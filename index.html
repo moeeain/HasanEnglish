@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>English ABC — Basic English for Everyone</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&family=Noto+Sans+Myanmar:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-badge">🐘</span>
+    <div>
+      <h1>English ABC</h1>
+      <p class="tagline">Basic English for Everyone · အခြေခံ အင်္ဂလိပ်စာ · बुनियादी अंग्रेज़ी</p>
+    </div>
+  </div>
+  <div class="score-pill" id="scorePill">⭐ <span id="scoreValue">0</span></div>
+</header>
+
+<nav class="tabbar" id="tabbar">
+  <button class="tab active" data-tab="home">🏠 Home</button>
+  <button class="tab" data-tab="vocab">🔤 Words</button>
+  <button class="tab" data-tab="grammar">🧩 Grammar</button>
+  <button class="tab" data-tab="listening">🎧 Listening</button>
+  <button class="tab" data-tab="speaking">🗣️ Speaking</button>
+  <button class="tab" data-tab="reading">📖 Reading</button>
+  <button class="tab" data-tab="writing">✏️ Writing</button>
+  <button class="tab" data-tab="workbook">📝 Workbook</button>
+</nav>
+
+<main id="app">
+
+  <!-- HOME -->
+  <section class="panel active" id="panel-home">
+    <div class="hero">
+      <h2>Hi! Let's learn English together 👋</h2>
+      <p class="tri">
+        <b>EN:</b> This site teaches you real basic English — words, grammar, listening, speaking, reading and writing. No prior knowledge needed.<br>
+        <b>MY:</b> ဒီဝဘ်ဆိုဒ်က အင်္ဂလိပ်စာ အခြေခံကနေ စလေ့လာနိုင်ပါတယ် — စကားလုံး၊ သဒ္ဒါ၊ နားထောင်၊ စကားပြော၊ ဖတ်၊ ရေးသားခြင်း အားလုံးပါ။ ဘာမှ မသိရင်တောင် စတင်နိုင်ပါတယ်။<br>
+        <b>HI:</b> यह वेबसाइट आपको बुनियादी अंग्रेज़ी सिखाती है — शब्द, व्याकरण, सुनना, बोलना, पढ़ना और लिखना। पहले से कुछ जानने की ज़रूरत नहीं है।
+      </p>
+    </div>
+    <div class="card-grid">
+      <div class="mini-card" onclick="goTab('vocab')"><span>🔤</span><p>Words<br><small>စကားလုံး · शब्द</small></p></div>
+      <div class="mini-card" onclick="goTab('grammar')"><span>🧩</span><p>Grammar<br><small>သဒ္ဒါ · व्याकरण</small></p></div>
+      <div class="mini-card" onclick="goTab('listening')"><span>🎧</span><p>Listening<br><small>နားထောင် · सुनना</small></p></div>
+      <div class="mini-card" onclick="goTab('speaking')"><span>🗣️</span><p>Speaking<br><small>စကားပြော · बोलना</small></p></div>
+      <div class="mini-card" onclick="goTab('reading')"><span>📖</span><p>Reading<br><small>ဖတ်ခြင်း · पढ़ना</small></p></div>
+      <div class="mini-card" onclick="goTab('writing')"><span>✏️</span><p>Writing<br><small>ရေးသားခြင်း · लिखना</small></p></div>
+    </div>
+    <div class="howto">
+      <h3>How to use / အသုံးပြုနည်း / उपयोग कैसे करें</h3>
+      <ol>
+        <li>EN: Start with <b>Words</b>, then <b>Grammar</b>, one unit a day.</li>
+        <li>MY: <b>စကားလုံး</b> ကနေ စပြီး <b>သဒ္ဒါ</b> ကို တစ်နေ့ တစ်ခန်းစီ လေ့လာပါ။</li>
+        <li>HI: <b>शब्दों</b> से शुरू करें, फिर <b>व्याकरण</b>, रोज़ एक पाठ।</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- VOCABULARY -->
+  <section class="panel" id="panel-vocab">
+    <h2>🔤 Words · စကားလုံးများ · शब्द</h2>
+    <p class="tri small">EN: Tap a word to hear it. · MY: အသံထွက်နားထောင်ရန် စကားလုံးကို နှိပ်ပါ။ · HI: सुनने के लिए शब्द पर टैप करें।</p>
+    <div id="vocabUnits"></div>
+  </section>
+
+  <!-- GRAMMAR -->
+  <section class="panel" id="panel-grammar">
+    <h2>🧩 Grammar · သဒ္ဒါ · व्याकरण</h2>
+    <div id="grammarUnits"></div>
+  </section>
+
+  <!-- LISTENING -->
+  <section class="panel" id="panel-listening">
+    <h2>🎧 Listening · နားထောင်ခြင်း · सुनना</h2>
+    <p class="tri small">EN: Replace the video links in <code>data.js</code> with any kids' English channel you like. · MY: <code>data.js</code> ဖိုင်ထဲက video link တွေကို ကြိုက်တဲ့ channel နဲ့ လဲလို့ရပါတယ်။ · HI: <code>data.js</code> में वीडियो लिंक बदल सकते हैं।</p>
+    <div id="listeningUnits"></div>
+  </section>
+
+  <!-- SPEAKING -->
+  <section class="panel" id="panel-speaking">
+    <h2>🗣️ Speaking · စကားပြောခြင်း · बोलना</h2>
+    <div id="speakingUnits"></div>
+  </section>
+
+  <!-- READING -->
+  <section class="panel" id="panel-reading">
+    <h2>📖 Reading · ဖတ်ခြင်း · पढ़ना</h2>
+    <div id="readingUnits"></div>
+  </section>
+
+  <!-- WRITING -->
+  <section class="panel" id="panel-writing">
+    <h2>✏️ Writing · ရေးသားခြင်း · लिखना</h2>
+    <div id="writingUnits"></div>
+  </section>
+
+  <!-- WORKBOOK -->
+  <section class="panel" id="panel-workbook">
+    <h2>📝 Workbook · လေ့ကျင့်ခန်းစာအုပ် · अभ्यास पुस्तिका</h2>
+    <p class="tri small">EN: Answer, then check. Your score can be saved online. · MY: ဖြေပြီး Check နှိပ်ပါ။ ရမှတ်ကို online မှာ သိမ်းနိုင်ပါတယ်။ · HI: उत्तर देकर जांचें। स्कोर ऑनलाइन सेव हो सकता है।</p>
+    <div id="workbookQuestions"></div>
+    <button class="btn-primary" id="checkWorkbook">Check my answers / စစ်ဆေးမယ် / जांचें</button>
+    <div id="workbookResult"></div>
+    <div class="name-save" id="nameSave" style="display:none">
+      <input id="studentName" placeholder="Your name / နာမည် / नाम">
+      <button class="btn-secondary" id="saveScoreBtn">Save score / ရမှတ်သိမ်းမယ် / स्कोर सेव करें</button>
+      <p id="saveStatus"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Made with ❤️ for beginners · Let's Go–style · Free to edit on GitHub</p>
+</footer>
+
+<!-- Firebase SDK (only used if you fill in firebase-config.js — safe to leave as is otherwise) -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+<script src="data.js"></script>
+<script src="firebase-config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
