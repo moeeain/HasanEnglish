@@ -14,12 +14,60 @@ document.getElementById('tabbar').addEventListener('click', e=>{
   if(btn) goTab(btn.dataset.tab);
 });
 
-// ---- Text-to-speech (free, built into the browser) ----
+// ---- Text-to-speech: prefers a real recording (AUDIO_MAP), then
+// picks the best-sounding voice the browser/device offers ----
+let preferredVoice = null;
+let availableVoices = [];
+
+function scoreVoice(v){
+  // Higher score = more natural-sounding (rough heuristic).
+  let s = 0;
+  const n = v.name.toLowerCase();
+  if(!v.lang.toLowerCase().startsWith('en')) return -1;
+  if(n.includes('natural')) s += 5;
+  if(n.includes('online')) s += 4;
+  if(n.includes('neural')) s += 5;
+  if(n.includes('premium') || n.includes('enhanced')) s += 4;
+  if(n.includes('google')) s += 3;
+  if(n.includes('samantha') || n.includes('aria') || n.includes('jenny')) s += 3;
+  if(n.includes('compact') || n.includes('espeak') || n.includes('robot')) s -= 3;
+  if(v.localService === false) s += 1; // cloud voices often sound better
+  return s;
+}
+
+function loadVoices(){
+  availableVoices = speechSynthesis.getVoices().filter(v=>v.lang.toLowerCase().startsWith('en'));
+  if(!availableVoices.length) return;
+  const saved = localStorage.getItem('preferredVoiceName');
+  const select = document.getElementById('voiceSelect');
+  if(select && select.options.length !== availableVoices.length){
+    select.innerHTML = availableVoices.map(v=>`<option value="${v.name}">${v.name} (${v.lang})</option>`).join('');
+    if(saved && availableVoices.some(v=>v.name===saved)) select.value = saved;
+  }
+  const byName = saved && availableVoices.find(v=>v.name===saved);
+  preferredVoice = byName || availableVoices.slice().sort((a,b)=>scoreVoice(b)-scoreVoice(a))[0] || null;
+}
+speechSynthesis.onvoiceschanged = loadVoices;
+loadVoices();
+document.getElementById('voiceSelect').addEventListener('change', e=>{
+  localStorage.setItem('preferredVoiceName', e.target.value);
+  preferredVoice = availableVoices.find(v=>v.name===e.target.value) || null;
+});
+
 function speak(text){
+  const key = text.trim().toLowerCase();
+  if(typeof AUDIO_MAP !== 'undefined' && AUDIO_MAP[key]){
+    try{
+      const audio = new Audio(AUDIO_MAP[key]);
+      audio.play();
+      return;
+    }catch(e){ console.warn('Audio playback failed, falling back to TTS', e); }
+  }
   try{
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'en-US';
     u.rate = 0.85;
+    if(preferredVoice) u.voice = preferredVoice;
     speechSynthesis.cancel();
     speechSynthesis.speak(u);
   }catch(e){ console.warn('TTS not supported', e); }
@@ -65,8 +113,10 @@ const listeningWrap = document.getElementById('listeningUnits');
 LISTENING_UNITS.forEach(unit=>{
   const box = document.createElement('div');
   box.className = 'unit';
+  const phrase = (unit.keyPhrase || unit.note.en).replace(/'/g,"\\'");
   box.innerHTML = `<h3>${unit.title}</h3>
     <div class="video-wrap"><iframe src="https://www.youtube.com/embed/${unit.youtubeId}" allowfullscreen></iframe></div>
+    <button class="speaker-btn" onclick="speak('${phrase}')">🔊 Play key phrase / အဓိကစကားစု နားထောင်ရန် / मुख्य वाक्यांश सुनें</button>
     <div class="explain">
       <p><b>EN:</b> ${unit.note.en}</p>
       <p><b>MY:</b> ${unit.note.my}</p>
@@ -76,18 +126,69 @@ LISTENING_UNITS.forEach(unit=>{
 });
 
 // ---- Render: Speaking ----
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 const speakingWrap = document.getElementById('speakingUnits');
-SPEAKING_UNITS.forEach(unit=>{
+SPEAKING_UNITS.forEach((unit,ui)=>{
   const box = document.createElement('div');
   box.className = 'unit';
-  let promptsHtml = unit.prompts.map(p=>`
+  let promptsHtml = unit.prompts.map((p,pi)=>{
+    const fbId = `sp-fb-${ui}-${pi}`;
+    const micBtn = SR
+      ? `<button class="mic-btn" data-en="${p.en.replace(/"/g,'&quot;')}" data-fb="${fbId}">🎤 Speak / ပြောကြည့် / बोलें</button>`
+      : `<p class="tri small">🎤 EN: Voice check not supported in this browser. · MY: ဒီ browser မှာ အသံစစ်ဆေးမှု အသုံးပြု၍မရပါ။ · HI: इस ब्राउज़र में आवाज़ जांच उपलब्ध नहीं है।</p>`;
+    return `
     <div class="example">
       <p><b>EN:</b> ${p.en}</p>
       <p><b>MY:</b> ${p.my}</p>
       <p><b>HI:</b> ${p.hi}</p>
-    </div>`).join('');
+      ${micBtn}
+      <p class="mic-feedback" id="${fbId}"></p>
+    </div>`;
+  }).join('');
   box.innerHTML = `<h3>${unit.title}</h3>${promptsHtml}`;
   speakingWrap.appendChild(box);
+});
+
+// Extract the quoted target phrase from a prompt like: Say: "Hello, my name is ___."
+function extractTarget(promptEn){
+  const m = promptEn.match(/"([^"]+)"/);
+  return m ? m[1] : promptEn;
+}
+function normalize(s){
+  return s.toLowerCase().replace(/[.,!?"']/g,'').replace(/___/g,'').trim();
+}
+
+document.getElementById('speakingUnits').addEventListener('click', e=>{
+  const btn = e.target.closest('.mic-btn');
+  if(!btn || !SR) return;
+  const fb = document.getElementById(btn.dataset.fb);
+  const target = normalize(extractTarget(btn.dataset.en));
+  fb.textContent = '🎙️ Listening... / နားထောင်နေသည်... / सुन रहा है...';
+  fb.className = 'mic-feedback';
+  const rec = new SR();
+  rec.lang = 'en-US';
+  rec.interimResults = false;
+  rec.maxAlternatives = 1;
+  rec.onresult = ev=>{
+    const said = ev.results[0][0].transcript;
+    const saidNorm = normalize(said);
+    // Correct if the target phrase (ignoring blanks like ___) is contained in what was said
+    const targetCore = target.replace(/\s+/g,' ').trim();
+    const isClose = saidNorm.includes(targetCore) || targetCore.includes(saidNorm) ||
+      targetCore.split(' ').filter(w=>w && saidNorm.includes(w)).length >= Math.max(1, Math.ceil(targetCore.split(' ').length*0.7));
+    if(isClose){
+      fb.textContent = `✅ Great! You said: "${said}"`;
+      fb.className = 'mic-feedback ok';
+    } else {
+      fb.textContent = `❌ Try again. You said: "${said}"`;
+      fb.className = 'mic-feedback bad';
+    }
+  };
+  rec.onerror = ()=>{
+    fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ / फिर से कोशिश करें।';
+    fb.className = 'mic-feedback bad';
+  };
+  rec.start();
 });
 
 // ---- Render: Reading ----

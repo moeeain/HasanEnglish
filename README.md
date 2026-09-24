@@ -35,7 +35,36 @@ Workbook (quiz) ပါဝင်ပါတယ်။
 4. ရလာတဲ့ URL ကို `firebase-config.js` ထဲက `GOOGLE_SCRIPT_URL` မှာ ထည့်ပါ
    (Firebase config ကို empty ထားခဲ့ရင် Google Script ကိုပဲ အသုံးပြုပါလိမ့်မယ်)
 
-## ၄) Content ထပ်ဖြည့်နည်း (video, words, grammar, quiz)
+## လက်ရှိပါဝင်သော content
+- **Words**: Greetings/People, Everyday Things, Numbers 1-10, Colors, Family, Body Parts (unit ၆ ခု)
+- **Grammar**: Sentence, To be (am/is/are), Simple Present, Plurals, This/That/These/Those, Question words (unit ၆ ခု)
+- **Listening**: Alphabet, Greetings, Numbers, Colors, Days of the Week, Family, Body Parts songs — video ၇ ခု
+  — အားလုံးသည် **supersimple.com** နှင့် **The Singing Walrus** ရဲ့ တရားဝင် YouTube video များဖြစ်ပြီး
+  တစ်ခုချင်းစီကို ရှာပြီး video ID ကို စစ်ဆေးပြီးမှ ထည့်ထားပါသည်
+- **Speaking, Reading, Writing**: Unit ၂-၄ ခုစီ
+- **Workbook**: မေးခွန်း ၁၂ ခု
+
+## 🔊 အသံနှင့် 🎤 Mic feature အသစ်များ
+- **Listening tab**: unit တစ်ခုစီအောက်မှာ 🔊 speaker ခလုတ် ထည့်ထားပါတယ် — အဓိကစကားစုကို ပြန်ဖွင့်နားထောင်နိုင်ပါတယ်
+- **Speaking tab**: prompt တစ်ခုစီအောက်မှာ 🎤 mic ခလုတ် ထည့်ထားပါတယ် — နှိပ်ပြီး English လိုပြောကြည့်ပါ။
+  ကလေးပြောတာကို browser ရဲ့ Speech Recognition နဲ့ တစ်ခါထဲ (instant) စစ်ပေးပြီး
+  ✅ မှန်တယ် (သို့) ❌ ထပ်ကြိုးစားပါ လို့ ချက်ချင်း ပြပေးပါတယ်
+  (Chrome/Edge browser မှာ အကောင်းဆုံး အလုပ်လုပ်ပါတယ်၊ Firefox အချို့မှာ အလုပ်မလုပ်နိုင်ပါ)
+- **Voice ရွေးချယ်ခွင့်**: Home tab အောက်ဆုံးမှာ "🔊 Voice" dropdown ထည့်ထားပါတယ် —
+  စက်/browser ပေါ်မူတည်ပြီး ရနိုင်တဲ့ အသံများထဲက အကောင်းဆုံး၊ AI ဆန်မှုအနည်းဆုံး အသံကို
+  အလိုအလျောက် ရွေးပေးပါတယ်၊ ကိုယ်တိုင်လည်း ပြောင်းရွေးနိုင်ပါတယ် (ရွေးထားတာကို memory ထဲ မှတ်ထားပါတယ်)
+
+## 🗣️ တကယ့်လူ့အသံ (Human Voice) ထည့်ချင်ရင်
+Browser ရဲ့ 🔊 အသံဟာ synthetic (စက်ပြောသံ) ဖြစ်တဲ့အတွက် လူ့အသံအစစ်ချင်ရင်:
+1. Word/phrase တစ်ခုစီကို phone ဖြင့် ကိုယ်တိုင် (သို့) မိသားစုဝင်တစ်ဦးဖြင့် mp3 short clip အနေနှင့် recording လုပ်ပါ
+   (သို့) [Google Translate](https://translate.google.com) ရဲ့ 🔊 listen feature ကနေ mp3 download လုပ်နိုင်ပါတယ်
+2. Recording files များကို website folder ထဲက `audio/` ဆိုတဲ့ folder အသစ်ဖန်တီးပြီး ထည့်ပါ
+3. `data.js` ဖိုင်ထဲက `AUDIO_MAP` ထဲမှာ စကားလုံးနှင့် file path ကို တွဲထည့်ပါ
+   ဥပမာ - `"hello": "audio/hello.mp3"`
+4. ဒီစကားလုံးကို 🔊 နှိပ်တိုင်း website က browser voice အစား မိမိတင်ထားတဲ့ mp3 ကို ဖွင့်ပေးပါလိမ့်မယ်
+   (AUDIO_MAP ထဲမပါသေးတဲ့ စကားလုံးများက ပုံမှန်အတိုင်း browser voice ကိုပဲ ဆက်သုံးပါလိမ့်မယ်)
+
+## Content ထပ်ဖြည့်နည်း (video, words, grammar, quiz)
 `data.js` ဖိုင်ထဲမှာ Unit အသစ်တွေကို object အသစ်အဖြစ် array ထဲ ထပ်ထည့်ရုံပါပဲ —
 ပုံစံအတိုင်း copy-paste ပြီး English/Myanmar/Hindi ၃ ခုစလုံး ဖြည့်ပေးပါ။
 Listening video အတွက် YouTube video ID ကိုပဲ လိုအပ်ပါတယ် (link တစ်ခုလုံး မလို —
