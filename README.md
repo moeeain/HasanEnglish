@@ -35,14 +35,18 @@ Workbook (quiz) ပါဝင်ပါတယ်။
 4. ရလာတဲ့ URL ကို `firebase-config.js` ထဲက `GOOGLE_SCRIPT_URL` မှာ ထည့်ပါ
    (Firebase config ကို empty ထားခဲ့ရင် Google Script ကိုပဲ အသုံးပြုပါလိမ့်မယ်)
 
-## လက်ရှိပါဝင်သော content
-- **Words**: Greetings/People, Everyday Things, Numbers 1-10, Colors, Family, Body Parts (unit ၆ ခု)
-- **Grammar**: Sentence, To be (am/is/are), Simple Present, Plurals, This/That/These/Those, Question words (unit ၆ ခု)
-- **Listening**: Alphabet, Greetings, Numbers, Colors, Days of the Week, Family, Body Parts songs — video ၇ ခု
-  — အားလုံးသည် **supersimple.com** နှင့် **The Singing Walrus** ရဲ့ တရားဝင် YouTube video များဖြစ်ပြီး
+## လက်ရှိပါဝင်သော content (အစုံ)
+- **Words**: Greetings, Everyday Things, Numbers, Colors, Family, Body Parts, Animals, Food, Days of Week,
+  Weather, Clothing, Shapes, Occupations — unit ၁၃ ခု၊ စကားလုံး ၁၀၁ လုံး
+- **Grammar**: Sentence, To be, Simple Present, Plurals, This/That, Question words, Adjectives, Prepositions,
+  Possessives, Simple Past, Can/Can't, There is/are — unit ၁၂ ခု
+- **Listening**: video ၉ ခု (Alphabet, Greetings, Numbers, Colors, Days, Family, Body Parts, Animals, Weather)
+  — အားလုံးသည် **supersimple.com** ရဲ့ တရားဝင် YouTube video များဖြစ်ပြီး
   တစ်ခုချင်းစီကို ရှာပြီး video ID ကို စစ်ဆေးပြီးမှ ထည့်ထားပါသည်
-- **Speaking, Reading, Writing**: Unit ၂-၄ ခုစီ
-- **Workbook**: မေးခွန်း ၁၂ ခု
+- **Speaking**: unit ၈ ခု (mic + instant check ပါ)
+- **Reading**: unit ၄ ခု (My Family, My Day, My Favorite Animal, My School)
+- **Writing**: unit ၄ ခု
+- **Workbook**: မေးခွန်း ၂၈ ခု
 
 ## 🔊 အသံနှင့် 🎤 Mic feature အသစ်များ
 - **Listening tab**: unit တစ်ခုစီအောက်မှာ 🔊 speaker ခလုတ် ထည့်ထားပါတယ် — အဓိကစကားစုကို ပြန်ဖွင့်နားထောင်နိုင်ပါတယ်

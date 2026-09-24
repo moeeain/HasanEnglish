@@ -102,6 +102,89 @@ const VOCAB_UNITS = [
       {emoji:"👄", en:"Mouth", my:"ပါးစပ်", hi:"मुँह"},
       {emoji:"👃", en:"Nose", my:"နှာခေါင်း", hi:"नाक"}
     ]
+  },
+  {
+    title: "Unit 7 — Animals / တိရစ္ဆာန်များ · जानवर",
+    words: [
+      {emoji:"🐘", en:"Elephant", my:"ဆင်", hi:"हाथी"},
+      {emoji:"🐒", en:"Monkey", my:"မျောက်", hi:"बंदर"},
+      {emoji:"🐯", en:"Tiger", my:"ကျား", hi:"बाघ"},
+      {emoji:"🐸", en:"Frog", my:"ဖား", hi:"मेंढक"},
+      {emoji:"🐦", en:"Bird", my:"ငှက်", hi:"चिड़िया"},
+      {emoji:"🐟", en:"Fish", my:"ငါး", hi:"मछली"},
+      {emoji:"🐔", en:"Chicken", my:"ကြက်", hi:"मुर्गी"},
+      {emoji:"🐮", en:"Cow", my:"နွား", hi:"गाय"}
+    ]
+  },
+  {
+    title: "Unit 8 — Food / အစားအစာများ · भोजन",
+    words: [
+      {emoji:"🍎", en:"Apple", my:"ပန်းသီး", hi:"सेब"},
+      {emoji:"🍌", en:"Banana", my:"ငှက်ပျောသီး", hi:"केला"},
+      {emoji:"🍞", en:"Bread", my:"ပေါင်မုန့်", hi:"रोटी"},
+      {emoji:"🥛", en:"Milk", my:"နို့", hi:"दूध"},
+      {emoji:"🥚", en:"Egg", my:"ဥ", hi:"अंडा"},
+      {emoji:"🍗", en:"Chicken (food)", my:"ကြက်သား", hi:"चिकन"},
+      {emoji:"🥗", en:"Vegetables", my:"ဟင်းသီးဟင်းရွက်", hi:"सब्ज़ियाँ"},
+      {emoji:"🍬", en:"Candy", my:"သကြားလုံး", hi:"मिठाई"}
+    ]
+  },
+  {
+    title: "Unit 9 — Days of the Week / ရက်သတ္တပတ်ရက်များ · सप्ताह के दिन",
+    words: [
+      {emoji:"📅", en:"Monday", my:"တနင်္လာနေ့", hi:"सोमवार"},
+      {emoji:"📅", en:"Tuesday", my:"အင်္ဂါနေ့", hi:"मंगलवार"},
+      {emoji:"📅", en:"Wednesday", my:"ဗုဒ္ဓဟူးနေ့", hi:"बुधवार"},
+      {emoji:"📅", en:"Thursday", my:"ကြာသပတေးနေ့", hi:"गुरुवार"},
+      {emoji:"📅", en:"Friday", my:"သောကြာနေ့", hi:"शुक्रवार"},
+      {emoji:"📅", en:"Saturday", my:"စနေနေ့", hi:"शनिवार"},
+      {emoji:"📅", en:"Sunday", my:"တနင်္ဂနွေနေ့", hi:"रविवार"}
+    ]
+  },
+  {
+    title: "Unit 10 — Weather / ရာသီဥတု · मौसम",
+    words: [
+      {emoji:"☀️", en:"Sunny", my:"နေသာသည်", hi:"धूप वाला"},
+      {emoji:"🌧️", en:"Rainy", my:"မိုးရွာသည်", hi:"बारिश वाला"},
+      {emoji:"☁️", en:"Cloudy", my:"တိမ်ထူသည်", hi:"बादल वाला"},
+      {emoji:"❄️", en:"Snowy", my:"နှင်းကျသည်", hi:"बर्फ़ वाला"},
+      {emoji:"💨", en:"Windy", my:"လေတိုက်သည်", hi:"हवा वाला"},
+      {emoji:"🌡️", en:"Hot", my:"ပူသည်", hi:"गरम"},
+      {emoji:"🥶", en:"Cold", my:"အေးသည်", hi:"ठंडा"}
+    ]
+  },
+  {
+    title: "Unit 11 — Clothing / အဝတ်အစား · कपड़े",
+    words: [
+      {emoji:"👕", en:"Shirt", my:"ရှပ်အင်္ကျီ", hi:"कमीज़"},
+      {emoji:"👖", en:"Pants", my:"ဘောင်းဘီ", hi:"पैंट"},
+      {emoji:"👗", en:"Dress", my:"ဂါဝန်", hi:"पोशाक"},
+      {emoji:"🧢", en:"Hat", my:"ဦးထုပ်", hi:"टोपी"},
+      {emoji:"👟", en:"Shoes", my:"ဖိနပ်", hi:"जूते"},
+      {emoji:"🧦", en:"Socks", my:"ခြေအိတ်", hi:"मोज़े"},
+      {emoji:"🧥", en:"Jacket", my:"ဂျာကက်", hi:"जैकेट"}
+    ]
+  },
+  {
+    title: "Unit 12 — Shapes / ပုံသဏ္ဍာန်များ · आकार",
+    words: [
+      {emoji:"⭕", en:"Circle", my:"စက်ဝိုင်း", hi:"वृत्त"},
+      {emoji:"⬜", en:"Square", my:"စတုရန်း", hi:"वर्ग"},
+      {emoji:"🔺", en:"Triangle", my:"တြိဂံ", hi:"त्रिभुज"},
+      {emoji:"⭐", en:"Star", my:"ကြယ်", hi:"तारा"},
+      {emoji:"💛", en:"Heart", my:"နှလုံးသား ပုံသဏ္ဍာန်", hi:"दिल का आकार"}
+    ]
+  },
+  {
+    title: "Unit 13 — Occupations / အလုပ်အကိုင်များ · व्यवसाय",
+    words: [
+      {emoji:"👩‍⚕️", en:"Doctor", my:"ဆရာဝန်", hi:"डॉक्टर"},
+      {emoji:"👮", en:"Police officer", my:"ရဲ", hi:"पुलिस अधिकारी"},
+      {emoji:"👨‍🌾", en:"Farmer", my:"လယ်သမား", hi:"किसान"},
+      {emoji:"👨‍🍳", en:"Cook", my:"ဟင်းချက်သူ", hi:"रसोइया"},
+      {emoji:"👷", en:"Builder", my:"လုပ်ငန်းသမား", hi:"मिस्त्री"},
+      {emoji:"🧑‍💼", en:"Office worker", my:"ရုံးဝန်ထမ်း", hi:"कार्यालय कर्मचारी"}
+    ]
   }
 ];
 
@@ -159,6 +242,60 @@ const GRAMMAR_UNITS = [
        hi:"'What' चीज़ों के बारे में पूछता है, 'Where' जगह के बारे में, 'Who' व्यक्ति के बारे में।"}
     ],
     examples: ["What is your name?", "Where do you live?", "Who is your teacher?"]
+  },
+  {
+    title: "Grammar 7 — Adjectives (describing words) / နာမဝိသေသန · विशेषण",
+    explain: [
+      {en:"Adjectives describe nouns. They usually come before the noun.",
+       my:"Adjective တွေက naun ကို ဖော်ပြပါတယ်။ ပုံမှန်အားဖြင့် naun ရှေ့မှာ ရှိပါတယ်။",
+       hi:"विशेषण संज्ञा का वर्णन करते हैं। वे आमतौर पर संज्ञा से पहले आते हैं।"}
+    ],
+    examples: ["A big elephant.", "A small frog.", "A red apple."]
+  },
+  {
+    title: "Grammar 8 — Prepositions of place (in, on, under) / နေရာပြ preposition · स्थान बताने वाले शब्द",
+    explain: [
+      {en:"'In' = inside. 'On' = on top of. 'Under' = below.",
+       my:"'In' = အထဲမှာ။ 'On' = အပေါ်မှာ။ 'Under' = အောက်မှာ။",
+       hi:"'In' = अंदर। 'On' = ऊपर। 'Under' = नीचे।"}
+    ],
+    examples: ["The book is on the table.", "The cat is under the chair.", "The pencil is in the bag."]
+  },
+  {
+    title: "Grammar 9 — Possessive words (my, your, his, her) / ပိုင်ဆိုင်မှုပြ · संबंधवाचक शब्द",
+    explain: [
+      {en:"These words show who something belongs to.",
+       my:"ဒီစကားလုံးတွေက တစ်ခုခုက ဘယ်သူ့ဟာဖြစ်တယ်ဆိုတာကို ပြပါတယ်။",
+       hi:"ये शब्द दिखाते हैं कि कोई चीज़ किसकी है।"}
+    ],
+    examples: ["This is my book.", "That is your bag.", "This is his pencil.", "That is her house."]
+  },
+  {
+    title: "Grammar 10 — Simple Past (yesterday) / အတိတ်ကာလ · भूतकाल",
+    explain: [
+      {en:"Use the simple past for things that already happened. Many verbs add -ed.",
+       my:"ဖြစ်ပြီးသားအရာများအတွက် Simple Past သုံးပါ။ verb အများစုက -ed ထပ်ထည့်ပါတယ်။",
+       hi:"जो हो चुका है उसके लिए भूतकाल का उपयोग करें। कई क्रियाओं में -ed जोड़ा जाता है।"}
+    ],
+    examples: ["I played football yesterday.", "She walked to school.", "We ate rice. (irregular)"]
+  },
+  {
+    title: "Grammar 11 — Can / Can't (ability) / တတ်ကျွမ်းမှု · क्षमता",
+    explain: [
+      {en:"'Can' shows you are able to do something. 'Can't' shows you are not able.",
+       my:"'Can' က တတ်ကျွမ်းမှုကို ပြပါတယ်။ 'Can't' က မတတ်ကျွမ်းမှုကို ပြပါတယ်။",
+       hi:"'Can' दिखाता है कि आप कुछ कर सकते हैं। 'Can't' दिखाता है कि आप नहीं कर सकते।"}
+    ],
+    examples: ["I can swim.", "She can sing.", "He can't fly."]
+  },
+  {
+    title: "Grammar 12 — There is / There are / ရှိသည် · है / हैं",
+    explain: [
+      {en:"'There is' for one thing. 'There are' for many things.",
+       my:"'There is' တစ်ခုတည်းအတွက်။ 'There are' အများအတွက်။",
+       hi:"'There is' एक चीज़ के लिए। 'There are' कई चीज़ों के लिए।"}
+    ],
+    examples: ["There is a cat on the bed.", "There are three books on the table."]
   }
 ];
 
@@ -190,7 +327,15 @@ const LISTENING_UNITS = [
   {title:"Listen 7 — Head, Shoulders, Knees & Toes (Body Parts) / ခန္ဓာကိုယ်သီချင်း · शरीर के अंगों का गीत",
    youtubeId:"PynsQ_BWYht",
    keyPhrase:"Head, shoulders, knees, and toes",
-   note:{en:"Point to each body part while you sing.", my:"သီချင်းဆိုစဉ် ခန္ဓာကိုယ်အစိတ်အပိုင်းကို လက်ညှိုးထိုးပြပါ။", hi:"गाते समय शरीर के हर अंग की ओर इशारा करें।"}}
+   note:{en:"Point to each body part while you sing.", my:"သီချင်းဆိုစဉ် ခန္ဓာကိုယ်အစိတ်အပိုင်းကို လက်ညှိုးထိုးပြပါ။", hi:"गाते समय शरीर के हर अंग की ओर इशारा करें।"}},
+  {title:"Listen 8 — Walking In The Jungle (Animals) / တိရစ္ဆာန်သီချင်း · जानवरों का गीत",
+   youtubeId:"GoSq-yZcJ-4",
+   keyPhrase:"Walking in the jungle, we're not afraid",
+   note:{en:"Listen for the animal names: frog, monkey, toucan, tiger.", my:"frog, monkey, toucan, tiger — တိရစ္ဆာန်နာမည်များကို နားထောင်ပါ။", hi:"जानवरों के नाम सुनें: frog, monkey, toucan, tiger."}},
+  {title:"Listen 9 — How's The Weather? / ရာသီဥတုသီချင်း · मौसम का गीत",
+   youtubeId:"dTY0DHL9Lxb",
+   keyPhrase:"How's the weather today?",
+   note:{en:"Listen for: sunny, rainy, cloudy, snowy.", my:"sunny, rainy, cloudy, snowy — ရာသီဥတုစကားလုံးများကို နားထောင်ပါ။", hi:"मौसम के शब्द सुनें: sunny, rainy, cloudy, snowy."}}
 ];
 
 const SPEAKING_UNITS = [
@@ -213,6 +358,26 @@ const SPEAKING_UNITS = [
    prompts:[
      {en:"Ask a friend: \"What is your name?\" Answer: \"My name is ___.\"", my:"သူငယ်ချင်းကို မေးပါ - \"What is your name?\" ဖြေပါ - \"My name is ___.\"", hi:"दोस्त से पूछें: \"What is your name?\" जवाब दें: \"My name is ___.\""},
      {en:"Ask: \"What color is this?\" Answer: \"It is red.\"", my:"မေးပါ - \"What color is this?\" ဖြေပါ - \"It is red.\"", hi:"पूछें: \"What color is this?\" जवाब दें: \"It is red.\""}
+   ]},
+  {title:"Speak 5 — Describe things / ပစ္စည်းကို ဖော်ပြခြင်း · चीज़ों का वर्णन करें",
+   prompts:[
+     {en:"Say: \"This is a big elephant.\"", my:"ပြောကြည့်ပါ - \"This is a big elephant.\"", hi:"बोलें: \"This is a big elephant.\""},
+     {en:"Say: \"I like red apples.\"", my:"ပြောကြည့်ပါ - \"I like red apples.\"", hi:"बोलें: \"I like red apples.\""}
+   ]},
+  {title:"Speak 6 — Talk about the week / ရက်သတ္တပတ်အကြောင်းပြော · सप्ताह के बारे में बताएं",
+   prompts:[
+     {en:"Say: \"Today is Monday.\"", my:"ပြောကြည့်ပါ - \"Today is Monday.\"", hi:"बोलें: \"Today is Monday.\""},
+     {en:"Say: \"I go to school on Monday.\"", my:"ပြောကြည့်ပါ - \"I go to school on Monday.\"", hi:"बोलें: \"I go to school on Monday.\""}
+   ]},
+  {title:"Speak 7 — Talk about the weather / ရာသီဥတုအကြောင်းပြော · मौसम के बारे में बताएं",
+   prompts:[
+     {en:"Say: \"It is sunny today.\"", my:"ပြောကြည့်ပါ - \"It is sunny today.\"", hi:"बोलें: \"It is sunny today.\""},
+     {en:"Ask: \"How's the weather?\" Answer: \"It is rainy.\"", my:"မေးပါ - \"How's the weather?\" ဖြေပါ - \"It is rainy.\"", hi:"पूछें: \"How's the weather?\" जवाब दें: \"It is rainy.\""}
+   ]},
+  {title:"Speak 8 — What you can do / တတ်ကျွမ်းမှုပြောခြင်း · अपनी क्षमता बताएं",
+   prompts:[
+     {en:"Say: \"I can swim.\"", my:"ပြောကြည့်ပါ - \"I can swim.\"", hi:"बोलें: \"I can swim.\""},
+     {en:"Say: \"I can't fly, but I can run.\"", my:"ပြောကြည့်ပါ - \"I can't fly, but I can run.\"", hi:"बोलें: \"I can't fly, but I can run.\""}
    ]}
 ];
 
@@ -236,6 +401,26 @@ const READING_UNITS = [
    questions:[
      {en:"What time does the writer get up?", my:"ဘယ်အချိန်မှာ နိုးလဲ?", hi:"लेखक कितने बजे उठता है?"},
      {en:"How many books are in the bag?", my:"အိတ်ထဲမှာ စာအုပ် ဘယ်နှစ်အုပ်ရှိလဲ?", hi:"बैग में कितनी किताबें हैं?"}
+   ]},
+  {title:"Read 3 — My Favorite Animal / ကျွန်တော်အကြိုက်ဆုံးတိရစ္ဆာန် · मेरा पसंदीदा जानवर",
+   text:"My favorite animal is the elephant. It is big and gray. It has a long nose. Elephants eat leaves and fruit. They are very smart animals. I want to see an elephant one day.",
+   translation:{
+     my:"ကျွန်တော်အကြိုက်ဆုံးတိရစ္ဆာန်က ဆင်ဖြစ်ပါတယ်။ ဆင်ကြီးက ကြီးမားပြီး မီးခိုးရောင်ဖြစ်ပါတယ်။ နှာမောင်းရှည်ရှည်ရှိပါတယ်။ ဆင်တွေက အရွက်နဲ့ အသီးအနှံကို စားပါတယ်။ ဆင်တွေက အလွန်ဉာဏ်ကောင်းတဲ့ တိရစ္ဆာန်တွေဖြစ်ပါတယ်။ ကျွန်တော် တစ်နေ့နေ့ ဆင်ကို တွေ့ချင်ပါတယ်။",
+     hi:"मेरा पसंदीदा जानवर हाथी है। यह बड़ा और भूरे रंग का है। इसकी सूंड लंबी है। हाथी पत्ते और फल खाते हैं। वे बहुत बुद्धिमान जानवर हैं। मैं एक दिन हाथी देखना चाहता हूँ।"
+   },
+   questions:[
+     {en:"What color is the elephant?", my:"ဆင်ရဲ့ အရောင်က ဘာလဲ?", hi:"हाथी का रंग क्या है?"},
+     {en:"What do elephants eat?", my:"ဆင်တွေက ဘာစားလဲ?", hi:"हाथी क्या खाते हैं?"}
+   ]},
+  {title:"Read 4 — My School / ကျွန်တော့်ကျောင်း · मेरा स्कूल",
+   text:"My school is big and yellow. I have many friends there. My teacher is kind. We learn math, English, and science. On rainy days, we play inside. I like my school very much.",
+   translation:{
+     my:"ကျွန်တော့်ကျောင်းက ကြီးမားပြီး အဝါရောင်ဖြစ်ပါတယ်။ အဲဒီမှာ သူငယ်ချင်း အများကြီးရှိပါတယ်။ ကျွန်တော့်ဆရာမက စိတ်ကောင်းရှိပါတယ်။ သင်္ချာ၊ အင်္ဂလိပ်စာနဲ့ သိပ္ပံသင်ကြားပါတယ်။ မိုးရွာတဲ့နေ့မှာ ကျွန်တော်တို့ အထဲမှာ ကစားကြပါတယ်။ ကျွန်တော့်ကျောင်းကို အရမ်းကြိုက်ပါတယ်။",
+     hi:"मेरा स्कूल बड़ा और पीला है। मेरे वहाँ बहुत दोस्त हैं। मेरी शिक्षिका दयालु हैं। हम गणित, अंग्रेज़ी और विज्ञान सीखते हैं। बारिश के दिनों में, हम अंदर खेलते हैं। मुझे अपना स्कूल बहुत पसंद है।"
+   },
+   questions:[
+     {en:"What color is the school?", my:"ကျောင်းရဲ့ အရောင်က ဘာလဲ?", hi:"स्कूल का रंग क्या है?"},
+     {en:"What subjects does the writer learn?", my:"ဘာဘာသာရပ်တွေ သင်ကြားလဲ?", hi:"लेखक कौन से विषय सीखता है?"}
    ]}
 ];
 
@@ -251,6 +436,18 @@ const WRITING_UNITS = [
      en:"Write 3 sentences about your day using: I get up at ___. I go to ___. I sleep at ___.",
      my:"အောက်ပါပုံစံသုံးပြီး ကိုယ့်နေ့စဉ်အကြောင်း ဝါကျ ၃ ကြောင်း ရေးပါ - I get up at ___. I go to ___. I sleep at ___.",
      hi:"अपने दिन के बारे में 3 वाक्य लिखें: I get up at ___. I go to ___. I sleep at ___."
+   }},
+  {title:"Write 3 — My Favorite Animal / ကျွန်တော်အကြိုက်ဆုံးတိရစ္ဆာန် · मेरा पसंदीदा जानवर",
+   instructions:{
+     en:"Write 3 sentences using: My favorite animal is ___. It is ___ (color/size). It eats ___.",
+     my:"အောက်ပါပုံစံသုံးပြီး ဝါကျ ၃ ကြောင်း ရေးပါ - My favorite animal is ___. It is ___ (color/size). It eats ___.",
+     hi:"3 वाक्य लिखें: My favorite animal is ___. It is ___ (color/size). It eats ___."
+   }},
+  {title:"Write 4 — Today's Weather / ဒီနေ့ရာသီဥတု · आज का मौसम",
+   instructions:{
+     en:"Write 2 sentences using: Today is ___. It is ___ (sunny/rainy/cloudy/hot/cold).",
+     my:"ဝါကျ ၂ ကြောင်း ရေးပါ - Today is ___. It is ___ (sunny/rainy/cloudy/hot/cold).",
+     hi:"2 वाक्य लिखें: Today is ___. It is ___ (sunny/rainy/cloudy/hot/cold)."
    }}
 ];
 
@@ -274,5 +471,32 @@ const WORKBOOK_QUESTIONS = [
    options:["That","Those","This","These"], answer:"This"},
   {id:"w11", type:"fill", q:{en:"Fill in the question word: ___ is your name? (What/Where/Who)"}, answer:"What"},
   {id:"w12", type:"mcq", q:{en:"Choose the word for 'အဖေ / पिता':"},
-   options:["Mother","Father","Sister","Brother"], answer:"Father"}
+   options:["Mother","Father","Sister","Brother"], answer:"Father"},
+  {id:"w13", type:"mcq", q:{en:"Which animal is big and gray with a long nose?"},
+   options:["Tiger","Elephant","Frog","Bird"], answer:"Elephant"},
+  {id:"w14", type:"fill", q:{en:"Fill in: I drink ___ every morning. (နို့ / दूध)"}, answer:"milk"},
+  {id:"w15", type:"mcq", q:{en:"Which day comes after Sunday?"},
+   options:["Saturday","Monday","Friday","Wednesday"], answer:"Monday"},
+  {id:"w16", type:"mcq", q:{en:"Choose the correct sentence order:"},
+   options:["Elephant big a","A big elephant","Big a elephant","Elephant a big"], answer:"A big elephant"},
+  {id:"w17", type:"mcq", q:{en:"The book is ___ the table. (on top of)"},
+   options:["under","in","on","at"], answer:"on"},
+  {id:"w18", type:"fill", q:{en:"Fill in: The cat is ___ the chair. (below)"}, answer:"under"},
+  {id:"w19", type:"mcq", q:{en:"\"This is ___ book.\" (belongs to me)"},
+   options:["your","his","my","her"], answer:"my"},
+  {id:"w20", type:"mcq", q:{en:"Which word means 'နေသာသည် / धूप वाला'?"},
+   options:["Rainy","Sunny","Snowy","Windy"], answer:"Sunny"},
+  {id:"w21", type:"fill", q:{en:"Fill in: I wear ___ on my feet. (ဖိနပ် / जूते)"}, answer:"shoes"},
+  {id:"w22", type:"mcq", q:{en:"A ball is shaped like a ___."},
+   options:["Square","Triangle","Circle","Star"], answer:"Circle"},
+  {id:"w23", type:"mcq", q:{en:"Who helps sick people?"},
+   options:["Farmer","Doctor","Cook","Builder"], answer:"Doctor"},
+  {id:"w24", type:"mcq", q:{en:"Choose the past tense: I ___ football yesterday."},
+   options:["play","plays","played","playing"], answer:"played"},
+  {id:"w25", type:"mcq", q:{en:"\"I ___ swim.\" (I am able to)"},
+   options:["can't","can","not","don't"], answer:"can"},
+  {id:"w26", type:"fill", q:{en:"Fill in: There ___ a cat on the bed. (is/are)"}, answer:"is"},
+  {id:"w27", type:"mcq", q:{en:"\"There ___ three books.\" (many things)"},
+   options:["is","are","am","be"], answer:"are"},
+  {id:"w28", type:"fill", q:{en:"Fill in: On a cold day, I wear a ___. (ဂျာကက် / जैकेट)"}, answer:"jacket"}
 ];
