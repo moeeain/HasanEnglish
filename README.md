@@ -35,18 +35,15 @@ Workbook (quiz) ပါဝင်ပါတယ်။
 4. ရလာတဲ့ URL ကို `firebase-config.js` ထဲက `GOOGLE_SCRIPT_URL` မှာ ထည့်ပါ
    (Firebase config ကို empty ထားခဲ့ရင် Google Script ကိုပဲ အသုံးပြုပါလိမ့်မယ်)
 
-## လက်ရှိပါဝင်သော content (အစုံ)
-- **Words**: Greetings, Everyday Things, Numbers, Colors, Family, Body Parts, Animals, Food, Days of Week,
-  Weather, Clothing, Shapes, Occupations — unit ၁၃ ခု၊ စကားလုံး ၁၀၁ လုံး
-- **Grammar**: Sentence, To be, Simple Present, Plurals, This/That, Question words, Adjectives, Prepositions,
-  Possessives, Simple Past, Can/Can't, There is/are — unit ၁၂ ခု
-- **Listening**: video ၉ ခု (Alphabet, Greetings, Numbers, Colors, Days, Family, Body Parts, Animals, Weather)
-  — အားလုံးသည် **supersimple.com** ရဲ့ တရားဝင် YouTube video များဖြစ်ပြီး
-  တစ်ခုချင်းစီကို ရှာပြီး video ID ကို စစ်ဆေးပြီးမှ ထည့်ထားပါသည်
-- **Speaking**: unit ၈ ခု (mic + instant check ပါ)
-- **Reading**: unit ၄ ခု (My Family, My Day, My Favorite Animal, My School)
-- **Writing**: unit ၄ ခု
-- **Workbook**: မေးခွန်း ၂၈ ခု
+## လက်ရှိပါဝင်သော content (Level 1-5 scope, Let's Go style)
+- **Words**: unit ၁၆ ခု၊ စကားလုံး ၁၂၁ လုံး — Greetings→Occupations + Time, Sports, Transportation (Level 5 topics)
+- **Grammar**: unit ၁၈ ခု — Basic (sentence, to be, present) → Level 5 (comparatives, past continuous,
+  going-to future, frequency adverbs, telling time, object pronouns)
+- **Listening**: verified video ၉ ခု (supersimple.com)
+- **Speaking**: unit ၁၀ ခု (mic + instant check ပါ)
+- **Reading**: unit ၅ ခု
+- **Writing**: unit ၅ ခု
+- **Workbook**: မေးခွန်း ၃၇ ခု
 
 ## 🔊 အသံနှင့် 🎤 Mic feature အသစ်များ
 - **Listening tab**: unit တစ်ခုစီအောက်မှာ 🔊 speaker ခလုတ် ထည့်ထားပါတယ် — အဓိကစကားစုကို ပြန်ဖွင့်နားထောင်နိုင်ပါတယ်
@@ -58,15 +55,16 @@ Workbook (quiz) ပါဝင်ပါတယ်။
   စက်/browser ပေါ်မူတည်ပြီး ရနိုင်တဲ့ အသံများထဲက အကောင်းဆုံး၊ AI ဆန်မှုအနည်းဆုံး အသံကို
   အလိုအလျောက် ရွေးပေးပါတယ်၊ ကိုယ်တိုင်လည်း ပြောင်းရွေးနိုင်ပါတယ် (ရွေးထားတာကို memory ထဲ မှတ်ထားပါတယ်)
 
-## 🗣️ တကယ့်လူ့အသံ (Human Voice) ထည့်ချင်ရင်
-Browser ရဲ့ 🔊 အသံဟာ synthetic (စက်ပြောသံ) ဖြစ်တဲ့အတွက် လူ့အသံအစစ်ချင်ရင်:
-1. Word/phrase တစ်ခုစီကို phone ဖြင့် ကိုယ်တိုင် (သို့) မိသားစုဝင်တစ်ဦးဖြင့် mp3 short clip အနေနှင့် recording လုပ်ပါ
-   (သို့) [Google Translate](https://translate.google.com) ရဲ့ 🔊 listen feature ကနေ mp3 download လုပ်နိုင်ပါတယ်
-2. Recording files များကို website folder ထဲက `audio/` ဆိုတဲ့ folder အသစ်ဖန်တီးပြီး ထည့်ပါ
-3. `data.js` ဖိုင်ထဲက `AUDIO_MAP` ထဲမှာ စကားလုံးနှင့် file path ကို တွဲထည့်ပါ
-   ဥပမာ - `"hello": "audio/hello.mp3"`
-4. ဒီစကားလုံးကို 🔊 နှိပ်တိုင်း website က browser voice အစား မိမိတင်ထားတဲ့ mp3 ကို ဖွင့်ပေးပါလိမ့်မယ်
-   (AUDIO_MAP ထဲမပါသေးတဲ့ စကားလုံးများက ပုံမှန်အတိုင်း browser voice ကိုပဲ ဆက်သုံးပါလိမ့်မယ်)
+## 🗣️ "လူ့အသံ" (Human Voice) အကြောင်း — ရိုးရိုးသားသား ရှင်းပြချင်ပါတယ်
+ကျွန်တော် (Claude) က **တကယ့်လူတစ်ဦးရဲ့ အသံအစစ်ကို ဖန်တီးပေးလို့ မရပါဘူး** — ဒါက AI စာသားနဲ့ အလုပ်လုပ်တာဖြစ်လို့ အသံဖိုင် (mp3) ကို အစအဆုံး တီထွင်ပေးလို့ မဖြစ်နိုင်ပါဘူး။ ဒါပေမယ့် အောက်ပါအတိုင်း အကောင်းဆုံးအဖြေ ၃ မျိုး ပြင်ဆင်ပေးထားပါတယ်:
+
+1. **🌐 Online natural voice (default on)** — Website က default အနေနဲ့ Google ရဲ့ အသံဝန်ဆောင်မှုတစ်ခုကို အသုံးပြုပြီး browser ရဲ့ robot-အသံထက် **သိသိသာသာ ပိုပီး natural/human-ဆန်တဲ့** အသံနဲ့ ဖတ်ပေးပါတယ် (internet ရှိရပါမယ်)။
+   ⚠️ **ရိုးသားစွာ ပြောရရင်**: ဒါက Google ရဲ့ official API မဟုတ်ပါဘူး (documented မဟုတ်တဲ့ endpoint) — အခုချိန်မှာ ကောင်းကောင်းအလုပ်လုပ်ပေမယ့် အနာဂတ်မှာ ရပ်သွားနိုင်ပါတယ်။ ရပ်သွားရင် app က အလိုအလျောက် offline browser voice ကို ပြန်ပြောင်းအသုံးပြုပါလိမ့်မယ် (ဘာမှ ချိုးမကျပါဘူး)
+   — Home tab က "Use natural online voice" checkbox ကနေ ပိတ်/ဖွင့် လုပ်နိုင်ပါတယ်
+2. **📱 Offline voice (fallback)** — Internet မရှိရင် (သို့) checkbox ပိတ်ထားရင် device ရဲ့ built-in voice ကို voice-picker ကနေ ရွေးချယ်အသုံးပြုပါတယ်
+3. **🎙️ တကယ့်လူ့အသံအစစ် (100% real human)** — ဒါကို ရဖို့ တစ်နည်းတည်းသာ ရှိပါတယ်: word/phrase တွေကို phone ဖြင့် ကိုယ်တိုင် (သို့) မိသားစုဝင်တစ်ဦးဖြင့် mp3 short clip recording လုပ်ပြီး
+   `audio/` folder ထဲထည့်ကာ `data.js` ထဲက `AUDIO_MAP` မှာ စာရင်းသွင်းပါ (ဥပမာ - `"hello": "audio/hello.mp3"`)။
+   ဒီနည်းက **100% အာမခံ human voice** ဖြစ်ပြီး internet မလိုပါဘူး၊ ဒါပေမယ့် word တစ်လုံးချင်းစီ ကိုယ်တိုင် record လုပ်ရမှာ ဖြစ်ပါတယ်။
 
 ## Content ထပ်ဖြည့်နည်း (video, words, grammar, quiz)
 `data.js` ဖိုင်ထဲမှာ Unit အသစ်တွေကို object အသစ်အဖြစ် array ထဲ ထပ်ထည့်ရုံပါပဲ —

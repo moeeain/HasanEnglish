@@ -62,7 +62,12 @@
     </div>
     <div class="howto" id="voiceSettingBox">
       <h3>🔊 Voice / အသံ / आवाज़</h3>
-      <p class="tri small">EN: Pick the nicest-sounding voice your device offers. · MY: စက်ပေါ်က အကောင်းဆုံး အသံကို ရွေးပါ။ · HI: अपने डिवाइस की सबसे अच्छी आवाज़ चुनें।</p>
+      <p class="tri small">EN: By default this uses a more natural online voice (needs internet). Turn it off to always use your device's offline voice. · MY: ပုံမှန်အားဖြင့် အသံပိုပီးလူ့အသံဆန်တဲ့ online voice ကို သုံးပါတယ် (internet လိုအပ်ပါတယ်)။ Offline voice ချည်းပဲ သုံးချင်ရင် ပိတ်ထားနိုင်ပါတယ်။ · HI: डिफ़ॉल्ट रूप से एक बेहतर ऑनलाइन आवाज़ इस्तेमाल होती है (इंटरनेट ज़रूरी है)। इसे बंद कर सकते हैं।</p>
+      <label style="display:flex;align-items:center;gap:8px;margin:8px 0">
+        <input type="checkbox" id="onlineVoiceToggle" checked>
+        <span>Use natural online voice / အွန်လိုင်း အသံသုံးမယ် / ऑनलाइन आवाज़ का उपयोग करें</span>
+      </label>
+      <p class="tri small">EN: Offline fallback voice — pick the one your device sounds best with. · MY: Offline voice ကို ရွေးချယ်ပါ။ · HI: ऑफ़लाइन आवाज़ चुनें।</p>
       <select id="voiceSelect"></select>
     </div>
   </section>

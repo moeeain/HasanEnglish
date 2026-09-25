@@ -185,6 +185,41 @@ const VOCAB_UNITS = [
       {emoji:"👷", en:"Builder", my:"လုပ်ငန်းသမား", hi:"मिस्त्री"},
       {emoji:"🧑‍💼", en:"Office worker", my:"ရုံးဝန်ထမ်း", hi:"कार्यालय कर्मचारी"}
     ]
+  },
+  {
+    title: "Unit 14 — Time & Clock / အချိန်နှင့် နာရီ · समय और घड़ी",
+    words: [
+      {emoji:"🕐", en:"O'clock", my:"နာရီပြည့်", hi:"बजे"},
+      {emoji:"🌅", en:"Morning", my:"မနက်", hi:"सुबह"},
+      {emoji:"🌇", en:"Afternoon", my:"နေ့လယ်", hi:"दोपहर"},
+      {emoji:"🌃", en:"Evening", my:"ညနေ", hi:"शाम"},
+      {emoji:"🌙", en:"Night", my:"ညအချိန်", hi:"रात"},
+      {emoji:"⏰", en:"Early", my:"စောစော", hi:"जल्दी"},
+      {emoji:"⏳", en:"Late", my:"နောက်ကျ", hi:"देर से"}
+    ]
+  },
+  {
+    title: "Unit 15 — Sports / အားကစားများ · खेल",
+    words: [
+      {emoji:"⚽", en:"Football", my:"ဘောလုံး", hi:"फुटबॉल"},
+      {emoji:"🏀", en:"Basketball", my:"ဘတ်စကက်ဘော", hi:"बास्केटबॉल"},
+      {emoji:"🏊", en:"Swimming", my:"ရေကူး", hi:"तैराकी"},
+      {emoji:"🏃", en:"Running", my:"ပြေး", hi:"दौड़ना"},
+      {emoji:"🚴", en:"Cycling", my:"စက်ဘီးစီး", hi:"साइकिल चलाना"},
+      {emoji:"🏸", en:"Badminton", my:"ကွင်းလုံးအန်ခုန်", hi:"बैडमिंटन"}
+    ]
+  },
+  {
+    title: "Unit 16 — Transportation / သယ်ယူပို့ဆောင်ရေး · परिवहन",
+    words: [
+      {emoji:"🚌", en:"Bus", my:"ဘတ်စ်ကား", hi:"बस"},
+      {emoji:"🚗", en:"Car", my:"ကား", hi:"कार"},
+      {emoji:"🚲", en:"Bicycle", my:"စက်ဘီး", hi:"साइकिल"},
+      {emoji:"✈️", en:"Airplane", my:"လေယာဉ်", hi:"हवाई जहाज़"},
+      {emoji:"🚢", en:"Boat", my:"လှေ", hi:"नाव"},
+      {emoji:"🚆", en:"Train", my:"ရထား", hi:"ट्रेन"},
+      {emoji:"🏍️", en:"Motorbike", my:"မော်တော်ဆိုင်ကယ်", hi:"मोटरसाइकिल"}
+    ]
   }
 ];
 
@@ -296,6 +331,60 @@ const GRAMMAR_UNITS = [
        hi:"'There is' एक चीज़ के लिए। 'There are' कई चीज़ों के लिए।"}
     ],
     examples: ["There is a cat on the bed.", "There are three books on the table."]
+  },
+  {
+    title: "Grammar 13 — Comparative & Superlative / နှိုင်းယှဉ်ခြင်း · तुलना",
+    explain: [
+      {en:"Add -er to compare two things. Add -est (with 'the') to compare three or more.",
+       my:"နှစ်ခုနှိုင်းယှဉ်ဖို့ -er ထပ်ထည့်ပါ။ သုံးခုထက်ပိုတာကို နှိုင်းယှဉ်ဖို့ 'the' + -est သုံးပါ။",
+       hi:"दो चीज़ों की तुलना के लिए -er जोड़ें। तीन या अधिक के लिए 'the' + -est का उपयोग करें।"}
+    ],
+    examples: ["This bag is bigger than that one.", "This is the biggest elephant in the zoo.", "She is taller than me."]
+  },
+  {
+    title: "Grammar 14 — Past Continuous (was/were + -ing) / ဖြစ်ပျက်နေဆဲအတိတ် · भूतकाल निरंतर",
+    explain: [
+      {en:"Use 'was/were' + verb-ing for an action that was happening at a certain time in the past.",
+       my:"အတိတ်ကာလက အချိန်တစ်ခုမှာ ဖြစ်ပျက်နေတဲ့အရာအတွက် 'was/were' + verb-ing သုံးပါ။",
+       hi:"अतीत के किसी समय हो रही क्रिया के लिए 'was/were' + verb-ing का उपयोग करें।"}
+    ],
+    examples: ["I was reading a book at 8pm.", "They were playing football yesterday.", "She was sleeping when I called."]
+  },
+  {
+    title: "Grammar 15 — Future with \"going to\" / အနာဂတ်ကာလ (\"going to\") · भविष्य काल (\"going to\")",
+    explain: [
+      {en:"Use 'am/is/are + going to' to talk about a plan for the future.",
+       my:"အနာဂတ် အစီအစဉ်ကို ပြောဖို့ 'am/is/are + going to' သုံးပါ။",
+       hi:"भविष्य की योजना के बारे में बताने के लिए 'am/is/are + going to' का उपयोग करें।"}
+    ],
+    examples: ["I am going to visit my grandmother.", "It is going to rain.", "We are going to play football tomorrow."]
+  },
+  {
+    title: "Grammar 16 — Adverbs of Frequency (always, sometimes, never) / ကြိမ်နှုန်းပြ · आवृत्ति क्रिया-विशेषण",
+    explain: [
+      {en:"These words say how often something happens. They go before the main verb.",
+       my:"ဒီစကားလုံးတွေက တစ်ခုခု ဘယ်လောက်ကြာကြာဖြစ်လဲဆိုတာ ပြပါတယ်။ verb ရှေ့မှာ ရှိပါတယ်။",
+       hi:"ये शब्द बताते हैं कि कोई काम कितनी बार होता है। ये मुख्य क्रिया से पहले आते हैं।"}
+    ],
+    examples: ["I always eat breakfast.", "She sometimes plays basketball.", "He never eats candy."]
+  },
+  {
+    title: "Grammar 17 — Telling Time / အချိန်ပြောခြင်း · समय बताना",
+    explain: [
+      {en:"Use 'It is + [hour] o'clock' for the exact hour, or 'It is half past / quarter past [hour]'.",
+       my:"နာရီအတိအကျအတွက် 'It is + [hour] o'clock' သုံးပါ၊ (သို့) 'It is half past / quarter past [hour]'.",
+       hi:"ठीक समय के लिए 'It is + [hour] o'clock' का उपयोग करें, या 'It is half past / quarter past [hour]'."}
+    ],
+    examples: ["It is three o'clock.", "It is half past seven.", "It is quarter past nine."]
+  },
+  {
+    title: "Grammar 18 — Object Pronouns (me, him, her, them) / အရာဝတ္ထုပြ နာမ်စား · कर्म सर्वनाम",
+    explain: [
+      {en:"Object pronouns replace a noun that receives the action (comes after the verb).",
+       my:"Object pronoun တွေက verb ရဲ့ လက်ခံသူ naun ကို အစားထိုးပါတယ် (verb ရဲ့ နောက်မှာ လာပါတယ်)။",
+       hi:"कर्म सर्वनाम उस संज्ञा की जगह लेते हैं जो क्रिया प्राप्त करती है (क्रिया के बाद आती है)।"}
+    ],
+    examples: ["I see him.", "She likes me.", "We help them.", "Please give it to her."]
   }
 ];
 
@@ -378,6 +467,16 @@ const SPEAKING_UNITS = [
    prompts:[
      {en:"Say: \"I can swim.\"", my:"ပြောကြည့်ပါ - \"I can swim.\"", hi:"बोलें: \"I can swim.\""},
      {en:"Say: \"I can't fly, but I can run.\"", my:"ပြောကြည့်ပါ - \"I can't fly, but I can run.\"", hi:"बोलें: \"I can't fly, but I can run.\""}
+   ]},
+  {title:"Speak 9 — Comparing things / နှိုင်းယှဉ်ပြောခြင်း · चीज़ों की तुलना करें",
+   prompts:[
+     {en:"Say: \"An elephant is bigger than a cat.\"", my:"ပြောကြည့်ပါ - \"An elephant is bigger than a cat.\"", hi:"बोलें: \"An elephant is bigger than a cat.\""},
+     {en:"Say: \"This is the tallest tree.\"", my:"ပြောကြည့်ပါ - \"This is the tallest tree.\"", hi:"बोलें: \"This is the tallest tree.\""}
+   ]},
+  {title:"Speak 10 — Future plans / အနာဂတ်အစီအစဉ် · भविष्य की योजनाएं",
+   prompts:[
+     {en:"Say: \"I am going to visit my friend.\"", my:"ပြောကြည့်ပါ - \"I am going to visit my friend.\"", hi:"बोलें: \"I am going to visit my friend.\""},
+     {en:"Say: \"We are going to play football tomorrow.\"", my:"ပြောကြည့်ပါ - \"We are going to play football tomorrow.\"", hi:"बोलें: \"We are going to play football tomorrow.\""}
    ]}
 ];
 
@@ -421,6 +520,16 @@ const READING_UNITS = [
    questions:[
      {en:"What color is the school?", my:"ကျောင်းရဲ့ အရောင်က ဘာလဲ?", hi:"स्कूल का रंग क्या है?"},
      {en:"What subjects does the writer learn?", my:"ဘာဘာသာရပ်တွေ သင်ကြားလဲ?", hi:"लेखक कौन से विषय सीखता है?"}
+   ]},
+  {title:"Read 5 — My Weekend / ကျွန်တော့်သီတင်းပတ်ဆုံး · मेरा सप्ताहांत",
+   text:"Last Saturday, I was playing football with my friends in the morning. In the afternoon, it was raining, so we stayed inside. I always visit my grandmother on Sundays. She is older than me, but she can run faster than my little brother!",
+   translation:{
+     my:"ပြီးခဲ့တဲ့ စနေနေ့မှာ ကျွန်တော် မနက်ပိုင်း သူငယ်ချင်းတွေနဲ့ ဘောလုံးကစားနေခဲ့ပါတယ်။ နေ့လယ်ပိုင်းမှာ မိုးရွာနေလို့ အထဲမှာ နေခဲ့ကြပါတယ်။ တနင်္ဂနွေနေ့တိုင်း အဖွားကို အမြဲ ရောက်ရောက်လည်ပါတယ်။ သူက ကျွန်တော့်ထက် သက်ကြီးပေမယ့် ကျွန်တော့်ညီလေးထက် ပိုမြန်မြန် ပြေးနိုင်ပါတယ်!",
+     hi:"पिछले शनिवार, मैं सुबह अपने दोस्तों के साथ फुटबॉल खेल रहा था। दोपहर में बारिश हो रही थी, इसलिए हम अंदर रुके रहे। मैं हर रविवार अपनी दादी से मिलने जाता हूँ। वह मुझसे बड़ी हैं, लेकिन वह मेरे छोटे भाई से तेज़ दौड़ सकती हैं!"
+   },
+   questions:[
+     {en:"What was the writer doing on Saturday morning?", my:"စနေနေ့ မနက်ပိုင်းမှာ ဘာလုပ်နေခဲ့လဲ?", hi:"लेखक शनिवार सुबह क्या कर रहा था?"},
+     {en:"Who can run faster, the grandmother or the little brother?", my:"ဘယ်သူ ပိုမြန်ပြေးနိုင်လဲ?", hi:"कौन तेज़ दौड़ सकता है?"}
    ]}
 ];
 
@@ -448,6 +557,12 @@ const WRITING_UNITS = [
      en:"Write 2 sentences using: Today is ___. It is ___ (sunny/rainy/cloudy/hot/cold).",
      my:"ဝါကျ ၂ ကြောင်း ရေးပါ - Today is ___. It is ___ (sunny/rainy/cloudy/hot/cold).",
      hi:"2 वाक्य लिखें: Today is ___. It is ___ (sunny/rainy/cloudy/hot/cold)."
+   }},
+  {title:"Write 5 — Compare Two Things / နှစ်ခုနှိုင်းယှဉ်ခြင်း · दो चीज़ों की तुलना",
+   instructions:{
+     en:"Write 2 sentences comparing two animals or people, using -er and -est. Example: A tiger is faster than a cow.",
+     my:"တိရစ္ဆာန် (သို့) လူနှစ်ဦးကို -er/-est သုံးပြီး နှိုင်းယှဉ် ဝါကျ ၂ ကြောင်း ရေးပါ။ ဥပမာ - A tiger is faster than a cow.",
+     hi:"-er और -est का उपयोग करके दो जानवरों या लोगों की तुलना करते हुए 2 वाक्य लिखें।"
    }}
 ];
 
@@ -498,5 +613,21 @@ const WORKBOOK_QUESTIONS = [
   {id:"w26", type:"fill", q:{en:"Fill in: There ___ a cat on the bed. (is/are)"}, answer:"is"},
   {id:"w27", type:"mcq", q:{en:"\"There ___ three books.\" (many things)"},
    options:["is","are","am","be"], answer:"are"},
-  {id:"w28", type:"fill", q:{en:"Fill in: On a cold day, I wear a ___. (ဂျာကက် / जैकेट)"}, answer:"jacket"}
+  {id:"w28", type:"fill", q:{en:"Fill in: On a cold day, I wear a ___. (ဂျာကက် / जैकेट)"}, answer:"jacket"},
+  {id:"w29", type:"mcq", q:{en:"An elephant is ___ than a cat. (big)"},
+   options:["big","bigger","biggest","bigly"], answer:"bigger"},
+  {id:"w30", type:"mcq", q:{en:"This is ___ mountain in the country. (tall)"},
+   options:["taller","tall","the tallest","more tall"], answer:"the tallest"},
+  {id:"w31", type:"fill", q:{en:"Fill in: I ___ reading a book at 8pm yesterday. (was/were)"}, answer:"was"},
+  {id:"w32", type:"mcq", q:{en:"\"We ___ going to play football tomorrow.\""},
+   options:["is","am","are","be"], answer:"are"},
+  {id:"w33", type:"mcq", q:{en:"Choose the word meaning 'never at all':"},
+   options:["Always","Sometimes","Never","Often"], answer:"Never"},
+  {id:"w34", type:"fill", q:{en:"Fill in: It is half past ___. (7:30, write the hour word)"}, answer:"seven"},
+  {id:"w35", type:"mcq", q:{en:"\"She likes ___.\" (replace: me)"},
+   options:["I","my","me","mine"], answer:"me"},
+  {id:"w36", type:"mcq", q:{en:"Which vehicle flies in the sky?"},
+   options:["Bus","Boat","Airplane","Bicycle"], answer:"Airplane"},
+  {id:"w37", type:"mcq", q:{en:"Which sport uses a ball and a hoop/basket?"},
+   options:["Swimming","Basketball","Cycling","Running"], answer:"Basketball"}
 ];

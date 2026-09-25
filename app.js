@@ -63,6 +63,38 @@ function speak(text){
       return;
     }catch(e){ console.warn('Audio playback failed, falling back to TTS', e); }
   }
+  const useOnline = localStorage.getItem('useOnlineVoice') !== 'off'; // default: on
+  if(useOnline && navigator.onLine !== false){
+    tryOnlineVoice(text).catch(()=> speakBrowser(text));
+  } else {
+    speakBrowser(text);
+  }
+}
+
+// A more natural-sounding free online voice (Google's speech service).
+// This is an unofficial, undocumented endpoint — it usually works great,
+// but it isn't guaranteed forever, so we always fall back safely.
+function tryOnlineVoice(text){
+  return new Promise((resolve, reject)=>{
+    try{
+      const url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(text.slice(0,200));
+      const audio = new Audio(url);
+      let settled = false;
+      const timer = setTimeout(()=>{ if(!settled){ settled=true; reject(new Error('timeout')); } }, 2500);
+      audio.addEventListener('canplaythrough', ()=>{
+        if(settled) return;
+        settled = true; clearTimeout(timer);
+        audio.play().then(resolve).catch(reject);
+      });
+      audio.addEventListener('error', ()=>{
+        if(settled) return;
+        settled = true; clearTimeout(timer); reject(new Error('load error'));
+      });
+    }catch(e){ reject(e); }
+  });
+}
+
+function speakBrowser(text){
   try{
     const u = new SpeechSynthesisUtterance(text);
     u.lang = 'en-US';
@@ -71,6 +103,14 @@ function speak(text){
     speechSynthesis.cancel();
     speechSynthesis.speak(u);
   }catch(e){ console.warn('TTS not supported', e); }
+}
+
+const onlineToggle = document.getElementById('onlineVoiceToggle');
+if(onlineToggle){
+  onlineToggle.checked = localStorage.getItem('useOnlineVoice') !== 'off';
+  onlineToggle.addEventListener('change', e=>{
+    localStorage.setItem('useOnlineVoice', e.target.checked ? 'on' : 'off');
+  });
 }
 
 // ---- Render: Vocabulary ----
