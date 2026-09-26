@@ -651,60 +651,78 @@ const SPEAKING_UNITS = [
 
 const READING_UNITS = [
   {title:"Read 1 — My Family / ကျွန်တော့်မိသားစု",
-   text:"This is my family. I have a mother and a father. My mother is a teacher. My father is a farmer. I have one sister. We live in a small house.",
+   text:"This is my family. There are five people in my family: my mother, my father, my older brother, my younger sister, and me. My mother is a teacher at a primary school. She teaches young children how to read and write. My father is a farmer. Every morning, he goes to the field before the sun is too hot. My older brother is seventeen years old. He is a student at a high school, and he wants to be a doctor when he grows up. My younger sister is only five years old. She likes to draw pictures of animals. We live in a small house near a river. In the evening, we all sit together and eat dinner. My mother always tells us stories about when she was young. I love my family very much, and I feel happy every day when I am with them.",
    translation:{
-     my:"ဒါက ကျွန်တော့်မိသားစုပါ။ ကျွန်တော့်မှာ အမေနဲ့ အဖေရှိပါတယ်။ အမေက ဆရာမတစ်ယောက်ပါ။ အဖေက လယ်သမားတစ်ယောက်ပါ။ ညီမတစ်ယောက်ရှိပါတယ်။ ကျွန်တော်တို့ အိမ်ငယ်လေးမှာ နေထိုင်ကြပါတယ်။"
+     my:"ဒါက ကျွန်တော့်မိသားစုပါ။ ကျွန်တော့်မိသားစုမှာ လူငါးယောက်ရှိပါတယ် — အမေ၊ အဖေ၊ အစ်ကို၊ ညီမနဲ့ ကျွန်တော်ပါ။ အမေက မူလတန်းကျောင်းက ဆရာမတစ်ယောက်ပါ။ သူငယ်ချင်းလေးတွေကို စာဖတ်တာနဲ့ ရေးတာကို သင်ပေးပါတယ်။ အဖေက လယ်သမားတစ်ယောက်ပါ။ နေ့တိုင်း မနက်ပိုင်း နေမပူခင် လယ်ကွင်းကို သွားပါတယ်။ ကျွန်တော့်အစ်ကိုက အသက် ၁၇ နှစ်ရှိပါပြီ။ အထက်တန်းကျောင်းသားတစ်ယောက်ဖြစ်ပြီး ကြီးလာရင် ဆရာဝန်ဖြစ်ချင်ပါတယ်။ ညီမလေးက အသက် ၅ နှစ်ပဲရှိသေးပါတယ်။ တိရစ္ဆာန်ပုံလေးတွေ ဆွဲရတာ သဘောကျပါတယ်။ ကျွန်တော်တို့ မြစ်ကမ်းနားက အိမ်ငယ်လေးမှာ နေထိုင်ကြပါတယ်။ ညနေခင်းမှာ အားလုံး အတူတကွထိုင်ပြီး ညစာစားကြပါတယ်။ အမေက ငယ်ငယ်တုန်းက ဇာတ်လမ်းလေးတွေကို အမြဲ ပြောပြပါတယ်။ ကျွန်တော့်မိသားစုကို အရမ်းချစ်ပြီး သူတို့နဲ့အတူရှိတိုင်း ပျော်ရွှင်ပါတယ်။"
    },
    questions:[
-     {en:"What is the mother's job?", my:"အမေရဲ့ အလုပ်က ဘာလဲ?"},
-     {en:"How many sisters does the writer have?", my:"ညီမ ဘယ်နှစ်ယောက်ရှိလဲ?"}
+     {en:"How many people are in the family?", my:"မိသားစုထဲမှာ လူဘယ်နှစ်ယောက်ရှိလဲ?"},
+     {en:"What does the writer's mother do for work?", my:"အမေရဲ့ အလုပ်က ဘာလဲ?"},
+     {en:"What does the older brother want to be when he grows up?", my:"အစ်ကိုက ကြီးလာရင် ဘာဖြစ်ချင်လဲ?"},
+     {en:"Where does the family live?", my:"မိသားစုက ဘယ်မှာနေထိုင်လဲ?"}
    ]},
+
   {title:"Read 2 — My Day / ကျွန်တော့်တစ်နေ့",
-   text:"I get up at six o'clock. I eat rice for breakfast. Then I go to school. I have three books in my bag. After school, I play with my friends. At night, I sleep at nine o'clock.",
+   text:"Every school day starts the same way for me. I get up at six o'clock in the morning, before the sun is fully up. First, I wash my face and brush my teeth. Then I eat a simple breakfast — usually rice with a fried egg and a cup of warm milk. After breakfast, I put on my school uniform and check my bag. I always make sure I have three books, a notebook, and two pencils inside. My school is about fifteen minutes away, so I walk there with my neighbor. Classes start at eight o'clock. My favorite subject is English, because my teacher uses songs and games to help us learn. At noon, we have lunch together in the school yard. After school finishes at three o'clock, I usually play football with my friends for about an hour. When I get home, I do my homework before dinner. At night, I read a short story for ten minutes, and then I go to sleep at nine o'clock, ready for another day.",
    translation:{
-     my:"ကျွန်တော် ခြောက်နာရီမှာ နိုးပါတယ်။ မနက်စာအတွက် ထမင်းစားပါတယ်။ ပြီးရင် ကျောင်းသွားပါတယ်။ ကျွန်တော့်အိတ်ထဲမှာ စာအုပ် သုံးအုပ်ရှိပါတယ်။ ကျောင်းပြီးရင် သူငယ်ချင်းတွေနဲ့ ကစားပါတယ်။ ညမှာ ကိုးနာရီအချိန်မှာ အိပ်ပါတယ်။"
+     my:"ကျောင်းရက်တိုင်း ကျွန်တော့်အတွက် အစပြုပုံတူပါတယ်။ နေမတက်ခင် မနက်ခြောက်နာရီမှာ နိုးပါတယ်။ ပထမဆုံး မျက်နှာသစ်ပြီး သွားတိုက်ပါတယ်။ ပြီးရင် ရိုးရိုးလေးတဲ့ မနက်စာစားပါတယ် — ပုံမှန်အားဖြင့် ကြက်ဥကြော်နဲ့ ထမင်းနဲ့ နွေးနွေးလေးတဲ့ နို့တစ်ခွက်ပါ။ မနက်စာစားပြီးရင် ကျောင်းယူနီဖောင်း ဝတ်ပြီး အိတ်ကို စစ်ဆေးပါတယ်။ စာအုပ်သုံးအုပ်၊ မှတ်စုစာအုပ်တစ်အုပ်နဲ့ ခဲတံနှစ်ချောင်း အမြဲပါအောင် သေချာစစ်ပါတယ်။ ကျွန်တော့်ကျောင်းက မိနစ် ၁၅ လောက်ကြာတဲ့ နေရာမှာရှိလို့ အိမ်နီးချင်းနဲ့အတူ လမ်းလျှောက်သွားပါတယ်။ အတန်းစတင်ချိန်က မနက် ၈ နာရီပါ။ ကျွန်တော်အကြိုက်ဆုံးဘာသာရပ်က အင်္ဂလိပ်စာပါ၊ ဆရာမက သီချင်းနဲ့ ဂိမ်းတွေသုံးပြီး သင်ပေးလို့ပါ။ နေ့လယ်မှာ ကျောင်းဝင်းထဲမှာ အတူတကွ နေ့လည်စာစားကြပါတယ်။ ကျောင်းက ညနေ ၃ နာရီမှာ ပြီးတဲ့အခါ သူငယ်ချင်းတွေနဲ့ ဘောလုံးကစားလေ့ရှိပါတယ်၊ တစ်နာရီလောက်ကြာပါတယ်။ အိမ်ရောက်ရင် ညစာမစားခင် စာသင်ခန်းစာလုပ်ပါတယ်။ ညမှာ ဇာတ်လမ်းတိုလေးတစ်ပုဒ်ကို ၁၀ မိနစ်လောက် ဖတ်ပြီး၊ ညနေ ၉ နာရီမှာ နောက်နေ့အသစ်အတွက် အသင့်ဖြစ်အောင် အိပ်ပါတယ်။"
    },
    questions:[
-     {en:"What time does the writer get up?", my:"ဘယ်အချိန်မှာ နိုးလဲ?"},
-     {en:"How many books are in the bag?", my:"အိတ်ထဲမှာ စာအုပ် ဘယ်နှစ်အုပ်ရှိလဲ?"}
+     {en:"What does the writer eat for breakfast?", my:"မနက်စာအတွက် ဘာစားလဲ?"},
+     {en:"What three things does he always check are in his bag?", my:"အိတ်ထဲမှာ ဘာသုံးခုကို အမြဲစစ်ဆေးလဲ?"},
+     {en:"Why is English his favorite subject?", my:"ဘာကြောင့် အင်္ဂလိပ်စာကို အကြိုက်ဆုံးဖြစ်လဲ?"},
+     {en:"What time does he go to sleep?", my:"ဘယ်အချိန်မှာ အိပ်လဲ?"}
    ]},
+
   {title:"Read 3 — My Favorite Animal / ကျွန်တော်အကြိုက်ဆုံးတိရစ္ဆာန်",
-   text:"My favorite animal is the elephant. It is big and gray. It has a long nose. Elephants eat leaves and fruit. They are very smart animals. I want to see an elephant one day.",
+   text:"My favorite animal is the elephant. Elephants are the largest land animals in the world, and they are usually gray in color. They have a long nose called a trunk, which they use for many things — drinking water, picking up food, and even giving themselves a shower! Elephants also have big, wide ears that help them stay cool in hot weather. Unlike some other animals, elephants are herbivores, which means they only eat plants. They eat leaves, grass, fruit, and tree bark, and a large elephant can eat up to one hundred fifty kilograms of food in a single day. Elephants live together in family groups led by the oldest female, who is called the matriarch. They are known to be very intelligent and have excellent memories — some scientists say an elephant never forgets a friend, even after many years apart. Elephants also show real emotion; they can feel sad when a family member dies, and they sometimes touch the bones of elephants that have passed away. I have never seen a real elephant in person, but I have watched many videos about them, and I hope to visit a national park one day to see these gentle giants with my own eyes.",
    translation:{
-     my:"ကျွန်တော်အကြိုက်ဆုံးတိရစ္ဆာန်က ဆင်ဖြစ်ပါတယ်။ ဆင်ကြီးက ကြီးမားပြီး မီးခိုးရောင်ဖြစ်ပါတယ်။ နှာမောင်းရှည်ရှည်ရှိပါတယ်။ ဆင်တွေက အရွက်နဲ့ အသီးအနှံကို စားပါတယ်။ ဆင်တွေက အလွန်ဉာဏ်ကောင်းတဲ့ တိရစ္ဆာန်တွေဖြစ်ပါတယ်။ ကျွန်တော် တစ်နေ့နေ့ ဆင်ကို တွေ့ချင်ပါတယ်။"
+     my:"ကျွန်တော့်အကြိုက်ဆုံးတိရစ္ဆာန်က ဆင်ဖြစ်ပါတယ်။ ဆင်တွေက ကမ္ဘာပေါ်မှာ အကြီးဆုံးကုန်းနေတိရစ္ဆာန်တွေဖြစ်ပြီး ပုံမှန်အားဖြင့် မီးခိုးရောင်ဖြစ်ပါတယ်။ နှာမောင်းလို့ခေါ်တဲ့ နှာခေါင်းရှည်ရှည် ရှိပြီး ရေသောက်တာ၊ အစားအစာကောက်ယူတာ၊ ကိုယ့်ကိုယ်ကိုတောင် ရေချိုးပေးနိုင်တာအထိ အသုံးများပါတယ်။ ဆင်တွေမှာ နားကြီးကြီးရှိလို့ နေပူတဲ့အခါ အေးအောင် ကူညီပေးပါတယ်။ တခြားတိရစ္ဆာန်တွေနဲ့ မတူဘဲ ဆင်တွေက အသီးအရွက်ကိုပဲ စားတဲ့ တိရစ္ဆာန်ဖြစ်ပါတယ်။ အရွက်၊ မြက်၊ အသီးနဲ့ သစ်ကိုင်းကို စားပြီး ဆင်ကြီးတစ်ကောင်ဟာ တစ်နေ့ကို ကီလိုဂရမ် ၁၅၀ အထိ စားနိုင်ပါတယ်။ ဆင်တွေက အသက်အကြီးဆုံးမ ဆင်မ ဦးဆောင်ထားတဲ့ မိသားစုအုပ်စုလိုက် နေထိုင်ကြပါတယ်။ သူတို့ဟာ အလွန်ဉာဏ်ကောင်းပြီး မှတ်ဉာဏ်ကောင်းကြောင်း လူသိများပါတယ် — သိပ္ပံပညာရှင်တချို့က ဆင်ဟာ နှစ်တွေကြာအခွဲခံပြီးမှ ပြန်တွေ့တောင် သူငယ်ချင်းကို ဘယ်တော့မှ မမေ့ဘူးလို့ ဆိုပါတယ်။ ဆင်တွေက ခံစားချက်အစစ်ကိုလည်း ပြသတတ်ပါတယ် — မိသားစုဝင်တစ်ယောက် သေဆုံးရင် စိတ်မကောင်းဖြစ်တတ်ပြီး၊ သေဆုံးသွားတဲ့ ဆင်တွေရဲ့ အရိုးတွေကို တစ်ခါတစ်လေ ထိတွေ့ကြည့်ပါတယ်။ ကျွန်တော် ဆင်အစစ်ကို တကယ်တွေ့ဖူးတာ မရှိသေးပါဘူး၊ ဒါပေမယ့် ဆင်အကြောင်း ဗီဒီယိုများစွာ ကြည့်ဖူးပြီး တစ်နေ့နေ့ အမျိုးသားပန်းခြံတစ်ခုကို သွားပြီး ဒီနူးညံ့တဲ့ ကြီးမားတဲ့ တိရစ္ဆာန်ကို ကိုယ်တိုင်မျက်ဝါးထင်ထင် တွေ့ချင်ပါတယ်။"
    },
    questions:[
-     {en:"What color is the elephant?", my:"ဆင်ရဲ့ အရောင်က ဘာလဲ?"},
-     {en:"What do elephants eat?", my:"ဆင်တွေက ဘာစားလဲ?"}
+     {en:"What does an elephant use its trunk for?", my:"ဆင်က နှာမောင်းကို ဘာအတွက်သုံးလဲ?"},
+     {en:"How much food can a large elephant eat in one day?", my:"ဆင်ကြီးတစ်ကောင် တစ်နေ့ ဘယ်လောက်စားနိုင်လဲ?"},
+     {en:"Who leads an elephant family group?", my:"ဆင်မိသားစုအုပ်စုကို ဘယ်သူဦးဆောင်လဲ?"},
+     {en:"Has the writer ever seen a real elephant?", my:"ရေးသားသူ ဆင်အစစ်ကို တွေ့ဖူးလား?"}
    ]},
+
   {title:"Read 4 — My School / ကျွန်တော့်ကျောင်း",
-   text:"My school is big and yellow. I have many friends there. My teacher is kind. We learn math, English, and science. On rainy days, we play inside. I like my school very much.",
+   text:"My school is called Sunshine Primary School, and it is a big yellow building with a large playground in front. There are about six hundred students and thirty teachers at my school. I am in grade six, and there are thirty-two students in my class. Every morning, all the students line up in the yard to sing the national anthem before going to their classrooms. My classroom has posters on the walls showing numbers, letters, and pictures of animals from around the world. My teacher, Ms. Aye, is very kind and patient. She never gets angry when students make mistakes; instead, she explains things again in a different way until everyone understands. We study many subjects, including Myanmar, English, mathematics, science, and social studies. My favorite time of the week is Friday afternoon, when we have art class and can draw or paint whatever we like. During break time, my friends and I like to play a skipping-rope game in the yard. On rainy days, we stay inside and play board games or read books in the classroom instead. Every year, our school has a sports day, where all the classes compete in running races and other games. I always look forward to it because it is one of the most exciting days of the year.",
    translation:{
-     my:"ကျွန်တော့်ကျောင်းက ကြီးမားပြီး အဝါရောင်ဖြစ်ပါတယ်။ အဲဒီမှာ သူငယ်ချင်း အများကြီးရှိပါတယ်။ ကျွန်တော့်ဆရာမက စိတ်ကောင်းရှိပါတယ်။ သင်္ချာ၊ အင်္ဂလိပ်စာနဲ့ သိပ္ပံသင်ကြားပါတယ်။ မိုးရွာတဲ့နေ့မှာ ကျွန်တော်တို့ အထဲမှာ ကစားကြပါတယ်။ ကျွန်တော့်ကျောင်းကို အရမ်းကြိုက်ပါတယ်။"
+     my:"ကျွန်တော့်ကျောင်းကို Sunshine Primary School လို့ ခေါ်ပြီး ရှေ့မှာ ကွင်းကြီးတစ်ခုနဲ့ အဆောက်အအုံအဝါရောင်ကြီးတစ်ခုဖြစ်ပါတယ်။ ကျောင်းသား/သူ ၆၀၀ လောက်နဲ့ ဆရာ/ဆရာမ ၃၀ လောက်ရှိပါတယ်။ ကျွန်တော် Grade 6 မှာရှိပြီး အတန်းထဲမှာ ကျောင်းသား/သူ ၃၂ ယောက်ရှိပါတယ်။ မနက်တိုင်း ကျောင်းသားအားလုံး ကွင်းထဲမှာ တန်းစီပြီး အတန်းထဲမဝင်ခင် နိုင်ငံတော်သီချင်းကို ဆိုကြပါတယ်။ ကျွန်တော့်အတန်းထဲမှာ နံရံပေါ်မှာ ဂဏန်း၊ အက္ခရာနဲ့ ကမ္ဘာအနှံ့က တိရစ္ဆာန်ပုံတွေပါတဲ့ poster တွေ ကပ်ထားပါတယ်။ ကျွန်တော့်ဆရာမ Ms. Aye က အလွန်ကြင်နာပြီး စိတ်ရှည်ပါတယ်။ ကျောင်းသားတွေ အမှားလုပ်တဲ့အခါ ဘယ်တော့မှ စိတ်မဆိုးဘဲ၊ အားလုံးနားလည်တဲ့အထိ တခြားနည်းတစ်နည်းနဲ့ ပြန်ရှင်းပြပါတယ်။ ကျွန်တော်တို့ မြန်မာစာ၊ အင်္ဂလိပ်စာ၊ သင်္ချာ၊ သိပ္ပံနဲ့ လူမှုရေးဘာသာရပ်တွေကို သင်ကြားကြပါတယ်။ တစ်ပတ်ထဲမှာ ကျွန်တော် အကြိုက်ဆုံးအချိန်က သောကြာနေ့ ညနေပိုင်းပါ၊ အဲဒီအချိန်မှာ အနုပညာအတန်းရှိပြီး ကြိုက်တာဆွဲ/ဆေးဆိုးလို့ရပါတယ်။ အနားယူချိန်မှာ သူငယ်ချင်းတွေနဲ့ ကွင်းထဲမှာ ကြိုးခုန်ကစားရတာကို ကြိုက်ပါတယ်။ မိုးရွာတဲ့နေ့တွေမှာ အထဲမှာနေပြီး board game ကစားတာ (သို့) စာအုပ်ဖတ်တာလုပ်ကြပါတယ်။ နှစ်တိုင်း ကျွန်တော်တို့ကျောင်းမှာ အားကစားနေ့ရှိပြီး အတန်းအားလုံး ပြေးပွဲနဲ့ ကစားပွဲတွေမှာ ယှဉ်ပြိုင်ကြပါတယ်။ ဒါက တစ်နှစ်ထဲက အစိတ်ဆုံးနေ့တစ်နေ့ဖြစ်လို့ ကျွန်တော် အမြဲစောင့်မျှော်ပါတယ်။"
    },
    questions:[
-     {en:"What color is the school?", my:"ကျောင်းရဲ့ အရောင်က ဘာလဲ?"},
-     {en:"What subjects does the writer learn?", my:"ဘာဘာသာရပ်တွေ သင်ကြားလဲ?"}
+     {en:"How many students are in the writer's class?", my:"ရေးသားသူရဲ့ အတန်းထဲမှာ ကျောင်းသားဘယ်နှစ်ယောက်ရှိလဲ?"},
+     {en:"What does the teacher do when students make mistakes?", my:"ကျောင်းသားတွေ အမှားလုပ်ရင် ဆရာမက ဘာလုပ်လဲ?"},
+     {en:"What happens on rainy days at school?", my:"မိုးရွာတဲ့နေ့မှာ ကျောင်းမှာ ဘာဖြစ်လဲ?"},
+     {en:"What special event happens every year?", my:"နှစ်တိုင်း ဘာအထူးအခမ်းအနားရှိလဲ?"}
    ]},
+
   {title:"Read 5 — My Weekend / ကျွန်တော့်သီတင်းပတ်ဆုံး",
-   text:"Last Saturday, I was playing football with my friends in the morning. In the afternoon, it was raining, so we stayed inside. I always visit my grandmother on Sundays. She is older than me, but she can run faster than my little brother!",
+   text:"Last weekend was one of the most memorable weekends I have had in a long time. On Saturday morning, I woke up early and went to the field to play football with my friends, just like we always do. The weather was sunny, and we played for almost two hours before it suddenly began to rain heavily. We ran to a small shelter nearby and waited there, laughing and talking, until the rain stopped. In the afternoon, since it was still a little wet outside, we decided to stay indoors and play board games instead. My grandmother, who is seventy-two years old, came to visit us that day, as she always does on Sundays, but this time she came a day early because she wanted to help my mother cook a special dinner. Although she is much older than me, my grandmother can still run surprisingly fast — faster, in fact, than my little brother, who is only seven! On Sunday, the whole family went to the local market together to buy fresh vegetables and fruit for the week. In the evening, we sat outside and watched the sunset while my grandmother told us old stories about her childhood in the village. It was a simple weekend, but spending time together as a family made it truly special.",
    translation:{
-     my:"ပြီးခဲ့တဲ့ စနေနေ့မှာ ကျွန်တော် မနက်ပိုင်း သူငယ်ချင်းတွေနဲ့ ဘောလုံးကစားနေခဲ့ပါတယ်။ နေ့လယ်ပိုင်းမှာ မိုးရွာနေလို့ အထဲမှာ နေခဲ့ကြပါတယ်။ တနင်္ဂနွေနေ့တိုင်း အဖွားကို အမြဲ ရောက်ရောက်လည်ပါတယ်။ သူက ကျွန်တော့်ထက် သက်ကြီးပေမယ့် ကျွန်တော့်ညီလေးထက် ပိုမြန်မြန် ပြေးနိုင်ပါတယ်!"
+     my:"ပြီးခဲ့တဲ့ သီတင်းပတ်ဆုံးက ကြာမြင့်စွာ ကျွန်တော်ရရှိခဲ့တဲ့ အမှတ်ရဆုံးသီတင်းပတ်ဆုံးများထဲက တစ်ခုဖြစ်ပါတယ်။ စနေနေ့ မနက်ပိုင်းမှာ စောစောနိုးပြီး ပုံမှန်အတိုင်း သူငယ်ချင်းတွေနဲ့ ဘောလုံးကစားဖို့ ကွင်းကို သွားခဲ့ပါတယ်။ နေသာနေပြီး နှစ်နာရီလောက် ကစားပြီးတဲ့နောက် ရုတ်တရက် မိုးသည်းသည်းရွာလာပါတယ်။ အနီးက အမိုးအကာလေးဆီ ပြေးဝင်ပြီး ရယ်မောစကားပြောနေရင်း မိုးရပ်တဲ့အထိ စောင့်နေခဲ့ကြပါတယ်။ နေ့လယ်ပိုင်းမှာ အပြင်ဘက် စိုနေသေးလို့ အထဲမှာနေပြီး board game ကစားဖို့ ဆုံးဖြတ်ခဲ့ကြပါတယ်။ ကျွန်တော့်အဖွား (အသက် ၇၂ နှစ်ရှိပါပြီ) က ပုံမှန် တနင်္ဂနွေနေ့တိုင်း လာလည်လေ့ရှိသလို အဲဒီနေ့မှာ လာခဲ့ပါတယ်၊ ဒါပေမယ့် ဒီတစ်ခါတော့ အမေ့ကို ညစာအထူးချက်ပြုတ်ရာမှာ ကူညီဖို့ တစ်ရက်စောပြီး လာခဲ့တာဖြစ်ပါတယ်။ ကျွန်တော့်ထက် အများကြီးသက်ကြီးပေမယ့် အဖွားက အံ့ဩစရာကောင်းလောက်အောင် မြန်မြန်ပြေးနိုင်ပါတယ် — အသက် ၇ နှစ်ပဲရှိသေးတဲ့ ညီလေးထက်တောင် ပိုမြန်ပါတယ်! တနင်္ဂနွေနေ့မှာ မိသားစုတစ်စုလုံး နီးစပ်ရာ ဈေးကို အတူတကွသွားပြီး တစ်ပတ်စာအတွက် ဟင်းသီးဟင်းရွက်နဲ့ အသီးအနှံစိုစို ဝယ်ခဲ့ကြပါတယ်။ ညနေခင်းမှာ အပြင်ဘက်ထိုင်ပြီး နေဝင်ချိန်ကို ကြည့်ရင်း အဖွားက ငယ်ငယ်တုန်းက ရွာထဲမှာ နေထိုင်ခဲ့ရတဲ့ ဇာတ်လမ်းဟောင်းများကို ပြောပြပါတယ်။ ရိုးရှင်းတဲ့ သီတင်းပတ်ဆုံးတစ်ခုဖြစ်ပေမယ့် မိသားစုနဲ့အတူ အချိန်ဖြုန်းရတာက တကယ့်ကို အထူးဖြစ်စေခဲ့ပါတယ်။"
    },
    questions:[
-     {en:"What was the writer doing on Saturday morning?", my:"စနေနေ့ မနက်ပိုင်းမှာ ဘာလုပ်နေခဲ့လဲ?"},
-     {en:"Who can run faster, the grandmother or the little brother?", my:"ဘယ်သူ ပိုမြန်ပြေးနိုင်လဲ?"}
+     {en:"What did the writer do on Saturday morning?", my:"စနေနေ့ မနက်ပိုင်းမှာ ဘာလုပ်ခဲ့လဲ?"},
+     {en:"Why did the grandmother come a day early?", my:"ဘာကြောင့် အဖွားက တစ်ရက်စောပြီး လာခဲ့လဲ?"},
+     {en:"Who can run faster, the grandmother or the little brother?", my:"ဘယ်သူ ပိုမြန်ပြေးနိုင်လဲ?"},
+     {en:"What did the family do on Sunday?", my:"တနင်္ဂနွေနေ့မှာ မိသားစုက ဘာလုပ်ခဲ့လဲ?"}
    ]},
+
   {title:"Read 6 — A New City / မြို့သစ်တစ်ခု",
-   text:"My family has just moved to a new city. It is a place that has a big river and tall mountains nearby. I have never seen such a beautiful place before. You must visit the old market near the river — it is famous for fresh fruit. If you come here, you will love it too.",
+   text:"Six months ago, my family moved from our small village to a new city because my father found a better job there. At first, I was nervous about leaving my old friends and starting a new school, but I quickly discovered that this new place has many wonderful things to offer. Our new home is close to a wide river and surrounded by tall, green mountains — a view that I had never seen before in my life. Every weekend, my family and I like to walk along the riverside path, where fishermen sell fresh fish early in the morning. There is also an old market near the river that has existed for over a hundred years; it is famous throughout the region for its delicious fresh fruit, especially mangoes and durians, which are much cheaper here than in the village. The city also has a large public library, something my old village never had, and I have already become a regular visitor there, borrowing two or three books every week. My new school is bigger than my old one, with students from many different backgrounds, which has taught me a lot about people from other parts of the country. If you ever have the chance to visit this city, you must try the market and walk along the river — I am certain that you will love it here just as much as I do now.",
    translation:{
-     my:"ကျွန်တော့်မိသားစု မကြာသေးမီက မြို့သစ်တစ်ခုကို ပြောင်းရွှေ့လာခဲ့ပါတယ်။ ဒါက အနီးနားမှာ ကြီးမားတဲ့ မြစ်နဲ့ တောင်ကုန်းများရှိတဲ့ နေရာဖြစ်ပါတယ်။ ဒီလောက်လှတဲ့ နေရာမျိုး ကျွန်တော် ဒီမတိုင်ခင်က မမြင်ဖူးပါဘူး။ မြစ်ကမ်းနားက ဈေးဟောင်းကို လာလည်ရမှာ ဖြစ်ပါတယ် — အသီးအနှံစိုစို ကောင်းလို့ နာမည်ကြီးပါတယ်။ ဒီကို လာရင် သင်လည်း ကြိုက်သွားလိမ့်မယ်။"
+     my:"ခြောက်လကြာခဲ့ပြီ ကျွန်တော့်မိသားစု ရွာငယ်လေးကနေ မြို့သစ်တစ်ခုကို ပြောင်းရွှေ့ခဲ့ကြပါတယ် — အဖေက ပိုကောင်းတဲ့ အလုပ်တစ်ခု အဲဒီမှာ ရလို့ပါ။ အစပိုင်းတွေမှာ ရွာမှာရှိတဲ့ သူငယ်ချင်းဟောင်းတွေနဲ့ ခွဲခွာရမှာနဲ့ ကျောင်းသစ်စဖို့ ကျွန်တော် စိတ်ပူခဲ့ပါတယ်၊ ဒါပေမယ့် ဒီနေရာသစ်မှာ ကောင်းမွန်တာတွေ အများကြီးရှိတယ်ဆိုတာကို မကြာခင် သိလာခဲ့ပါတယ်။ ကျွန်တော်တို့ အိမ်သစ်က ကျယ်ပြန့်တဲ့ မြစ်နဲ့နီးပြီး အစိမ်းရောင်တောင်ကုန်းမြင့်များ ဝန်းရံထားပါတယ် — ဘဝမှာ ဒီလိုမြင်ကွင်းမျိုးကို ဒီမတိုင်ခင်က တစ်ခါမှ မမြင်ဖူးပါဘူး။ အပတ်စဉ်ရက်သတ္တပတ်ဆုံးတိုင်း ကျွန်တော့်မိသားစုတို့ မြစ်ကမ်းစပ်လမ်းလျှောက်ရတာ ကြိုက်ပါတယ်၊ အဲဒီမှာ တံငါသည်တွေ မနက်စောစော ငါးစိုစိုတွေ ရောင်းကြပါတယ်။ မြစ်နားမှာ နှစ်ပေါင်း တစ်ရာကျော် ရှိနေခဲ့တဲ့ ဈေးဟောင်းတစ်ခုလည်း ရှိပြီး၊ အသီးအနှံစိုစို အထူးသဖြင့် သရက်သီးနဲ့ ဒူးရင်းသီးတွေအတွက် ဒေသတစ်ခုလုံးမှာ နာမည်ကြီးပါတယ် — ရွာထက် ဒီမှာ ပိုစျေးသက်သာပါတယ်။ မြို့ထဲမှာ စာကြည့်တိုက်ကြီးတစ်ခုလည်း ရှိပြီး၊ ရွာဟောင်းမှာ ဘယ်တော့မှ မရှိခဲ့ဖူးတဲ့ အရာဖြစ်ပါတယ်၊ ကျွန်တော် အဲဒီကို ပုံမှန်သွားနေတဲ့ လူတစ်ယောက် ဖြစ်နေပြီဖြစ်ပြီး တစ်ပတ်ကို စာအုပ် နှစ်အုပ်၊ သုံးအုပ်လောက် ငှားဖတ်ပါတယ်။ ကျွန်တော့်ကျောင်းသစ်က ကျောင်းဟောင်းထက် ပိုကြီးပြီး နောက်ခံအမျိုးမျိုးကွဲပြားတဲ့ ကျောင်းသားတွေ ရှိပါတယ်၊ ဒါက နိုင်ငံရဲ့ တခြားနေရာတွေက လူတွေအကြောင်း အများကြီး ကျွန်တော့်ကို သင်ပေးခဲ့ပါတယ်။ ဒီမြို့ကို လာလည်ခွင့်ရရင် ဈေးကို စမ်းသုံးကြည့်ပြီး မြစ်ကမ်းစပ်လျှောက်ကြည့်ပါ — ကျွန်တော်ကဲ့သို့ပဲ သင်လည်း ဒီနေရာကို ကြိုက်သွားမှာ သေချာပါတယ်။"
    },
    questions:[
-     {en:"What is near the new city?", my:"မြို့သစ်နားမှာ ဘာရှိလဲ?"},
-     {en:"What is the old market famous for?", my:"ဈေးဟောင်းက ဘာနဲ့ နာမည်ကြီးလဲ?"}
+     {en:"Why did the family move to the new city?", my:"ဘာကြောင့် မိသားစုက မြို့သစ်ကို ပြောင်းလာခဲ့လဲ?"},
+     {en:"What is the old market famous for?", my:"ဈေးဟောင်းက ဘာနဲ့ နာမည်ကြီးလဲ?"},
+     {en:"What does the writer do at the public library?", my:"ရေးသားသူ စာကြည့်တိုက်မှာ ဘာလုပ်လဲ?"},
+     {en:"What has the new school taught the writer?", my:"ကျောင်းသစ်က ရေးသားသူကို ဘာသင်ပေးခဲ့လဲ?"}
    ]}
 ];
+
 
 const WRITING_UNITS = [
   {title:"Write 1 — About me / ကျွန်တော့်အကြောင်း",

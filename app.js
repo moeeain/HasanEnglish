@@ -135,16 +135,40 @@ if(onlineToggle){
   });
 }
 
-// ---- Render: Vocabulary ----
+// ---- Your Name: saved once, remembered on this device, auto-fills the workbook save field ----
+const homeNameInput = document.getElementById('homeNameInput');
+const homeNameStatus = document.getElementById('homeNameStatus');
+const savedName = localStorage.getItem('studentName') || '';
+if(homeNameInput) homeNameInput.value = savedName;
+const workbookNameInput = document.getElementById('studentName');
+if(workbookNameInput) workbookNameInput.value = savedName;
+
+const homeNameSaveBtn = document.getElementById('homeNameSaveBtn');
+if(homeNameSaveBtn){
+  homeNameSaveBtn.addEventListener('click', ()=>{
+    const name = homeNameInput.value.trim();
+    localStorage.setItem('studentName', name);
+    if(workbookNameInput) workbookNameInput.value = name;
+    homeNameStatus.textContent = name
+      ? `✅ Saved! Hi, ${name}!`
+      : '✅ Cleared.';
+    homeNameStatus.className = 'mic-feedback ok';
+  });
+}
+
+// ---- Render: Vocabulary (grouped into filterable level sections) ----
 const vocabWrap = document.getElementById('vocabUnits');
-let vocabLastLevel = null;
+let vocabLevelGroup = null;
 VOCAB_UNITS.forEach(unit=>{
-  if(unit.level && unit.level !== vocabLastLevel){
-    vocabLastLevel = unit.level;
+  if(!vocabLevelGroup || vocabLevelGroup.dataset.level !== String(unit.level)){
+    vocabLevelGroup = document.createElement('div');
+    vocabLevelGroup.className = 'level-group';
+    vocabLevelGroup.dataset.level = String(unit.level || '');
     const header = document.createElement('h2');
     header.className = 'level-header';
     header.textContent = `📘 Level ${unit.level}`;
-    vocabWrap.appendChild(header);
+    vocabLevelGroup.appendChild(header);
+    vocabWrap.appendChild(vocabLevelGroup);
   }
   const box = document.createElement('div');
   box.className = 'unit';
@@ -159,19 +183,22 @@ VOCAB_UNITS.forEach(unit=>{
     card.onclick = ()=>speak(w.en);
     grid.appendChild(card);
   });
-  vocabWrap.appendChild(box);
+  vocabLevelGroup.appendChild(box);
 });
 
-// ---- Render: Grammar ----
+// ---- Render: Grammar (grouped into filterable level sections) ----
 const grammarWrap = document.getElementById('grammarUnits');
-let grammarLastLevel = null;
+let grammarLevelGroup = null;
 GRAMMAR_UNITS.forEach(unit=>{
-  if(unit.level && unit.level !== grammarLastLevel){
-    grammarLastLevel = unit.level;
+  if(!grammarLevelGroup || grammarLevelGroup.dataset.level !== String(unit.level)){
+    grammarLevelGroup = document.createElement('div');
+    grammarLevelGroup.className = 'level-group';
+    grammarLevelGroup.dataset.level = String(unit.level || '');
     const header = document.createElement('h2');
     header.className = 'level-header';
     header.textContent = `📘 Level ${unit.level}`;
-    grammarWrap.appendChild(header);
+    grammarLevelGroup.appendChild(header);
+    grammarWrap.appendChild(grammarLevelGroup);
   }
   const box = document.createElement('div');
   box.className = 'unit';
@@ -181,8 +208,22 @@ GRAMMAR_UNITS.forEach(unit=>{
   let exHtml = unit.examples.map(e=>`<p onclick="speak('${e.replace(/'/g,"\\'")}')" style="cursor:pointer">🔊 ${e}</p>`).join('');
   box.innerHTML = `<h3>${unit.title}</h3><div class="explain">${explainHtml}</div>
     <div class="example"><b>Examples / ဥပမာ:</b>${exHtml}</div>`;
-  grammarWrap.appendChild(box);
+  grammarLevelGroup.appendChild(box);
 });
+
+// ---- Level filter dropdowns ----
+function wireLevelFilter(selectId, wrap){
+  const sel = document.getElementById(selectId);
+  if(!sel) return;
+  sel.addEventListener('change', ()=>{
+    const val = sel.value;
+    wrap.querySelectorAll('.level-group').forEach(group=>{
+      group.style.display = (val === 'all' || group.dataset.level === val) ? '' : 'none';
+    });
+  });
+}
+wireLevelFilter('vocabLevelFilter', vocabWrap);
+wireLevelFilter('grammarLevelFilter', grammarWrap);
 
 // ---- Render: Listening ----
 const listeningWrap = document.getElementById('listeningUnits');

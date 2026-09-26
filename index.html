@@ -58,6 +58,15 @@
         <li>MY: <b>စကားလုံး</b> ကနေ စပြီး <b>သဒ္ဒါ</b> ကို တစ်နေ့ တစ်ခန်းစီ လေ့လာပါ။</li>
       </ol>
     </div>
+    <div class="howto" id="nameSettingBox">
+      <h3>👤 Your Name / နာမည်</h3>
+      <p class="tri small">EN: Enter your name once — it will be remembered on this device and used when you save workbook scores. · MY: နာမည်ကို တစ်ကြိမ်ရိုက်ထည့်ပါ — ဒီစက်ပေါ်မှာ မှတ်ထားပြီး workbook score သိမ်းတဲ့အခါ အလိုအလျောက် သုံးပေးပါလိမ့်မယ်။</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <input id="homeNameInput" placeholder="Your name / နာမည်" style="flex:1;padding:10px;border-radius:10px;border:2px solid #ddd;min-width:150px">
+        <button class="btn-secondary" id="homeNameSaveBtn">Save / သိမ်းမယ်</button>
+      </div>
+      <p id="homeNameStatus" class="mic-feedback"></p>
+    </div>
     <div class="howto" id="voiceSettingBox">
       <h3>🔊 Voice / အသံ</h3>
       <p class="tri small">EN: By default this uses a more natural online voice (needs internet). Turn it off to always use your device's offline voice. · MY: ပုံမှန်အားဖြင့် အသံပိုပီးလူ့အသံဆန်တဲ့ online voice ကို သုံးပါတယ် (internet လိုအပ်ပါတယ်)။ Offline voice ချည်းပဲ သုံးချင်ရင် ပိတ်ထားနိုင်ပါတယ်။</p>
@@ -74,12 +83,30 @@
   <section class="panel" id="panel-vocab">
     <h2>🔤 Words · စကားလုံးများ</h2>
     <p class="tri small">EN: Tap a word to hear it. · MY: အသံထွက်နားထောင်ရန် စကားလုံးကို နှိပ်ပါ။</p>
+    <select id="vocabLevelFilter" class="level-filter">
+      <option value="all">All Levels / Level အားလုံး</option>
+      <option value="1">Level 1</option>
+      <option value="2">Level 2</option>
+      <option value="3">Level 3</option>
+      <option value="4">Level 4</option>
+      <option value="5">Level 5</option>
+      <option value="6">Level 6</option>
+    </select>
     <div id="vocabUnits"></div>
   </section>
 
   <!-- GRAMMAR -->
   <section class="panel" id="panel-grammar">
     <h2>🧩 Grammar · သဒ္ဒါ</h2>
+    <select id="grammarLevelFilter" class="level-filter">
+      <option value="all">All Levels / Level အားလုံး</option>
+      <option value="1">Level 1</option>
+      <option value="2">Level 2</option>
+      <option value="3">Level 3</option>
+      <option value="4">Level 4</option>
+      <option value="5">Level 5</option>
+      <option value="6">Level 6</option>
+    </select>
     <div id="grammarUnits"></div>
   </section>
 
