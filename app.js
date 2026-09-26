@@ -117,8 +117,7 @@ VOCAB_UNITS.forEach(unit=>{
     card.className = 'word-card';
     card.innerHTML = `<div class="word-emoji">${w.emoji}</div>
       <div class="word-en">${w.en}</div>
-      <div class="word-my">${w.my}</div>
-      <div class="word-hi">${w.hi}</div>`;
+      <div class="word-my">${w.my}</div>`;
     card.onclick = ()=>speak(w.en);
     grid.appendChild(card);
   });
@@ -132,11 +131,10 @@ GRAMMAR_UNITS.forEach(unit=>{
   box.className = 'unit';
   let explainHtml = unit.explain.map(x=>`
     <p><b>EN:</b> ${x.en}</p>
-    <p><b>MY:</b> ${x.my}</p>
-    <p><b>HI:</b> ${x.hi}</p>`).join('');
+    <p><b>MY:</b> ${x.my}</p>`).join('');
   let exHtml = unit.examples.map(e=>`<p onclick="speak('${e.replace(/'/g,"\\'")}')" style="cursor:pointer">🔊 ${e}</p>`).join('');
   box.innerHTML = `<h3>${unit.title}</h3><div class="explain">${explainHtml}</div>
-    <div class="example"><b>Examples / ဥပမာ / उदाहरण:</b>${exHtml}</div>`;
+    <div class="example"><b>Examples / ဥပမာ:</b>${exHtml}</div>`;
   grammarWrap.appendChild(box);
 });
 
@@ -148,11 +146,10 @@ LISTENING_UNITS.forEach(unit=>{
   const phrase = (unit.keyPhrase || unit.note.en).replace(/'/g,"\\'");
   box.innerHTML = `<h3>${unit.title}</h3>
     <div class="video-wrap"><iframe src="https://www.youtube.com/embed/${unit.youtubeId}" allowfullscreen></iframe></div>
-    <button class="speaker-btn" onclick="speak('${phrase}')">🔊 Play key phrase / အဓိကစကားစု နားထောင်ရန် / मुख्य वाक्यांश सुनें</button>
+    <button class="speaker-btn" onclick="speak('${phrase}')">🔊 Play key phrase / အဓိကစကားစု နားထောင်ရန်</button>
     <div class="explain">
       <p><b>EN:</b> ${unit.note.en}</p>
       <p><b>MY:</b> ${unit.note.my}</p>
-      <p><b>HI:</b> ${unit.note.hi}</p>
     </div>`;
   listeningWrap.appendChild(box);
 });
@@ -166,13 +163,12 @@ SPEAKING_UNITS.forEach((unit,ui)=>{
   let promptsHtml = unit.prompts.map((p,pi)=>{
     const fbId = `sp-fb-${ui}-${pi}`;
     const micBtn = SR
-      ? `<button class="mic-btn" data-en="${p.en.replace(/"/g,'&quot;')}" data-fb="${fbId}">🎤 Speak / ပြောကြည့် / बोलें</button>`
-      : `<p class="tri small">🎤 EN: Voice check not supported in this browser. · MY: ဒီ browser မှာ အသံစစ်ဆေးမှု အသုံးပြု၍မရပါ။ · HI: इस ब्राउज़र में आवाज़ जांच उपलब्ध नहीं है।</p>`;
+      ? `<button class="mic-btn" data-en="${p.en.replace(/"/g,'&quot;')}" data-fb="${fbId}">🎤 Speak / ပြောကြည့်</button>`
+      : `<p class="tri small">🎤 EN: Voice check not supported in this browser. · MY: ဒီ browser မှာ အသံစစ်ဆေးမှု အသုံးပြု၍မရပါ။</p>`;
     return `
     <div class="example">
       <p><b>EN:</b> ${p.en}</p>
       <p><b>MY:</b> ${p.my}</p>
-      <p><b>HI:</b> ${p.hi}</p>
       ${micBtn}
       <p class="mic-feedback" id="${fbId}"></p>
     </div>`;
@@ -195,7 +191,7 @@ document.getElementById('speakingUnits').addEventListener('click', e=>{
   if(!btn || !SR) return;
   const fb = document.getElementById(btn.dataset.fb);
   const target = normalize(extractTarget(btn.dataset.en));
-  fb.textContent = '🎙️ Listening... / နားထောင်နေသည်... / सुन रहा है...';
+  fb.textContent = '🎙️ Listening... / နားထောင်နေသည်...';
   fb.className = 'mic-feedback';
   const rec = new SR();
   rec.lang = 'en-US';
@@ -217,7 +213,7 @@ document.getElementById('speakingUnits').addEventListener('click', e=>{
     }
   };
   rec.onerror = ()=>{
-    fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ / फिर से कोशिश करें।';
+    fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ ';
     fb.className = 'mic-feedback bad';
   };
   rec.start();
@@ -249,7 +245,7 @@ function renderDialogueStage(){
 
   if(currentLineIndex >= currentDialogue.lines.length){
     stage.innerHTML = historyHtml +
-      `<p class="mic-feedback ok">🎉 Great job! Dialogue complete. / ပြီးပါပြီ! ကောင်းလိုက်တာ! / संवाद पूरा हुआ! बहुत बढ़िया!</p>`;
+      `<p class="mic-feedback ok">🎉 Great job! Dialogue complete. / ပြီးပါပြီ! ကောင်းလိုက်တာ!</p>`;
     return;
   }
 
@@ -260,8 +256,7 @@ function renderDialogueStage(){
       <div class="example">
         <p><b>🤖 App says:</b> ${line.en}</p>
         <p><b>MY:</b> ${line.my}</p>
-        <p><b>HI:</b> ${line.hi}</p>
-        <button class="btn-secondary" id="dlgNextBtn">Next ▶ / ရှေ့ဆက်မယ် / आगे बढ़ें</button>
+        <button class="btn-secondary" id="dlgNextBtn">Next ▶ / ရှေ့ဆက်မယ်</button>
       </div>`;
     speak(line.en);
     document.getElementById('dlgNextBtn').onclick = ()=>{
@@ -274,14 +269,13 @@ function renderDialogueStage(){
 
   // line.speaker === 'You'
   const micHtml = SR
-    ? `<button class="mic-btn" id="dlgMicBtn">🎤 Your turn — Speak / မင်းအလှည့် / आपकी बारी</button>`
-    : `<p class="tri small">🎤 EN: Voice check not supported here — read it, then tap Skip. · MY: ဒီ browser မှာ mic အလုပ်မလုပ်ပါ — ဖတ်ပြီး Skip နှိပ်ပါ။ · HI: यहाँ आवाज़ जांच उपलब्ध नहीं है — पढ़ें, फिर Skip दबाएं।</p>
+    ? `<button class="mic-btn" id="dlgMicBtn">🎤 Your turn — Speak / မင်းအလှည့်</button>`
+    : `<p class="tri small">🎤 EN: Voice check not supported here — read it, then tap Skip. · MY: ဒီ browser မှာ mic အလုပ်မလုပ်ပါ — ဖတ်ပြီး Skip နှိပ်ပါ။</p>
        <button class="btn-secondary" id="dlgSkipBtn">Skip ▶</button>`;
   stage.innerHTML = historyHtml + `
     <div class="example">
       <p><b>🧑 You say:</b> ${line.en}</p>
       <p><b>MY:</b> ${line.my}</p>
-      <p><b>HI:</b> ${line.hi}</p>
       ${micHtml}
       <p class="mic-feedback" id="dlgFeedback"></p>
     </div>`;
@@ -298,7 +292,7 @@ function renderDialogueStage(){
 
   const fb = document.getElementById('dlgFeedback');
   document.getElementById('dlgMicBtn').onclick = ()=>{
-    fb.textContent = '🎙️ Listening... / နားထောင်နေသည်... / सुन रहा है...';
+    fb.textContent = '🎙️ Listening... / နားထောင်နေသည်...';
     fb.className = 'mic-feedback';
     const rec = new SR();
     rec.lang = 'en-US';
@@ -321,7 +315,7 @@ function renderDialogueStage(){
       }
     };
     rec.onerror = ()=>{
-      fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ / फिर से कोशिश करें।';
+      fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ ';
       fb.className = 'mic-feedback bad';
     };
     rec.start();
@@ -334,14 +328,13 @@ READING_UNITS.forEach(unit=>{
   const box = document.createElement('div');
   box.className = 'unit';
   const qHtml = unit.questions.map(q=>`
-    <p><b>EN:</b> ${q.en}<br><b>MY:</b> ${q.my}<br><b>HI:</b> ${q.hi}</p>`).join('');
+    <p><b>EN:</b> ${q.en}<br><b>MY:</b> ${q.my}</p>`).join('');
   box.innerHTML = `<h3>${unit.title}</h3>
     <p onclick="speak(\`${unit.text.replace(/`/g,"'")}\`)" style="cursor:pointer">🔊 ${unit.text}</p>
     <div class="explain">
       <p><b>MY:</b> ${unit.translation.my}</p>
-      <p><b>HI:</b> ${unit.translation.hi}</p>
     </div>
-    <div class="example"><b>Questions / မေးခွန်း / प्रश्न:</b>${qHtml}</div>`;
+    <div class="example"><b>Questions / မေးခွန်း:</b>${qHtml}</div>`;
   readingWrap.appendChild(box);
 });
 
@@ -354,7 +347,6 @@ WRITING_UNITS.forEach((unit,i)=>{
     <div class="explain">
       <p><b>EN:</b> ${unit.instructions.en}</p>
       <p><b>MY:</b> ${unit.instructions.my}</p>
-      <p><b>HI:</b> ${unit.instructions.hi}</p>
     </div>
     <textarea rows="4" style="width:100%;border-radius:10px;padding:10px;border:2px solid #ddd;margin-top:8px"
       id="writing-${i}" placeholder="Write here..."></textarea>`;
@@ -397,7 +389,7 @@ document.getElementById('checkWorkbook').addEventListener('click', ()=>{
   });
   lastScore = correct;
   document.getElementById('workbookResult').textContent =
-    `Score / ရမှတ် / स्कोर: ${correct} / ${WORKBOOK_QUESTIONS.length}`;
+    `Score / ရမှတ်: ${correct} / ${WORKBOOK_QUESTIONS.length}`;
   document.getElementById('scoreValue').textContent = correct;
   document.getElementById('nameSave').style.display = 'flex';
 });

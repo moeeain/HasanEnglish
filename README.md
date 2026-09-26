@@ -1,8 +1,8 @@
 # English ABC — အခြေခံ အင်္ဂလိပ်စာ website
 
 Grade 8 လောက် ရောက်ဖူးပေမယ့် basic word/grammar မသိသေးတဲ့ ကလေးများအတွက်
-Let's Go style ရှိတဲ့ ရိုးရှင်းသော English learning website။ Myanmar / Hindi / English
-၃ ဘာသာနဲ့ ရှင်းပြထားပါတယ်။ Words, Grammar, Listening, Speaking, Reading, Writing,
+Let's Go style ရှိတဲ့ ရိုးရှင်းသော English learning website။ **Myanmar / English ၂ ဘာသာနဲ့သာ** ရှင်းပြထားပါတယ်
+(Hindi ကို ဖြုတ်လိုက်ပါပြီ)။ Words, Grammar, Listening, Speaking (Dialogue Practice ပါ), Reading, Writing,
 Workbook (quiz) ပါဝင်ပါတယ်။
 
 ## ဖိုင်များ
@@ -72,6 +72,12 @@ offline browser voice ကို အလိုအလျောက် ပြန်�
 3. **🎙️ တကယ့်လူ့အသံအစစ် (100% real human)** — ဒါကို ရဖို့ တစ်နည်းတည်းသာ ရှိပါတယ်: word/phrase တွေကို phone ဖြင့် ကိုယ်တိုင် (သို့) မိသားစုဝင်တစ်ဦးဖြင့် mp3 short clip recording လုပ်ပြီး
    `audio/` folder ထဲထည့်ကာ `data.js` ထဲက `AUDIO_MAP` မှာ စာရင်းသွင်းပါ (ဥပမာ - `"hello": "audio/hello.mp3"`)။
    ဒီနည်းက **100% အာမခံ human voice** ဖြစ်ပြီး internet မလိုပါဘူး၊ ဒါပေမယ့် word တစ်လုံးချင်းစီ ကိုယ်တိုင် record လုပ်ရမှာ ဖြစ်ပါတယ်။
+
+## Hindi ဖြုတ်ထားခြင်းအကြောင်း
+Website ပေါ်မှာ Hindi စာသား လုံးဝ မပေါ်တော့ပါဘူး (index.html/app.js အားလုံးကနေ ဖယ်ရှားပြီးပါပြီ၊
+Devanagari font import ကိုလည်း ဖယ်ထားပါတယ်)။ `data.js` ဖိုင်ထဲက word/unit တွေမှာ `hi:` field တွေ
+ကျန်နေသေးပေမယ့် **ဘယ်မှ မပေါ်ပါဘူး** (အသုံးမပြုတော့လို့ သက်ရောက်မှု မရှိပါ) — ဖျက်ချင်ရင်လည်း
+ဖျက်လို့ရပါတယ်၊ ထားလည်း ပြဿနာ မရှိပါဘူး။
 
 ## Content ထပ်ဖြည့်နည်း (video, words, grammar, quiz)
 `data.js` ဖိုင်ထဲမှာ Unit အသစ်တွေကို object အသစ်အဖြစ် array ထဲ ထပ်ထည့်ရုံပါပဲ —

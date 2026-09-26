@@ -5,7 +5,7 @@
 <title>English ABC — Basic English for Everyone</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&family=Noto+Sans+Myanmar:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;800&family=Noto+Sans+Myanmar:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
     <span class="brand-badge">🐘</span>
     <div>
       <h1>English ABC</h1>
-      <p class="tagline">Basic English for Everyone · အခြေခံ အင်္ဂလိပ်စာ · बुनियादी अंग्रेज़ी</p>
+      <p class="tagline">Basic English for Everyone · အခြေခံ အင်္ဂလိပ်စာ</p>
     </div>
   </div>
   <div class="score-pill" id="scorePill">⭐ <span id="scoreValue">0</span></div>
@@ -40,67 +40,65 @@
       <h2>Hi! Let's learn English together 👋</h2>
       <p class="tri">
         <b>EN:</b> This site teaches you real basic English — words, grammar, listening, speaking, reading and writing. No prior knowledge needed.<br>
-        <b>MY:</b> ဒီဝဘ်ဆိုဒ်က အင်္ဂလိပ်စာ အခြေခံကနေ စလေ့လာနိုင်ပါတယ် — စကားလုံး၊ သဒ္ဒါ၊ နားထောင်၊ စကားပြော၊ ဖတ်၊ ရေးသားခြင်း အားလုံးပါ။ ဘာမှ မသိရင်တောင် စတင်နိုင်ပါတယ်။<br>
-        <b>HI:</b> यह वेबसाइट आपको बुनियादी अंग्रेज़ी सिखाती है — शब्द, व्याकरण, सुनना, बोलना, पढ़ना और लिखना। पहले से कुछ जानने की ज़रूरत नहीं है।
+        <b>MY:</b> ဒီဝဘ်ဆိုဒ်က အင်္ဂလိပ်စာ အခြေခံကနေ စလေ့လာနိုင်ပါတယ် — စကားလုံး၊ သဒ္ဒါ၊ နားထောင်၊ စကားပြော၊ ဖတ်၊ ရေးသားခြင်း အားလုံးပါ။ ဘာမှ မသိရင်တောင် စတင်နိုင်ပါတယ်။
       </p>
     </div>
     <div class="card-grid">
-      <div class="mini-card" onclick="goTab('vocab')"><span>🔤</span><p>Words<br><small>စကားလုံး · शब्द</small></p></div>
-      <div class="mini-card" onclick="goTab('grammar')"><span>🧩</span><p>Grammar<br><small>သဒ္ဒါ · व्याकरण</small></p></div>
-      <div class="mini-card" onclick="goTab('listening')"><span>🎧</span><p>Listening<br><small>နားထောင် · सुनना</small></p></div>
-      <div class="mini-card" onclick="goTab('speaking')"><span>🗣️</span><p>Speaking<br><small>စကားပြော · बोलना</small></p></div>
-      <div class="mini-card" onclick="goTab('reading')"><span>📖</span><p>Reading<br><small>ဖတ်ခြင်း · पढ़ना</small></p></div>
-      <div class="mini-card" onclick="goTab('writing')"><span>✏️</span><p>Writing<br><small>ရေးသားခြင်း · लिखना</small></p></div>
+      <div class="mini-card" onclick="goTab('vocab')"><span>🔤</span><p>Words<br><small>စကားလုံး</small></p></div>
+      <div class="mini-card" onclick="goTab('grammar')"><span>🧩</span><p>Grammar<br><small>သဒ္ဒါ</small></p></div>
+      <div class="mini-card" onclick="goTab('listening')"><span>🎧</span><p>Listening<br><small>နားထောင်</small></p></div>
+      <div class="mini-card" onclick="goTab('speaking')"><span>🗣️</span><p>Speaking<br><small>စကားပြော</small></p></div>
+      <div class="mini-card" onclick="goTab('reading')"><span>📖</span><p>Reading<br><small>ဖတ်ခြင်း</small></p></div>
+      <div class="mini-card" onclick="goTab('writing')"><span>✏️</span><p>Writing<br><small>ရေးသားခြင်း</small></p></div>
     </div>
     <div class="howto">
-      <h3>How to use / အသုံးပြုနည်း / उपयोग कैसे करें</h3>
+      <h3>How to use / အသုံးပြုနည်း</h3>
       <ol>
         <li>EN: Start with <b>Words</b>, then <b>Grammar</b>, one unit a day.</li>
         <li>MY: <b>စကားလုံး</b> ကနေ စပြီး <b>သဒ္ဒါ</b> ကို တစ်နေ့ တစ်ခန်းစီ လေ့လာပါ။</li>
-        <li>HI: <b>शब्दों</b> से शुरू करें, फिर <b>व्याकरण</b>, रोज़ एक पाठ।</li>
       </ol>
     </div>
     <div class="howto" id="voiceSettingBox">
-      <h3>🔊 Voice / အသံ / आवाज़</h3>
-      <p class="tri small">EN: By default this uses a more natural online voice (needs internet). Turn it off to always use your device's offline voice. · MY: ပုံမှန်အားဖြင့် အသံပိုပီးလူ့အသံဆန်တဲ့ online voice ကို သုံးပါတယ် (internet လိုအပ်ပါတယ်)။ Offline voice ချည်းပဲ သုံးချင်ရင် ပိတ်ထားနိုင်ပါတယ်။ · HI: डिफ़ॉल्ट रूप से एक बेहतर ऑनलाइन आवाज़ इस्तेमाल होती है (इंटरनेट ज़रूरी है)। इसे बंद कर सकते हैं।</p>
+      <h3>🔊 Voice / အသံ</h3>
+      <p class="tri small">EN: By default this uses a more natural online voice (needs internet). Turn it off to always use your device's offline voice. · MY: ပုံမှန်အားဖြင့် အသံပိုပီးလူ့အသံဆန်တဲ့ online voice ကို သုံးပါတယ် (internet လိုအပ်ပါတယ်)။ Offline voice ချည်းပဲ သုံးချင်ရင် ပိတ်ထားနိုင်ပါတယ်။</p>
       <label style="display:flex;align-items:center;gap:8px;margin:8px 0">
         <input type="checkbox" id="onlineVoiceToggle" checked>
-        <span>Use natural online voice / အွန်လိုင်း အသံသုံးမယ် / ऑनलाइन आवाज़ का उपयोग करें</span>
+        <span>Use natural online voice / အွန်လိုင်း အသံသုံးမယ်</span>
       </label>
-      <p class="tri small">EN: Offline fallback voice — pick the one your device sounds best with. · MY: Offline voice ကို ရွေးချယ်ပါ။ · HI: ऑफ़लाइन आवाज़ चुनें।</p>
+      <p class="tri small">EN: Offline fallback voice — pick the one your device sounds best with. · MY: Offline voice ကို ရွေးချယ်ပါ။</p>
       <select id="voiceSelect"></select>
     </div>
   </section>
 
   <!-- VOCABULARY -->
   <section class="panel" id="panel-vocab">
-    <h2>🔤 Words · စကားလုံးများ · शब्द</h2>
-    <p class="tri small">EN: Tap a word to hear it. · MY: အသံထွက်နားထောင်ရန် စကားလုံးကို နှိပ်ပါ။ · HI: सुनने के लिए शब्द पर टैप करें।</p>
+    <h2>🔤 Words · စကားလုံးများ</h2>
+    <p class="tri small">EN: Tap a word to hear it. · MY: အသံထွက်နားထောင်ရန် စကားလုံးကို နှိပ်ပါ။</p>
     <div id="vocabUnits"></div>
   </section>
 
   <!-- GRAMMAR -->
   <section class="panel" id="panel-grammar">
-    <h2>🧩 Grammar · သဒ္ဒါ · व्याकरण</h2>
+    <h2>🧩 Grammar · သဒ္ဒါ</h2>
     <div id="grammarUnits"></div>
   </section>
 
   <!-- LISTENING -->
   <section class="panel" id="panel-listening">
-    <h2>🎧 Listening · နားထောင်ခြင်း · सुनना</h2>
-    <p class="tri small">EN: Replace the video links in <code>data.js</code> with any kids' English channel you like. · MY: <code>data.js</code> ဖိုင်ထဲက video link တွေကို ကြိုက်တဲ့ channel နဲ့ လဲလို့ရပါတယ်။ · HI: <code>data.js</code> में वीडियो लिंक बदल सकते हैं।</p>
+    <h2>🎧 Listening · နားထောင်ခြင်း</h2>
+    <p class="tri small">EN: Replace the video links in <code>data.js</code> with any kids' English channel you like. · MY: <code>data.js</code> ဖိုင်ထဲက video link တွေကို ကြိုက်တဲ့ channel နဲ့ လဲလို့ရပါတယ်။</p>
     <div id="listeningUnits"></div>
   </section>
 
   <!-- SPEAKING -->
   <section class="panel" id="panel-speaking">
-    <h2>🗣️ Speaking · စကားပြောခြင်း · बोलना</h2>
+    <h2>🗣️ Speaking · စကားပြောခြင်း</h2>
 
     <div class="unit" id="dialogueBox">
-      <h3>💬 Dialogue Practice — "I say a line, you say a line" / တစ်ကြောင်းစီ အလှည့်ကျပြောခြင်း · बारी-बारी से बात करें</h3>
-      <p class="tri small">EN: Pick a dialogue. The app speaks the "App" lines — tap 🎤 and say the "You" lines back. · MY: Dialogue တစ်ခုရွေးပါ။ "App" ကြောင်းကို website ကပြောပြီး "You" ကြောင်းကို 🎤 နှိပ်ပြီး ပြန်ပြောပါ။ · HI: एक संवाद चुनें। "App" लाइनें ऐप बोलेगा — "You" लाइनें आप 🎤 दबाकर बोलें।</p>
+      <h3>💬 Dialogue Practice — "I say a line, you say a line" / တစ်ကြောင်းစီ အလှည့်ကျပြောခြင်း</h3>
+      <p class="tri small">EN: Pick a dialogue. The app speaks the "App" lines — tap 🎤 and say the "You" lines back. · MY: Dialogue တစ်ခုရွေးပါ။ "App" ကြောင်းကို website ကပြောပြီး "You" ကြောင်းကို 🎤 နှိပ်ပြီး ပြန်ပြောပါ။</p>
       <select id="dialogueSelect"></select>
-      <button class="btn-primary" id="dialogueStartBtn">▶ Start / စတင်မယ် / शुरू करें</button>
+      <button class="btn-primary" id="dialogueStartBtn">▶ Start / စတင်မယ်</button>
       <div id="dialogueStage"></div>
     </div>
 
@@ -109,26 +107,26 @@
 
   <!-- READING -->
   <section class="panel" id="panel-reading">
-    <h2>📖 Reading · ဖတ်ခြင်း · पढ़ना</h2>
+    <h2>📖 Reading · ဖတ်ခြင်း</h2>
     <div id="readingUnits"></div>
   </section>
 
   <!-- WRITING -->
   <section class="panel" id="panel-writing">
-    <h2>✏️ Writing · ရေးသားခြင်း · लिखना</h2>
+    <h2>✏️ Writing · ရေးသားခြင်း</h2>
     <div id="writingUnits"></div>
   </section>
 
   <!-- WORKBOOK -->
   <section class="panel" id="panel-workbook">
-    <h2>📝 Workbook · လေ့ကျင့်ခန်းစာအုပ် · अभ्यास पुस्तिका</h2>
-    <p class="tri small">EN: Answer, then check. Your score can be saved online. · MY: ဖြေပြီး Check နှိပ်ပါ။ ရမှတ်ကို online မှာ သိမ်းနိုင်ပါတယ်။ · HI: उत्तर देकर जांचें। स्कोर ऑनलाइन सेव हो सकता है।</p>
+    <h2>📝 Workbook · လေ့ကျင့်ခန်းစာအုပ်</h2>
+    <p class="tri small">EN: Answer, then check. Your score can be saved online. · MY: ဖြေပြီး Check နှိပ်ပါ။ ရမှတ်ကို online မှာ သိမ်းနိုင်ပါတယ်။</p>
     <div id="workbookQuestions"></div>
-    <button class="btn-primary" id="checkWorkbook">Check my answers / စစ်ဆေးမယ် / जांचें</button>
+    <button class="btn-primary" id="checkWorkbook">Check my answers / စစ်ဆေးမယ်</button>
     <div id="workbookResult"></div>
     <div class="name-save" id="nameSave" style="display:none">
-      <input id="studentName" placeholder="Your name / နာမည် / नाम">
-      <button class="btn-secondary" id="saveScoreBtn">Save score / ရမှတ်သိမ်းမယ် / स्कोर सेव करें</button>
+      <input id="studentName" placeholder="Your name / နာမည်">
+      <button class="btn-secondary" id="saveScoreBtn">Save score / ရမှတ်သိမ်းမယ်</button>
       <p id="saveStatus"></p>
     </div>
   </section>
