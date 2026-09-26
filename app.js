@@ -239,51 +239,42 @@ function renderDialogueStage(){
   const stage = document.getElementById('dialogueStage');
   if(!currentDialogue){ stage.innerHTML = ''; return; }
 
+  const total = currentDialogue.lines.length;
   let historyHtml = dialogueHistory.map(h=>
-    `<p class="dlg-line"><b>${h.speaker==='App' ? '🤖 App' : '🧑 You'}:</b> ${h.said || h.en}</p>`
+    `<p class="dlg-line">✅ ${h.en}</p>`
   ).join('');
 
-  if(currentLineIndex >= currentDialogue.lines.length){
+  if(currentLineIndex >= total){
     stage.innerHTML = historyHtml +
-      `<p class="mic-feedback ok">🎉 Great job! Dialogue complete. / ပြီးပါပြီ! ကောင်းလိုက်တာ!</p>`;
+      `<p class="mic-feedback ok">🎉 Great job! You finished all ${total} lines! / ပြီးပါပြီ! ကောင်းလိုက်တာ!</p>`;
     return;
   }
 
   const line = currentDialogue.lines[currentLineIndex];
-
-  if(line.speaker === 'App'){
-    stage.innerHTML = historyHtml + `
-      <div class="example">
-        <p><b>🤖 App says:</b> ${line.en}</p>
-        <p><b>MY:</b> ${line.my}</p>
-        <button class="btn-secondary" id="dlgNextBtn">Next ▶ / ရှေ့ဆက်မယ်</button>
-      </div>`;
-    speak(line.en);
-    document.getElementById('dlgNextBtn').onclick = ()=>{
-      dialogueHistory.push({speaker:'App', en: line.en});
-      currentLineIndex++;
-      renderDialogueStage();
-    };
-    return;
-  }
-
-  // line.speaker === 'You'
+  const progress = `(${currentLineIndex + 1} / ${total})`;
   const micHtml = SR
-    ? `<button class="mic-btn" id="dlgMicBtn">🎤 Your turn — Speak / မင်းအလှည့်</button>`
-    : `<p class="tri small">🎤 EN: Voice check not supported here — read it, then tap Skip. · MY: ဒီ browser မှာ mic အလုပ်မလုပ်ပါ — ဖတ်ပြီး Skip နှိပ်ပါ။</p>
+    ? `<button class="mic-btn" id="dlgMicBtn">🎤 Repeat it / ထပ်ပြောပါ</button>`
+    : `<p class="tri small">🎤 EN: Voice check not supported here — read it aloud, then tap Skip. · MY: ဒီ browser မှာ mic အလုပ်မလုပ်ပါ — ဖတ်ပြောပြီး Skip နှိပ်ပါ။</p>
        <button class="btn-secondary" id="dlgSkipBtn">Skip ▶</button>`;
+
   stage.innerHTML = historyHtml + `
     <div class="example">
-      <p><b>🧑 You say:</b> ${line.en}</p>
+      <p class="tri small">${progress}</p>
+      <p><b>🔊 Listen:</b> ${line.en}</p>
       <p><b>MY:</b> ${line.my}</p>
+      <button class="speaker-btn" id="dlgReplayBtn">🔊 Hear it again / ပြန်နားထောင်မယ်</button>
       ${micHtml}
       <p class="mic-feedback" id="dlgFeedback"></p>
     </div>`;
 
+  // Auto-speak the line once when it first appears.
+  speak(line.en);
+  document.getElementById('dlgReplayBtn').onclick = ()=> speak(line.en);
+
   const skipBtn = document.getElementById('dlgSkipBtn');
   if(skipBtn){
     skipBtn.onclick = ()=>{
-      dialogueHistory.push({speaker:'You', en: line.en});
+      dialogueHistory.push({en: line.en});
       currentLineIndex++;
       renderDialogueStage();
     };
@@ -301,13 +292,13 @@ function renderDialogueStage(){
     rec.onresult = ev=>{
       const said = ev.results[0][0].transcript;
       const saidNorm = normalize(said);
-      const target = normalize(extractTarget(line.en));
+      const target = normalize(line.en);
       const isClose = saidNorm.includes(target) || target.includes(saidNorm) ||
-        target.split(' ').filter(w=>w && saidNorm.includes(w)).length >= Math.max(1, Math.ceil(target.split(' ').length*0.6));
+        target.split(' ').filter(w=>w && saidNorm.includes(w)).length >= Math.max(1, Math.ceil(target.split(' ').length*0.7));
       if(isClose){
         fb.textContent = `✅ Great! You said: "${said}"`;
         fb.className = 'mic-feedback ok';
-        dialogueHistory.push({speaker:'You', en: line.en, said});
+        dialogueHistory.push({en: line.en});
         setTimeout(()=>{ currentLineIndex++; renderDialogueStage(); }, 900);
       } else {
         fb.textContent = `❌ Try again. You said: "${said}"`;
@@ -315,7 +306,7 @@ function renderDialogueStage(){
       }
     };
     rec.onerror = ()=>{
-      fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ ';
+      fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။';
       fb.className = 'mic-feedback bad';
     };
     rec.start();

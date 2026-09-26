@@ -46,13 +46,14 @@ Workbook (quiz) ပါဝင်ပါတယ်။
 - **Writing**: unit ၅ ခု
 - **Workbook**: မေးခွန်း ၄၃ ခု
 
-## 💬 Dialogue Practice အသစ် ("မင်းတစ်ကြောင်း ငါတစ်ကြောင်း")
-Speaking tab ရဲ့ ထိပ်ဆုံးမှာ Dialogue ၃ ခု ထည့်ထားပါတယ် (Meeting a Friend, At School, Buying Food) —
-Dialogue ရွေးပြီး Start နှိပ်ရင်:
-- **App line**: website ကိုယ်တိုင် အသံထွက်ပြောပြီး ဖတ်ပြပေးပါတယ်
-- **You line**: 🎤 နှိပ်ပြီး ကလေးက English လိုပြောရမှာ — ✅/❌ ချက်ချင်း သိရပါတယ်
-- မှန်ရင် နောက်တစ်ကြောင်းကို အလိုအလျောက် ဆက်ပြောပေးပါတယ်
-`data.js` ရဲ့ `DIALOGUES` array ထဲမှာ ပုံစံအတိုင်း Dialogue အသစ် ထပ်ထည့်နိုင်ပါတယ်။
+## 🔁 Listen & Repeat Practice (redesigned)
+အရင် "Dialogue Practice" (App/You အလှည့်ကျပြောတဲ့ ပုံစံ) က confusing ဖြစ်နေလို့
+ပိုရှင်းလင်းတဲ့ **Listen & Repeat** ပုံစံအဖြစ် ပြင်လိုက်ပါတယ်:
+1. Set တစ်ခုရွေးပြီး Start နှိပ်ပါ
+2. App က line တစ်ကြောင်းကို အသံထွက်ပြောပြီး ပြပေးပါတယ် (🔊 Hear it again နှိပ်ပြီး ထပ်နားထောင်နိုင်ပါတယ်)
+3. 🎤 "Repeat it" နှိပ်ပြီး ကလေးက **အတိအကျ တူတူ** ပြန်ပြောရမှာဖြစ်ပါတယ်
+4. မှန်ရင် ✅ ပြပြီး နောက်တစ်ကြောင်းကို အလိုအလျောက် ဆက်သွားပါလိမ့်မယ်
+`data.js` ရဲ့ `DIALOGUES` array ထဲမှာ ပုံစံအတိုင်း sentence set အသစ် ထပ်ထည့်နိုင်ပါတယ်။
 
 ## 🔧 Voice bug ပြင်ပြီးပါပြီ
 အရင်က online voice (Google) ကို timeout ဖြစ်နေပြီး browser voice (robot-သံ) ကိုပဲ အမြဲသုံးနေခဲ့ပါတယ်။
