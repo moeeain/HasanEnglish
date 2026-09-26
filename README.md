@@ -35,16 +35,26 @@ Workbook (quiz) ပါဝင်ပါတယ်။
 4. ရလာတဲ့ URL ကို `firebase-config.js` ထဲက `GOOGLE_SCRIPT_URL` မှာ ထည့်ပါ
    (Firebase config ကို empty ထားခဲ့ရင် Google Script ကိုပဲ အသုံးပြုပါလိမ့်မယ်)
 
-## လက်ရှိပါဝင်သော content (Level 1-5 scope, Let's Go style)
-- **Words**: unit ၂၀ ခု၊ စကားလုံး ၁၅၅ လုံး — Greetings→Occupations, Time/Sports/Transportation (Level 5),
-  School Items, Household Items, Feelings, Common Verbs
-- **Grammar**: unit ၁၈ ခု — Basic (sentence, to be, present) → Level 5 (comparatives, past continuous,
-  going-to future, frequency adverbs, telling time, object pronouns)
+## 📘 Level 1-6 Structure (Let's Go series ပုံစံ)
+Vocabulary နဲ့ Grammar tab နှစ်ခုစလုံးကို **Let's Go series (Book 1-6) ပုံစံအတိုင်း Level ခွဲပြီး** organize
+လုပ်ထားပါတယ် — Level တစ်ခုပြောင်းတိုင်း 📘 Level N label ပေါ်ပြီး unit အားလုံးကို အလွယ်တကူ အဆင့်လိုက်
+လေ့လာနိုင်ပါတယ်:
+- **Level 1**: Greetings, Everyday Things, Numbers, Colors, Family + Sentence, To be, Simple Present
+- **Level 2**: Body Parts, Animals, Food, Days, School/Household Items + Plurals, This/That, Questions, Adjectives, There is/are
+- **Level 3**: Weather, Clothing, Shapes, Occupations + Prepositions, Possessives, Simple Past, Can/Can't
+- **Level 4**: Feelings, Common Verbs + Comparative/Superlative, Going-to Future, Frequency Adverbs, Telling Time
+- **Level 5**: Time/Clock, Sports, Transportation + Past Continuous, Object Pronouns
+- **Level 6 (အသစ်)**: Technology, Nature & Environment, Places in Town + Present Perfect, Modals (must/have to/should),
+  Relative Clauses (who/which/that), Passive Voice, First Conditional, Reported Speech
+
+## လက်ရှိပါဝင်သော content (Level 1-6, Let's Go style)
+- **Words**: unit ၂၃ ခု၊ စကားလုံး ၁၇၆ လုံး
+- **Grammar**: unit ၂၄ ခု (Level 1 → Level 6)
 - **Listening**: verified video ၉ ခု (supersimple.com)
-- **Speaking**: unit ၁၀ ခု (mic + instant check) **+ 💬 Dialogue Practice (conversation ၃ ခု, အလှည့်ကျ)**
-- **Reading**: unit ၅ ခု
-- **Writing**: unit ၅ ခု
-- **Workbook**: မေးခွန်း ၄၃ ခု
+- **Speaking**: unit ၁၂ ခု (mic + instant check) **+ 🔁 Listen & Repeat Practice**
+- **Reading**: unit ၆ ခု
+- **Writing**: unit ၆ ခု
+- **Workbook**: မေးခွန်း ၄၉ ခု
 
 ## 🔁 Listen & Repeat Practice (redesigned)
 အရင် "Dialogue Practice" (App/You အလှည့်ကျပြောတဲ့ ပုံစံ) က confusing ဖြစ်နေလို့
@@ -63,16 +73,30 @@ network/browser အနေအထားပေါ်မူတည်ပြီး တ
 offline browser voice ကို အလိုအလျောက် ပြန်ပြောင်းပါလိမ့်မယ်။
 100% အာမခံ human voice လိုချင်ရင် အောက်က `AUDIO_MAP` section ကို ကြည့်ပါ။
 
-## 🗣️ "လူ့အသံ" (Human Voice) အကြောင်း — ရိုးရိုးသားသား ရှင်းပြချင်ပါတယ်
-ကျွန်တော် (Claude) က **တကယ့်လူတစ်ဦးရဲ့ အသံအစစ်ကို ဖန်တီးပေးလို့ မရပါဘူး** — ဒါက AI စာသားနဲ့ အလုပ်လုပ်တာဖြစ်လို့ အသံဖိုင် (mp3) ကို အစအဆုံး တီထွင်ပေးလို့ မဖြစ်နိုင်ပါဘူး။ ဒါပေမယ့် အောက်ပါအတိုင်း အကောင်းဆုံးအဖြေ ၃ မျိုး ပြင်ဆင်ပေးထားပါတယ်:
+## 🗣️ "လူ့အသံ" (Human Voice) — Wikimedia Commons ကနေ တကယ့်လူ့အသံ အလိုအလျောက် ရှာပေးတယ်
+ကျွန်တော် (Claude) က **လူ့အသံအသစ် ကိုယ်တိုင် ဖန်တီးပေးလို့ မရပါဘူး** — ဒါပေမယ့် Wikimedia Commons
+(Wiktionary ရဲ့ audio data source) မှာ လူ့အသံအစစ်နဲ့ record လုပ်ထားတဲ့ word pronunciation
+အများကြီး **အခမဲ့ ပြန်သုံးလို့ရအောင် license (CC-BY/CC-BY-SA/Public Domain) နဲ့ တင်ထားပါတယ်** —
+ဒါကို website က **word တစ်လုံးချင်းစီအတွက် အလိုအလျောက် ရှာပြီး ရှိရင် ဖွင့်ပေးအောင်** ပြင်ဆင်ပေးလိုက်ပါတယ်။
 
-1. **🌐 Online natural voice (default on)** — Website က default အနေနဲ့ Google ရဲ့ အသံဝန်ဆောင်မှုတစ်ခုကို အသုံးပြုပြီး browser ရဲ့ robot-အသံထက် **သိသိသာသာ ပိုပီး natural/human-ဆန်တဲ့** အသံနဲ့ ဖတ်ပေးပါတယ် (internet ရှိရပါမယ်)။
-   ⚠️ **ရိုးသားစွာ ပြောရရင်**: ဒါက Google ရဲ့ official API မဟုတ်ပါဘူး (documented မဟုတ်တဲ့ endpoint) — အခုချိန်မှာ ကောင်းကောင်းအလုပ်လုပ်ပေမယ့် အနာဂတ်မှာ ရပ်သွားနိုင်ပါတယ်။ ရပ်သွားရင် app က အလိုအလျောက် offline browser voice ကို ပြန်ပြောင်းအသုံးပြုပါလိမ့်မယ် (ဘာမှ ချိုးမကျပါဘူး)
-   — Home tab က "Use natural online voice" checkbox ကနေ ပိတ်/ဖွင့် လုပ်နိုင်ပါတယ်
-2. **📱 Offline voice (fallback)** — Internet မရှိရင် (သို့) checkbox ပိတ်ထားရင် device ရဲ့ built-in voice ကို voice-picker ကနေ ရွေးချယ်အသုံးပြုပါတယ်
-3. **🎙️ တကယ့်လူ့အသံအစစ် (100% real human)** — ဒါကို ရဖို့ တစ်နည်းတည်းသာ ရှိပါတယ်: word/phrase တွေကို phone ဖြင့် ကိုယ်တိုင် (သို့) မိသားစုဝင်တစ်ဦးဖြင့် mp3 short clip recording လုပ်ပြီး
-   `audio/` folder ထဲထည့်ကာ `data.js` ထဲက `AUDIO_MAP` မှာ စာရင်းသွင်းပါ (ဥပမာ - `"hello": "audio/hello.mp3"`)။
-   ဒီနည်းက **100% အာမခံ human voice** ဖြစ်ပြီး internet မလိုပါဘူး၊ ဒါပေမယ့် word တစ်လုံးချင်းစီ ကိုယ်တိုင် record လုပ်ရမှာ ဖြစ်ပါတယ်။
+**🔊 ဘယ်လိုအစီအစဉ်နဲ့ အသံရွေးလဲ (word တစ်လုံးအတွက်):**
+1. **`AUDIO_MAP` ထဲမှာ ကိုယ်တိုင်ထည့်ထားတဲ့ mp3** ရှိရင် အရင်ဆုံး အဲဒါကို သုံးမယ် (100% အာမခံ)
+2. **Wikimedia Commons ရဲ့ လူ့အသံ recording** ရှိရင် အဲဒါကို အလိုအလျောက် ရှာပြီးဖွင့်ပေးမယ်
+   (`En-us-word.ogg` / `En-uk-word.ogg` pattern ကို စစ်ပါတယ်) — ဒါက **တကယ့်လူ့အသံအစစ်** ဖြစ်ပေမယ့်
+   စကားလုံး **အားလုံးအတွက် မရှိနိုင်ပါဘူး** (Commons မှာ common word တွေအတွက်ပဲ များများ record လုပ်ထားလို့)
+3. ၁ နဲ့ ၂ မရှိရင် 🌐 Online natural voice (Google) ကို ဆက်သုံးမယ်
+4. ၃ လည်း fail ရင် 📱 Offline browser voice ကို နောက်ဆုံး fallback အဖြစ် သုံးမယ်
+
+⚠️ **ရိုးသားစွာ ပြောရရင်**: item ၂ က "best-effort" ဖြစ်ပါတယ် — word တိုင်းအတွက် Commons မှာ
+recording ရှိချင်မှ ရှိမှာမို့ (hello, thank you, one-ten, colors, animals စတဲ့ common word တွေအတွက်
+များများ ရှိပါတယ်၊ occupation/adjective အနည်းစားအတွက်တော့ မရှိနိုင်ပါ) — မရှိရင် app က
+ချောချောမွေ့မွေ့ item ၃/၄ ကို ဆက်သုံးပါလိမ့်မယ်၊ ဘာမှ ချိုးမကျပါဘူး။ Sentence/phrase (word တစ်လုံးထက်ပို)
+တွေအတွက်ကတော့ Commons မှာ တစ်ကြောင်းလုံး record ရှိတာ ရှားလို့ item ၂ ကို skip လုပ်ပြီး
+တိုက်ရိုက် item ၃ ကို သွားပါလိမ့်မယ်။
+
+📱 **100% အာမခံ human voice** လိုချင်ရင်တော့ item ၁ ပဲ ရှိပါတယ် — word/phrase ကို phone ဖြင့်
+ကိုယ်တိုင် (သို့) မိသားစုဝင်တစ်ဦးဖြင့် mp3 short clip recording လုပ်ပြီး `audio/` folder ထဲထည့်ကာ
+`data.js` ထဲက `AUDIO_MAP` မှာ စာရင်းသွင်းပါ (ဥပမာ - `"hello": "audio/hello.mp3"`)။
 
 ## Hindi ဖြုတ်ထားခြင်းအကြောင်း
 Website ပေါ်မှာ Hindi စာသား လုံးဝ မပေါ်တော့ပါဘူး (index.html/app.js အားလုံးကနေ ဖယ်ရှားပြီးပါပြီ၊
@@ -82,7 +106,9 @@ Devanagari font import ကိုလည်း ဖယ်ထားပါတယ်)�
 
 ## Content ထပ်ဖြည့်နည်း (video, words, grammar, quiz)
 `data.js` ဖိုင်ထဲမှာ Unit အသစ်တွေကို object အသစ်အဖြစ် array ထဲ ထပ်ထည့်ရုံပါပဲ —
-ပုံစံအတိုင်း copy-paste ပြီး English/Myanmar/Hindi ၃ ခုစလုံး ဖြည့်ပေးပါ။
+ပုံစံအတိုင်း copy-paste ပြီး English/Myanmar ၂ ခုစလုံး ဖြည့်ပေးပါ။
+VOCAB_UNITS/GRAMMAR_UNITS unit အသစ်ထည့်တဲ့အခါ `level: N,` ဆိုတဲ့ field ကို `title:` ရှေ့မှာ ထည့်ပေးရင်
+Vocabulary/Grammar tab ထဲမှာ 📘 Level N label အောက်မှာ အလိုအလျောက် ပေါင်းစည်းသွားပါလိမ့်မယ်။
 Listening video အတွက် YouTube video ID ကိုပဲ လိုအပ်ပါတယ် (link တစ်ခုလုံး မလို —
 `youtube.com/watch?v=XXXXXXXX` ထဲက `XXXXXXXX` အပိုင်းပဲ ယူပါ)။
 

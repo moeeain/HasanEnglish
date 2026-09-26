@@ -64,11 +64,41 @@ function speak(text){
     }catch(e){ console.warn('Audio playback failed, falling back to TTS', e); }
   }
   const useOnline = localStorage.getItem('useOnlineVoice') !== 'off'; // default: on
-  if(useOnline && navigator.onLine !== false){
+  const isSingleWord = /^[a-zA-Z']+$/.test(text.trim());
+  if(isSingleWord && useOnline && navigator.onLine !== false){
+    tryHumanRecording(text.trim()).catch(()=> tryOnlineVoice(text).catch(()=> speakBrowser(text)));
+  } else if(useOnline && navigator.onLine !== false){
     tryOnlineVoice(text).catch(()=> speakBrowser(text));
   } else {
     speakBrowser(text);
   }
+}
+
+// Real human-voice recordings, free of charge: Wikimedia Commons/Wiktionary
+// host thousands of openly-licensed (CC-BY/CC-BY-SA/public domain) audio
+// pronunciations recorded by volunteers, made specifically for reuse.
+// We try a couple of their common naming patterns for single words; if none
+// exist for this word, we fall through safely to the synthetic voice.
+function tryHumanRecording(word){
+  const w = word.toLowerCase();
+  const candidates = [
+    `En-us-${w}.ogg`,
+    `En-uk-${w}.ogg`
+  ];
+  return tryAudioCandidates(candidates.map(name =>
+    'https://commons.wikimedia.org/wiki/Special:FilePath/' + encodeURIComponent(name)
+  ));
+}
+
+function tryAudioCandidates(urls){
+  return urls.reduce((chain, url) =>
+    chain.catch(()=> new Promise((resolve, reject)=>{
+      const audio = new Audio(url);
+      audio.onerror = ()=> reject(new Error('not found: ' + url));
+      audio.play().then(resolve).catch(reject);
+    })),
+    Promise.reject(new Error('start'))
+  );
 }
 
 // A natural-sounding free online voice (Google's speech service).
@@ -107,7 +137,15 @@ if(onlineToggle){
 
 // ---- Render: Vocabulary ----
 const vocabWrap = document.getElementById('vocabUnits');
+let vocabLastLevel = null;
 VOCAB_UNITS.forEach(unit=>{
+  if(unit.level && unit.level !== vocabLastLevel){
+    vocabLastLevel = unit.level;
+    const header = document.createElement('h2');
+    header.className = 'level-header';
+    header.textContent = `📘 Level ${unit.level}`;
+    vocabWrap.appendChild(header);
+  }
   const box = document.createElement('div');
   box.className = 'unit';
   box.innerHTML = `<h3>${unit.title}</h3><div class="word-grid"></div>`;
@@ -126,7 +164,15 @@ VOCAB_UNITS.forEach(unit=>{
 
 // ---- Render: Grammar ----
 const grammarWrap = document.getElementById('grammarUnits');
+let grammarLastLevel = null;
 GRAMMAR_UNITS.forEach(unit=>{
+  if(unit.level && unit.level !== grammarLastLevel){
+    grammarLastLevel = unit.level;
+    const header = document.createElement('h2');
+    header.className = 'level-header';
+    header.textContent = `📘 Level ${unit.level}`;
+    grammarWrap.appendChild(header);
+  }
   const box = document.createElement('div');
   box.className = 'unit';
   let explainHtml = unit.explain.map(x=>`

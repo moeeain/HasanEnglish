@@ -20,7 +20,7 @@ const AUDIO_MAP = {
 };
 
 const VOCAB_UNITS = [
-  {
+  {    level: 1,
     title: "Unit 1 — Greetings & People / နှုတ်ဆက်စကား",
     words: [
       {emoji:"👋", en:"Hello", my:"မင်္ဂလာပါ"},
@@ -35,7 +35,7 @@ const VOCAB_UNITS = [
       {emoji:"🧑‍🏫", en:"Teacher", my:"ဆရာ/ဆရာမ"}
     ]
   },
-  {
+  {    level: 1,
     title: "Unit 2 — Everyday Things / နေ့စဉ်သုံးပစ္စည်းများ",
     words: [
       {emoji:"📖", en:"Book", my:"စာအုပ်"},
@@ -50,7 +50,7 @@ const VOCAB_UNITS = [
       {emoji:"🌙", en:"Moon", my:"လ"}
     ]
   },
-  {
+  {    level: 1,
     title: "Unit 3 — Numbers / ဂဏန်းများ",
     words: [
       {emoji:"1️⃣", en:"One", my:"တစ်"},
@@ -65,7 +65,7 @@ const VOCAB_UNITS = [
       {emoji:"🔟", en:"Ten", my:"ဆယ်"}
     ]
   },
-  {
+  {    level: 1,
     title: "Unit 4 — Colors / အရောင်များ",
     words: [
       {emoji:"🔴", en:"Red", my:"အနီရောင်"},
@@ -78,7 +78,7 @@ const VOCAB_UNITS = [
       {emoji:"⚫", en:"Black", my:"အနက်ရောင်"}
     ]
   },
-  {
+  {    level: 1,
     title: "Unit 5 — Family / မိသားစုဝင်များ",
     words: [
       {emoji:"👨", en:"Father", my:"အဖေ"},
@@ -90,7 +90,7 @@ const VOCAB_UNITS = [
       {emoji:"🧑", en:"Cousin", my:"ဝမ်းကွဲ"}
     ]
   },
-  {
+  {    level: 2,
     title: "Unit 6 — Body Parts / ခန္ဓာကိုယ်အင်္ဂါများ",
     words: [
       {emoji:"👤", en:"Head", my:"ခေါင်း"},
@@ -103,7 +103,7 @@ const VOCAB_UNITS = [
       {emoji:"👃", en:"Nose", my:"နှာခေါင်း"}
     ]
   },
-  {
+  {    level: 2,
     title: "Unit 7 — Animals / တိရစ္ဆာန်များ",
     words: [
       {emoji:"🐘", en:"Elephant", my:"ဆင်"},
@@ -116,7 +116,7 @@ const VOCAB_UNITS = [
       {emoji:"🐮", en:"Cow", my:"နွား"}
     ]
   },
-  {
+  {    level: 2,
     title: "Unit 8 — Food / အစားအစာများ",
     words: [
       {emoji:"🍎", en:"Apple", my:"ပန်းသီး"},
@@ -129,7 +129,7 @@ const VOCAB_UNITS = [
       {emoji:"🍬", en:"Candy", my:"သကြားလုံး"}
     ]
   },
-  {
+  {    level: 2,
     title: "Unit 9 — Days of the Week / ရက်သတ္တပတ်ရက်များ",
     words: [
       {emoji:"📅", en:"Monday", my:"တနင်္လာနေ့"},
@@ -141,7 +141,7 @@ const VOCAB_UNITS = [
       {emoji:"📅", en:"Sunday", my:"တနင်္ဂနွေနေ့"}
     ]
   },
-  {
+  {    level: 3,
     title: "Unit 10 — Weather / ရာသီဥတု",
     words: [
       {emoji:"☀️", en:"Sunny", my:"နေသာသည်"},
@@ -153,7 +153,7 @@ const VOCAB_UNITS = [
       {emoji:"🥶", en:"Cold", my:"အေးသည်"}
     ]
   },
-  {
+  {    level: 3,
     title: "Unit 11 — Clothing / အဝတ်အစား",
     words: [
       {emoji:"👕", en:"Shirt", my:"ရှပ်အင်္ကျီ"},
@@ -165,7 +165,7 @@ const VOCAB_UNITS = [
       {emoji:"🧥", en:"Jacket", my:"ဂျာကက်"}
     ]
   },
-  {
+  {    level: 3,
     title: "Unit 12 — Shapes / ပုံသဏ္ဍာန်များ",
     words: [
       {emoji:"⭕", en:"Circle", my:"စက်ဝိုင်း"},
@@ -175,7 +175,7 @@ const VOCAB_UNITS = [
       {emoji:"💛", en:"Heart", my:"နှလုံးသား ပုံသဏ္ဍာန်"}
     ]
   },
-  {
+  {    level: 3,
     title: "Unit 13 — Occupations / အလုပ်အကိုင်များ",
     words: [
       {emoji:"👩‍⚕️", en:"Doctor", my:"ဆရာဝန်"},
@@ -186,7 +186,7 @@ const VOCAB_UNITS = [
       {emoji:"🧑‍💼", en:"Office worker", my:"ရုံးဝန်ထမ်း"}
     ]
   },
-  {
+  {    level: 5,
     title: "Unit 14 — Time & Clock / အချိန်နှင့် နာရီ",
     words: [
       {emoji:"🕐", en:"O'clock", my:"နာရီပြည့်"},
@@ -198,7 +198,7 @@ const VOCAB_UNITS = [
       {emoji:"⏳", en:"Late", my:"နောက်ကျ"}
     ]
   },
-  {
+  {    level: 5,
     title: "Unit 15 — Sports / အားကစားများ",
     words: [
       {emoji:"⚽", en:"Football", my:"ဘောလုံး"},
@@ -209,7 +209,7 @@ const VOCAB_UNITS = [
       {emoji:"🏸", en:"Badminton", my:"ကွင်းလုံးအန်ခုန်"}
     ]
   },
-  {
+  {    level: 5,
     title: "Unit 16 — Transportation / သယ်ယူပို့ဆောင်ရေး",
     words: [
       {emoji:"🚌", en:"Bus", my:"ဘတ်စ်ကား"},
@@ -221,7 +221,7 @@ const VOCAB_UNITS = [
       {emoji:"🏍️", en:"Motorbike", my:"မော်တော်ဆိုင်ကယ်"}
     ]
   },
-  {
+  {    level: 2,
     title: "Unit 17 — School Items / ကျောင်းသုံးပစ္စည်းများ",
     words: [
       {emoji:"🎒", en:"Bag", my:"အိတ်"},
@@ -234,7 +234,7 @@ const VOCAB_UNITS = [
       {emoji:"🖊️", en:"Pen", my:"ဘောပင်"}
     ]
   },
-  {
+  {    level: 2,
     title: "Unit 18 — Household Items / အိမ်သုံးပစ္စည်းများ",
     words: [
       {emoji:"🛏️", en:"Bed", my:"ကုတင်"},
@@ -247,7 +247,7 @@ const VOCAB_UNITS = [
       {emoji:"🧹", en:"Broom", my:"တံမြက်စည်း"}
     ]
   },
-  {
+  {    level: 4,
     title: "Unit 19 — Feelings / ခံစားချက်များ",
     words: [
       {emoji:"😊", en:"Happy", my:"ပျော်ရွှင်"},
@@ -260,7 +260,7 @@ const VOCAB_UNITS = [
       {emoji:"🥵", en:"Thirsty", my:"ရေဆာ"}
     ]
   },
-  {
+  {    level: 4,
     title: "Unit 20 — Common Verbs (Action Words) / ပြုမူကြိယာ",
     words: [
       {emoji:"🏃", en:"Run", my:"ပြေး"},
@@ -274,11 +274,47 @@ const VOCAB_UNITS = [
       {emoji:"🗣️", en:"Speak", my:"ပြော"},
       {emoji:"🧼", en:"Wash", my:"ဆေး"}
     ]
+  },
+  {    level: 6,
+    title: "Unit 21 — Technology / နည်းပညာ",
+    words: [
+      {emoji:"📱", en:"Phone", my:"ဖုန်း"},
+      {emoji:"💻", en:"Computer", my:"ကွန်ပျူတာ"},
+      {emoji:"📷", en:"Camera", my:"ကင်မရာ"},
+      {emoji:"🖨️", en:"Printer", my:"ပရင်တာ"},
+      {emoji:"🔋", en:"Battery", my:"ဘက်ထရီ"},
+      {emoji:"📶", en:"Internet", my:"အင်တာနက်"},
+      {emoji:"🎧", en:"Headphones", my:"နားကြပ်"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 22 — Nature & Environment / သဘာဝပတ်ဝန်းကျင်",
+    words: [
+      {emoji:"🌳", en:"Tree", my:"သစ်ပင်"},
+      {emoji:"🏞️", en:"River", my:"မြစ်"},
+      {emoji:"⛰️", en:"Mountain", my:"တောင်"},
+      {emoji:"🌊", en:"Ocean", my:"သမုဒ္ဒရာ"},
+      {emoji:"🌲", en:"Forest", my:"တောင်တောကုန်း"},
+      {emoji:"♻️", en:"Recycle", my:"ပြန်လည်အသုံးပြု"},
+      {emoji:"🗑️", en:"Trash", my:"အမှိုက်"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 23 — Places in Town & Directions / မြို့ထဲရှိနေရာများနှင့် ဦးတည်ရာ",
+    words: [
+      {emoji:"🏥", en:"Hospital", my:"ဆေးရုံ"},
+      {emoji:"🏦", en:"Bank", my:"ဘဏ်"},
+      {emoji:"🏪", en:"Store", my:"စတိုးဆိုင်"},
+      {emoji:"⛪", en:"Church", my:"ဘုရားကျောင်း"},
+      {emoji:"⬅️", en:"Left", my:"ဘယ်ဘက်"},
+      {emoji:"➡️", en:"Right", my:"ညာဘက်"},
+      {emoji:"⬆️", en:"Straight", my:"တည့်တည့်"}
+    ]
   }
 ];
 
 const GRAMMAR_UNITS = [
-  {
+  {    level: 1,
     title: "Grammar 1 — What is a sentence? / ဝါကျဆိုတာ",
     explain: [
       {en:"A sentence needs a SUBJECT (who/what) and a VERB (action). Example: I + eat.", 
@@ -286,7 +322,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I eat rice.", "You read a book.", "She drinks water."]
   },
-  {
+  {    level: 1,
     title: "Grammar 2 — The verb \"to be\" (am / is / are) / to be",
     explain: [
       {en:"Use 'am' with I, 'is' with he/she/it, 'are' with you/we/they.",
@@ -294,7 +330,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I am a student.", "He is a boy.", "They are happy."]
   },
-  {
+  {    level: 1,
     title: "Grammar 3 — Simple Present (daily habits) / လက်ရှိပြုမူ",
     explain: [
       {en:"Use the simple present for daily habits. Add -s for he/she/it.",
@@ -302,7 +338,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I go to school.", "She goes to school.", "We play football."]
   },
-  {
+  {    level: 2,
     title: "Grammar 4 — Plural nouns (one → many) / အများကိန်း",
     explain: [
       {en:"Add -s to most words to show more than one. Some words are irregular.",
@@ -310,7 +346,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["One book, two books.", "One cat, three cats.", "One child, two children. (irregular)"]
   },
-  {
+  {    level: 2,
     title: "Grammar 5 — This / That / These / Those / ဒီဟာ · ဟိုဟာ",
     explain: [
       {en:"'This/These' = near you. 'That/Those' = far from you. This/That = one thing. These/Those = many things.",
@@ -318,7 +354,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["This is my book.", "That is your house.", "These are my pencils.", "Those are their shoes."]
   },
-  {
+  {    level: 2,
     title: "Grammar 6 — Question words (What, Where, Who) / မေးခွန်းလုံးများ",
     explain: [
       {en:"'What' asks about things, 'Where' asks about places, 'Who' asks about people.",
@@ -326,7 +362,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["What is your name?", "Where do you live?", "Who is your teacher?"]
   },
-  {
+  {    level: 2,
     title: "Grammar 7 — Adjectives (describing words) / နာမဝိသေသန",
     explain: [
       {en:"Adjectives describe nouns. They usually come before the noun.",
@@ -334,7 +370,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["A big elephant.", "A small frog.", "A red apple."]
   },
-  {
+  {    level: 3,
     title: "Grammar 8 — Prepositions of place (in, on, under) / နေရာပြ preposition",
     explain: [
       {en:"'In' = inside. 'On' = on top of. 'Under' = below.",
@@ -342,7 +378,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["The book is on the table.", "The cat is under the chair.", "The pencil is in the bag."]
   },
-  {
+  {    level: 3,
     title: "Grammar 9 — Possessive words (my, your, his, her) / ပိုင်ဆိုင်မှုပြ",
     explain: [
       {en:"These words show who something belongs to.",
@@ -350,7 +386,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["This is my book.", "That is your bag.", "This is his pencil.", "That is her house."]
   },
-  {
+  {    level: 3,
     title: "Grammar 10 — Simple Past (yesterday) / အတိတ်ကာလ",
     explain: [
       {en:"Use the simple past for things that already happened. Many verbs add -ed.",
@@ -358,7 +394,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I played football yesterday.", "She walked to school.", "We ate rice. (irregular)"]
   },
-  {
+  {    level: 3,
     title: "Grammar 11 — Can / Can't (ability) / တတ်ကျွမ်းမှု",
     explain: [
       {en:"'Can' shows you are able to do something. 'Can't' shows you are not able.",
@@ -366,7 +402,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I can swim.", "She can sing.", "He can't fly."]
   },
-  {
+  {    level: 2,
     title: "Grammar 12 — There is / There are / ရှိသည်",
     explain: [
       {en:"'There is' for one thing. 'There are' for many things.",
@@ -374,7 +410,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["There is a cat on the bed.", "There are three books on the table."]
   },
-  {
+  {    level: 4,
     title: "Grammar 13 — Comparative & Superlative / နှိုင်းယှဉ်ခြင်း",
     explain: [
       {en:"Add -er to compare two things. Add -est (with 'the') to compare three or more.",
@@ -382,7 +418,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["This bag is bigger than that one.", "This is the biggest elephant in the zoo.", "She is taller than me."]
   },
-  {
+  {    level: 5,
     title: "Grammar 14 — Past Continuous (was/were + -ing) / ဖြစ်ပျက်နေဆဲအတိတ်",
     explain: [
       {en:"Use 'was/were' + verb-ing for an action that was happening at a certain time in the past.",
@@ -390,7 +426,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I was reading a book at 8pm.", "They were playing football yesterday.", "She was sleeping when I called."]
   },
-  {
+  {    level: 4,
     title: "Grammar 15 — Future with \"going to\" / အနာဂတ်ကာလ (\"going to\")",
     explain: [
       {en:"Use 'am/is/are + going to' to talk about a plan for the future.",
@@ -398,7 +434,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I am going to visit my grandmother.", "It is going to rain.", "We are going to play football tomorrow."]
   },
-  {
+  {    level: 4,
     title: "Grammar 16 — Adverbs of Frequency (always, sometimes, never) / ကြိမ်နှုန်းပြ",
     explain: [
       {en:"These words say how often something happens. They go before the main verb.",
@@ -406,7 +442,7 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["I always eat breakfast.", "She sometimes plays basketball.", "He never eats candy."]
   },
-  {
+  {    level: 4,
     title: "Grammar 17 — Telling Time / အချိန်ပြောခြင်း",
     explain: [
       {en:"Use 'It is + [hour] o'clock' for the exact hour, or 'It is half past / quarter past [hour]'.",
@@ -414,13 +450,61 @@ const GRAMMAR_UNITS = [
     ],
     examples: ["It is three o'clock.", "It is half past seven.", "It is quarter past nine."]
   },
-  {
+  {    level: 5,
     title: "Grammar 18 — Object Pronouns (me, him, her, them) / အရာဝတ္ထုပြ နာမ်စား",
     explain: [
       {en:"Object pronouns replace a noun that receives the action (comes after the verb).",
        my:"Object pronoun တွေက verb ရဲ့ လက်ခံသူ naun ကို အစားထိုးပါတယ် (verb ရဲ့ နောက်မှာ လာပါတယ်)။"}
     ],
     examples: ["I see him.", "She likes me.", "We help them.", "Please give it to her."]
+  },
+  {    level: 6,
+    title: "Grammar 19 — Present Perfect (have/has + past participle) / လက်ရှိစုံလင်ကာလ",
+    explain: [
+      {en:"Use 'have/has + past participle' for something that happened at an unspecified time, or continues into now.",
+       my:"အချိန်အတိအကျ မဖော်ပြဘဲ ဖြစ်ခဲ့တဲ့အရာ (သို့) အခုအချိန်ထိ ဆက်ဖြစ်နေတဲ့အရာအတွက် 'have/has + past participle' သုံးပါ။"}
+    ],
+    examples: ["I have visited Japan.", "She has finished her homework.", "They have lived here for two years."]
+  },
+  {    level: 6,
+    title: "Grammar 20 — Modals of Obligation (must, have to, should) / တာဝန်ပြ modal",
+    explain: [
+      {en:"'Must/have to' show something is necessary. 'Should' gives advice, softer than 'must'.",
+       my:"'Must/have to' က လိုအပ်ချက်ကို ပြပါတယ်။ 'Should' ကတော့ အကြံပြုချက်ဖြစ်ပြီး 'must' ထက် ပိုနူးညံ့ပါတယ်။"}
+    ],
+    examples: ["You must wear a seatbelt.", "I have to finish my homework.", "You should drink more water."]
+  },
+  {    level: 6,
+    title: "Grammar 21 — Relative Clauses (who, which, that) / ဆက်စပ်ပုဒ်ချုပ်",
+    explain: [
+      {en:"'Who' is for people, 'which' is for things, 'that' can be used for both. They add extra information about a noun.",
+       my:"'Who' ကို လူအတွက်၊ 'which' ကို အရာဝတ္ထုအတွက်၊ 'that' ကို နှစ်မျိုးစလုံးအတွက် သုံးနိုင်ပါတယ်။ Naun အကြောင်း အချက်အလက်ထပ်ဖြည့်ပေးပါတယ်။"}
+    ],
+    examples: ["The teacher who teaches English is kind.", "This is the book which I read.", "I have a dog that is very friendly."]
+  },
+  {    level: 6,
+    title: "Grammar 22 — Passive Voice (is/are + past participle) / ကတ္တားဝါစက",
+    explain: [
+      {en:"Use passive voice when the action matters more than who did it.",
+       my:"ဘယ်သူလုပ်တယ်ဆိုတာထက် လုပ်ဆောင်ချက်ကသာ အရေးကြီးတဲ့အခါ Passive voice ကို သုံးပါတယ်။"}
+    ],
+    examples: ["The letter is written by Tom.", "The windows are cleaned every week.", "The cake was eaten by the children."]
+  },
+  {    level: 6,
+    title: "Grammar 23 — First Conditional (If + present, will + verb) / အနာဂတ်အခြေအနေပြ",
+    explain: [
+      {en:"Use 'If + present simple, ... will + verb' to talk about a real possible future result.",
+       my:"အနာဂတ်မှာ ဖြစ်နိုင်ချေရှိတဲ့ ရလဒ်ကို ပြောဖို့ 'If + present simple, ... will + verb' ပုံစံကို သုံးပါတယ်။"}
+    ],
+    examples: ["If it rains, I will stay home.", "If you study hard, you will pass the test.", "If she calls, I will answer."]
+  },
+  {    level: 6,
+    title: "Grammar 24 — Reported Speech (basic) / သွယ်ဝိုက်ပြောစကား",
+    explain: [
+      {en:"When we report what someone said, the verb tense usually moves one step into the past.",
+       my:"တစ်ယောက်ယောက်ပြောတာကို ပြန်ပြောပြတဲ့အခါ verb tense ကို အတိတ်ကာလဆီ တစ်ဆင့် ရွှေ့ပေးရပါတယ်။"}
+    ],
+    examples: ["She said, \"I am tired.\" → She said (that) she was tired.", "He said, \"I will come.\" → He said (that) he would come."]
   }
 ];
 
@@ -552,6 +636,16 @@ const SPEAKING_UNITS = [
    prompts:[
      {en:"Say: \"I am going to visit my friend.\"", my:"ပြောကြည့်ပါ - \"I am going to visit my friend.\""},
      {en:"Say: \"We are going to play football tomorrow.\"", my:"ပြောကြည့်ပါ - \"We are going to play football tomorrow.\""}
+   ]},
+  {title:"Speak 11 — Giving advice / အကြံပေးခြင်း",
+   prompts:[
+     {en:"Say: \"You should drink more water.\"", my:"ပြောကြည့်ပါ - \"You should drink more water.\""},
+     {en:"Say: \"I have to finish my homework.\"", my:"ပြောကြည့်ပါ - \"I have to finish my homework.\""}
+   ]},
+  {title:"Speak 12 — Talking about experiences / အတွေ့အကြုံပြောခြင်း",
+   prompts:[
+     {en:"Say: \"I have visited Yangon.\"", my:"ပြောကြည့်ပါ - \"I have visited Yangon.\""},
+     {en:"Say: \"If it rains, I will stay home.\"", my:"ပြောကြည့်ပါ - \"If it rains, I will stay home.\""}
    ]}
 ];
 
@@ -600,6 +694,15 @@ const READING_UNITS = [
    questions:[
      {en:"What was the writer doing on Saturday morning?", my:"စနေနေ့ မနက်ပိုင်းမှာ ဘာလုပ်နေခဲ့လဲ?"},
      {en:"Who can run faster, the grandmother or the little brother?", my:"ဘယ်သူ ပိုမြန်ပြေးနိုင်လဲ?"}
+   ]},
+  {title:"Read 6 — A New City / မြို့သစ်တစ်ခု",
+   text:"My family has just moved to a new city. It is a place that has a big river and tall mountains nearby. I have never seen such a beautiful place before. You must visit the old market near the river — it is famous for fresh fruit. If you come here, you will love it too.",
+   translation:{
+     my:"ကျွန်တော့်မိသားစု မကြာသေးမီက မြို့သစ်တစ်ခုကို ပြောင်းရွှေ့လာခဲ့ပါတယ်။ ဒါက အနီးနားမှာ ကြီးမားတဲ့ မြစ်နဲ့ တောင်ကုန်းများရှိတဲ့ နေရာဖြစ်ပါတယ်။ ဒီလောက်လှတဲ့ နေရာမျိုး ကျွန်တော် ဒီမတိုင်ခင်က မမြင်ဖူးပါဘူး။ မြစ်ကမ်းနားက ဈေးဟောင်းကို လာလည်ရမှာ ဖြစ်ပါတယ် — အသီးအနှံစိုစို ကောင်းလို့ နာမည်ကြီးပါတယ်။ ဒီကို လာရင် သင်လည်း ကြိုက်သွားလိမ့်မယ်။"
+   },
+   questions:[
+     {en:"What is near the new city?", my:"မြို့သစ်နားမှာ ဘာရှိလဲ?"},
+     {en:"What is the old market famous for?", my:"ဈေးဟောင်းက ဘာနဲ့ နာမည်ကြီးလဲ?"}
    ]}
 ];
 
@@ -628,6 +731,11 @@ const WRITING_UNITS = [
    instructions:{
      en:"Write 2 sentences comparing two animals or people, using -er and -est. Example: A tiger is faster than a cow.",
      my:"တိရစ္ဆာန် (သို့) လူနှစ်ဦးကို -er/-est သုံးပြီး နှိုင်းယှဉ် ဝါကျ ၂ ကြောင်း ရေးပါ။ ဥပမာ - A tiger is faster than a cow."
+   }},
+  {title:"Write 6 — Places I Have Visited / ကျွန်တော်သွားဖူးတဲ့နေရာများ",
+   instructions:{
+     en:"Write 2 sentences using: I have visited ___. I have never visited ___.",
+     my:"ဝါကျ ၂ ကြောင်း ရေးပါ - I have visited ___. I have never visited ___."
    }}
 ];
 
@@ -702,5 +810,17 @@ const WORKBOOK_QUESTIONS = [
    options:["Sad","Angry","Happy","Scared"], answer:"Happy"},
   {id:"w41", type:"fill", q:{en:"Fill in: I ___ a book every night. (ဖတ်)"}, answer:"read"},
   {id:"w42", type:"mcq", q:{en:"Which word means very tired and want to close your eyes?"},
-   options:["Hungry","Tired","Excited","Thirsty"], answer:"Tired"}
+   options:["Hungry","Tired","Excited","Thirsty"], answer:"Tired"},
+  {id:"w43", type:"mcq", q:{en:"\"I ___ visited Japan.\" (present perfect)"},
+   options:["has","have","having","had"], answer:"have"},
+  {id:"w44", type:"mcq", q:{en:"\"You ___ wear a seatbelt.\" (it is necessary)"},
+   options:["should","must","can","may"], answer:"must"},
+  {id:"w45", type:"fill", q:{en:"Fill in: This is the book ___ I read. (which/who)"}, answer:"which"},
+  {id:"w46", type:"mcq", q:{en:"\"The cake ___ eaten by the children.\" (passive voice)"},
+   options:["is","do","have","are"], answer:"is"},
+  {id:"w47", type:"mcq", q:{en:"\"If it rains, I ___ stay home.\""},
+   options:["will","would","was","did"], answer:"will"},
+  {id:"w48", type:"fill", q:{en:"Fill in: I use my ___ to call people. (ဖုန်း)"}, answer:"phone"},
+  {id:"w49", type:"mcq", q:{en:"Which word means a large area of trees?"},
+   options:["River","Mountain","Forest","Ocean"], answer:"Forest"}
 ];
