@@ -36,24 +36,31 @@ Workbook (quiz) ပါဝင်ပါတယ်။
    (Firebase config ကို empty ထားခဲ့ရင် Google Script ကိုပဲ အသုံးပြုပါလိမ့်မယ်)
 
 ## လက်ရှိပါဝင်သော content (Level 1-5 scope, Let's Go style)
-- **Words**: unit ၁၆ ခု၊ စကားလုံး ၁၂၁ လုံး — Greetings→Occupations + Time, Sports, Transportation (Level 5 topics)
+- **Words**: unit ၂၀ ခု၊ စကားလုံး ၁၅၅ လုံး — Greetings→Occupations, Time/Sports/Transportation (Level 5),
+  School Items, Household Items, Feelings, Common Verbs
 - **Grammar**: unit ၁၈ ခု — Basic (sentence, to be, present) → Level 5 (comparatives, past continuous,
   going-to future, frequency adverbs, telling time, object pronouns)
 - **Listening**: verified video ၉ ခု (supersimple.com)
-- **Speaking**: unit ၁၀ ခု (mic + instant check ပါ)
+- **Speaking**: unit ၁၀ ခု (mic + instant check) **+ 💬 Dialogue Practice (conversation ၃ ခု, အလှည့်ကျ)**
 - **Reading**: unit ၅ ခု
 - **Writing**: unit ၅ ခု
-- **Workbook**: မေးခွန်း ၃၇ ခု
+- **Workbook**: မေးခွန်း ၄၃ ခု
 
-## 🔊 အသံနှင့် 🎤 Mic feature အသစ်များ
-- **Listening tab**: unit တစ်ခုစီအောက်မှာ 🔊 speaker ခလုတ် ထည့်ထားပါတယ် — အဓိကစကားစုကို ပြန်ဖွင့်နားထောင်နိုင်ပါတယ်
-- **Speaking tab**: prompt တစ်ခုစီအောက်မှာ 🎤 mic ခလုတ် ထည့်ထားပါတယ် — နှိပ်ပြီး English လိုပြောကြည့်ပါ။
-  ကလေးပြောတာကို browser ရဲ့ Speech Recognition နဲ့ တစ်ခါထဲ (instant) စစ်ပေးပြီး
-  ✅ မှန်တယ် (သို့) ❌ ထပ်ကြိုးစားပါ လို့ ချက်ချင်း ပြပေးပါတယ်
-  (Chrome/Edge browser မှာ အကောင်းဆုံး အလုပ်လုပ်ပါတယ်၊ Firefox အချို့မှာ အလုပ်မလုပ်နိုင်ပါ)
-- **Voice ရွေးချယ်ခွင့်**: Home tab အောက်ဆုံးမှာ "🔊 Voice" dropdown ထည့်ထားပါတယ် —
-  စက်/browser ပေါ်မူတည်ပြီး ရနိုင်တဲ့ အသံများထဲက အကောင်းဆုံး၊ AI ဆန်မှုအနည်းဆုံး အသံကို
-  အလိုအလျောက် ရွေးပေးပါတယ်၊ ကိုယ်တိုင်လည်း ပြောင်းရွေးနိုင်ပါတယ် (ရွေးထားတာကို memory ထဲ မှတ်ထားပါတယ်)
+## 💬 Dialogue Practice အသစ် ("မင်းတစ်ကြောင်း ငါတစ်ကြောင်း")
+Speaking tab ရဲ့ ထိပ်ဆုံးမှာ Dialogue ၃ ခု ထည့်ထားပါတယ် (Meeting a Friend, At School, Buying Food) —
+Dialogue ရွေးပြီး Start နှိပ်ရင်:
+- **App line**: website ကိုယ်တိုင် အသံထွက်ပြောပြီး ဖတ်ပြပေးပါတယ်
+- **You line**: 🎤 နှိပ်ပြီး ကလေးက English လိုပြောရမှာ — ✅/❌ ချက်ချင်း သိရပါတယ်
+- မှန်ရင် နောက်တစ်ကြောင်းကို အလိုအလျောက် ဆက်ပြောပေးပါတယ်
+`data.js` ရဲ့ `DIALOGUES` array ထဲမှာ ပုံစံအတိုင်း Dialogue အသစ် ထပ်ထည့်နိုင်ပါတယ်။
+
+## 🔧 Voice bug ပြင်ပြီးပါပြီ
+အရင်က online voice (Google) ကို timeout ဖြစ်နေပြီး browser voice (robot-သံ) ကိုပဲ အမြဲသုံးနေခဲ့ပါတယ်။
+ယခု ပြင်ပြီးပါပြီ — audio ကို တိုက်ရိုက် play() လုပ်အောင် ပြောင်းလိုက်တာဖြစ်လို့ online natural voice က
+ယခင်ထက် ပိုမှန်ကန်စွာ အလုပ်လုပ်သင့်ပါတယ်။ ဒါပေမယ့် ၎င်းသည် unofficial Google endpoint ဖြစ်တဲ့အတွက်
+network/browser အနေအထားပေါ်မူတည်ပြီး တစ်ခါတစ်ရံ fail နိုင်ပါသေးတယ် — ဖြစ်ရင် app က
+offline browser voice ကို အလိုအလျောက် ပြန်ပြောင်းပါလိမ့်မယ်။
+100% အာမခံ human voice လိုချင်ရင် အောက်က `AUDIO_MAP` section ကို ကြည့်ပါ။
 
 ## 🗣️ "လူ့အသံ" (Human Voice) အကြောင်း — ရိုးရိုးသားသား ရှင်းပြချင်ပါတယ်
 ကျွန်တော် (Claude) က **တကယ့်လူတစ်ဦးရဲ့ အသံအစစ်ကို ဖန်တီးပေးလို့ မရပါဘူး** — ဒါက AI စာသားနဲ့ အလုပ်လုပ်တာဖြစ်လို့ အသံဖိုင် (mp3) ကို အစအဆုံး တီထွင်ပေးလို့ မဖြစ်နိုင်ပါဘူး။ ဒါပေမယ့် အောက်ပါအတိုင်း အကောင်းဆုံးအဖြေ ၃ မျိုး ပြင်ဆင်ပေးထားပါတယ်:

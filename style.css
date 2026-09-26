@@ -90,6 +90,9 @@ main{padding:10px 18px 40px;max-width:760px;margin:0 auto}
 
 #voiceSettingBox select{width:100%;padding:10px;border-radius:10px;border:2px solid #ddd;margin-top:8px}
 
+#dialogueBox select{width:100%;padding:10px;border-radius:10px;border:2px solid #ddd;margin:8px 0}
+.dlg-line{background:#F1F8FF;padding:8px 12px;border-radius:8px;margin-bottom:6px}
+
 .q-block{background:var(--card);border-radius:14px;padding:16px;margin-bottom:12px;box-shadow:0 2px 0 rgba(0,0,0,0.06)}
 .q-block p.q-text{font-weight:800;margin-bottom:8px}
 .q-options label{display:block;padding:8px 10px;border-radius:8px;margin-bottom:6px;background:var(--paper);cursor:pointer}

@@ -220,6 +220,60 @@ const VOCAB_UNITS = [
       {emoji:"🚆", en:"Train", my:"ရထား", hi:"ट्रेन"},
       {emoji:"🏍️", en:"Motorbike", my:"မော်တော်ဆိုင်ကယ်", hi:"मोटरसाइकिल"}
     ]
+  },
+  {
+    title: "Unit 17 — School Items / ကျောင်းသုံးပစ္စည်းများ · स्कूल की चीज़ें",
+    words: [
+      {emoji:"🎒", en:"Bag", my:"အိတ်", hi:"बैग"},
+      {emoji:"📓", en:"Notebook", my:"မှတ်စုစာအုပ်", hi:"नोटबुक"},
+      {emoji:"✏️", en:"Eraser", my:"ခဲဖျက်", hi:"रबड़"},
+      {emoji:"📏", en:"Ruler", my:"ပေတံ", hi:"स्केल"},
+      {emoji:"🖍️", en:"Crayon", my:"ခရာအရောင်ခဲ", hi:"क्रेयॉन"},
+      {emoji:"🎨", en:"Paint", my:"ဆေးရေး", hi:"रंग"},
+      {emoji:"⌚", en:"Clock", my:"နာရီ", hi:"घड़ी"},
+      {emoji:"🖊️", en:"Pen", my:"ဘောပင်", hi:"पेन"}
+    ]
+  },
+  {
+    title: "Unit 18 — Household Items / အိမ်သုံးပစ္စည်းများ · घरेलू सामान",
+    words: [
+      {emoji:"🛏️", en:"Bed", my:"ကုတင်", hi:"बिस्तर"},
+      {emoji:"🪑", en:"Chair", my:"ကုလားထိုင်", hi:"कुर्सी"},
+      {emoji:"🍽️", en:"Plate", my:"ပန်းကန်", hi:"थाली"},
+      {emoji:"🥄", en:"Spoon", my:"ဇွန်း", hi:"चम्मच"},
+      {emoji:"🚪", en:"Door", my:"တံခါး", hi:"दरवाज़ा"},
+      {emoji:"🪟", en:"Window", my:"ပြတင်းပေါက်", hi:"खिड़की"},
+      {emoji:"💡", en:"Light", my:"မီးလုံး", hi:"बत्ती"},
+      {emoji:"🧹", en:"Broom", my:"တံမြက်စည်း", hi:"झाड़ू"}
+    ]
+  },
+  {
+    title: "Unit 19 — Feelings / ခံစားချက်များ · भावनाएँ",
+    words: [
+      {emoji:"😊", en:"Happy", my:"ပျော်ရွှင်", hi:"खुश"},
+      {emoji:"😢", en:"Sad", my:"စိတ်မကောင်း", hi:"उदास"},
+      {emoji:"😠", en:"Angry", my:"စိတ်ဆိုး", hi:"गुस्सा"},
+      {emoji:"😨", en:"Scared", my:"ကြောက်", hi:"डरा हुआ"},
+      {emoji:"😴", en:"Tired", my:"မောပန်း", hi:"थका हुआ"},
+      {emoji:"🤗", en:"Excited", my:"စိတ်လှုပ်ရှား", hi:"उत्साहित"},
+      {emoji:"😋", en:"Hungry", my:"ဗိုက်ဆာ", hi:"भूखा"},
+      {emoji:"🥵", en:"Thirsty", my:"ရေဆာ", hi:"प्यासा"}
+    ]
+  },
+  {
+    title: "Unit 20 — Common Verbs (Action Words) / ပြုမူကြိယာ · सामान्य क्रियाएँ",
+    words: [
+      {emoji:"🏃", en:"Run", my:"ပြေး", hi:"दौड़ना"},
+      {emoji:"🚶", en:"Walk", my:"လမ်းလျှောက်", hi:"चलना"},
+      {emoji:"🍽️", en:"Eat", my:"စား", hi:"खाना"},
+      {emoji:"🥤", en:"Drink", my:"သောက်", hi:"पीना"},
+      {emoji:"😴", en:"Sleep", my:"အိပ်", hi:"सोना"},
+      {emoji:"📖", en:"Read", my:"ဖတ်", hi:"पढ़ना"},
+      {emoji:"✍️", en:"Write", my:"ရေး", hi:"लिखना"},
+      {emoji:"👂", en:"Listen", my:"နားထောင်", hi:"सुनना"},
+      {emoji:"🗣️", en:"Speak", my:"ပြော", hi:"बोलना"},
+      {emoji:"🧼", en:"Wash", my:"ဆေး", hi:"धोना"}
+    ]
   }
 ];
 
@@ -427,6 +481,45 @@ const LISTENING_UNITS = [
    note:{en:"Listen for: sunny, rainy, cloudy, snowy.", my:"sunny, rainy, cloudy, snowy — ရာသီဥတုစကားလုံးများကို နားထောင်ပါ။", hi:"मौसम के शब्द सुनें: sunny, rainy, cloudy, snowy."}}
 ];
 
+// ============================================================
+// DIALOGUES — "You say a line, I say a line" turn-by-turn
+// conversation practice. speaker "App" = the website speaks it
+// out loud for you. speaker "You" = you tap the mic and say it.
+// ============================================================
+const DIALOGUES = [
+  {
+    title: "Dialogue 1 — Meeting a Friend / သူငယ်ချင်းနှင့်တွေ့ခြင်း · दोस्त से मिलना",
+    lines: [
+      {speaker:"App", en:"Hello! What is your name?", my:"မင်္ဂလာပါ! နာမည်ဘယ်လိုခေါ်လဲ?", hi:"नमस्ते! आपका नाम क्या है?"},
+      {speaker:"You", en:"Hello! My name is ___.", my:"မင်္ဂလာပါ! ကျွန်တော့်နာမည် ___ ပါ။", hi:"नमस्ते! मेरा नाम ___ है।"},
+      {speaker:"App", en:"Nice to meet you! How are you?", my:"တွေ့ရတာ ဝမ်းသာပါတယ်! နေကောင်းလား?", hi:"आपसे मिलकर खुशी हुई! आप कैसे हैं?"},
+      {speaker:"You", en:"I am fine, thank you!", my:"ကျွန်တော် ကောင်းပါတယ်၊ ကျေးဇူးတင်ပါတယ်!", hi:"मैं ठीक हूँ, धन्यवाद!"},
+      {speaker:"App", en:"Goodbye! See you later.", my:"သွားတော့မယ်! နောက်မှတွေ့မယ်။", hi:"अलविदा! फिर मिलेंगे।"},
+      {speaker:"You", en:"Goodbye!", my:"သွားတော့မယ်!", hi:"अलविदा!"}
+    ]
+  },
+  {
+    title: "Dialogue 2 — At School / ကျောင်းမှာ · स्कूल में",
+    lines: [
+      {speaker:"App", en:"Good morning! What do you have in your bag?", my:"မင်္ဂလာနံနက်ခင်းပါ! အိတ်ထဲမှာ ဘာရှိလဲ?", hi:"सुप्रभात! आपके बैग में क्या है?"},
+      {speaker:"You", en:"I have a book and a pencil.", my:"ကျွန်တော့်မှာ စာအုပ်နဲ့ ခဲတံရှိပါတယ်။", hi:"मेरे पास एक किताब और एक पेंसिल है।"},
+      {speaker:"App", en:"Do you like English?", my:"အင်္ဂလိပ်စာကို သဘောကျလား?", hi:"क्या आपको अंग्रेज़ी पसंद है?"},
+      {speaker:"You", en:"Yes, I like English very much.", my:"ဟုတ်ကဲ့၊ အင်္ဂလိပ်စာကို အရမ်းသဘောကျပါတယ်။", hi:"हाँ, मुझे अंग्रेज़ी बहुत पसंद है।"},
+      {speaker:"App", en:"Great! See you in class.", my:"ကောင်းလိုက်တာ! အတန်းထဲမှာ တွေ့မယ်။", hi:"बहुत बढ़िया! कक्षा में मिलते हैं।"}
+    ]
+  },
+  {
+    title: "Dialogue 3 — Buying Food / အစားအစာဝယ်ခြင်း · खाना खरीदना",
+    lines: [
+      {speaker:"App", en:"Hello! What do you want to buy?", my:"မင်္ဂလာပါ! ဘာဝယ်ချင်လဲ?", hi:"नमस्ते! आप क्या खरीदना चाहते हैं?"},
+      {speaker:"You", en:"I want an apple and some milk, please.", my:"ကျွန်တော် ပန်းသီးနဲ့ နို့ ဝယ်ချင်ပါတယ်။", hi:"मुझे एक सेब और थोड़ा दूध चाहिए।"},
+      {speaker:"App", en:"Here you are. Anything else?", my:"ဒီမှာပါ။ နောက်ထပ် ရှိသေးလား?", hi:"यह लीजिए। और कुछ चाहिए?"},
+      {speaker:"You", en:"No, thank you.", my:"မလိုတော့ပါဘူး၊ ကျေးဇူးတင်ပါတယ်။", hi:"नहीं, धन्यवाद।"},
+      {speaker:"App", en:"You're welcome. Have a nice day!", my:"ရပါတယ်။ နေ့လေးကောင်းပါစေ!", hi:"कोई बात नहीं। आपका दिन शुभ हो!"}
+    ]
+  }
+];
+
 const SPEAKING_UNITS = [
   {title:"Speak 1 — Introduce yourself / မိတ်ဆက်ခြင်း · परिचय",
    prompts:[
@@ -629,5 +722,13 @@ const WORKBOOK_QUESTIONS = [
   {id:"w36", type:"mcq", q:{en:"Which vehicle flies in the sky?"},
    options:["Bus","Boat","Airplane","Bicycle"], answer:"Airplane"},
   {id:"w37", type:"mcq", q:{en:"Which sport uses a ball and a hoop/basket?"},
-   options:["Swimming","Basketball","Cycling","Running"], answer:"Basketball"}
+   options:["Swimming","Basketball","Cycling","Running"], answer:"Basketball"},
+  {id:"w38", type:"fill", q:{en:"Fill in: I write with a ___. (ဘောပင် / पेन)"}, answer:"pen"},
+  {id:"w39", type:"mcq", q:{en:"Which one do you sleep on?"},
+   options:["Chair","Plate","Bed","Door"], answer:"Bed"},
+  {id:"w40", type:"mcq", q:{en:"Which word means 'ပျော်ရွှင် / खुश'?"},
+   options:["Sad","Angry","Happy","Scared"], answer:"Happy"},
+  {id:"w41", type:"fill", q:{en:"Fill in: I ___ a book every night. (ဖတ် / पढ़ना)"}, answer:"read"},
+  {id:"w42", type:"mcq", q:{en:"Which word means very tired and want to close your eyes?"},
+   options:["Hungry","Tired","Excited","Thirsty"], answer:"Tired"}
 ];

@@ -71,25 +71,17 @@ function speak(text){
   }
 }
 
-// A more natural-sounding free online voice (Google's speech service).
+// A natural-sounding free online voice (Google's speech service).
 // This is an unofficial, undocumented endpoint — it usually works great,
-// but it isn't guaranteed forever, so we always fall back safely.
+// but it isn't guaranteed forever, so we always fall back safely to the
+// device's own voice if it ever fails.
 function tryOnlineVoice(text){
   return new Promise((resolve, reject)=>{
     try{
       const url = 'https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=' + encodeURIComponent(text.slice(0,200));
       const audio = new Audio(url);
-      let settled = false;
-      const timer = setTimeout(()=>{ if(!settled){ settled=true; reject(new Error('timeout')); } }, 2500);
-      audio.addEventListener('canplaythrough', ()=>{
-        if(settled) return;
-        settled = true; clearTimeout(timer);
-        audio.play().then(resolve).catch(reject);
-      });
-      audio.addEventListener('error', ()=>{
-        if(settled) return;
-        settled = true; clearTimeout(timer); reject(new Error('load error'));
-      });
+      audio.onerror = ()=> reject(new Error('google tts load error'));
+      audio.play().then(resolve).catch(reject);
     }catch(e){ reject(e); }
   });
 }
@@ -230,6 +222,111 @@ document.getElementById('speakingUnits').addEventListener('click', e=>{
   };
   rec.start();
 });
+
+// ---- Dialogue Practice: "I say a line, you say a line" ----
+let currentDialogue = null;
+let currentLineIndex = 0;
+let dialogueHistory = [];
+
+const dialogueSelect = document.getElementById('dialogueSelect');
+if(dialogueSelect){
+  dialogueSelect.innerHTML = DIALOGUES.map((d,i)=>`<option value="${i}">${d.title}</option>`).join('');
+  document.getElementById('dialogueStartBtn').addEventListener('click', ()=>{
+    currentDialogue = DIALOGUES[parseInt(dialogueSelect.value, 10)];
+    currentLineIndex = 0;
+    dialogueHistory = [];
+    renderDialogueStage();
+  });
+}
+
+function renderDialogueStage(){
+  const stage = document.getElementById('dialogueStage');
+  if(!currentDialogue){ stage.innerHTML = ''; return; }
+
+  let historyHtml = dialogueHistory.map(h=>
+    `<p class="dlg-line"><b>${h.speaker==='App' ? '🤖 App' : '🧑 You'}:</b> ${h.said || h.en}</p>`
+  ).join('');
+
+  if(currentLineIndex >= currentDialogue.lines.length){
+    stage.innerHTML = historyHtml +
+      `<p class="mic-feedback ok">🎉 Great job! Dialogue complete. / ပြီးပါပြီ! ကောင်းလိုက်တာ! / संवाद पूरा हुआ! बहुत बढ़िया!</p>`;
+    return;
+  }
+
+  const line = currentDialogue.lines[currentLineIndex];
+
+  if(line.speaker === 'App'){
+    stage.innerHTML = historyHtml + `
+      <div class="example">
+        <p><b>🤖 App says:</b> ${line.en}</p>
+        <p><b>MY:</b> ${line.my}</p>
+        <p><b>HI:</b> ${line.hi}</p>
+        <button class="btn-secondary" id="dlgNextBtn">Next ▶ / ရှေ့ဆက်မယ် / आगे बढ़ें</button>
+      </div>`;
+    speak(line.en);
+    document.getElementById('dlgNextBtn').onclick = ()=>{
+      dialogueHistory.push({speaker:'App', en: line.en});
+      currentLineIndex++;
+      renderDialogueStage();
+    };
+    return;
+  }
+
+  // line.speaker === 'You'
+  const micHtml = SR
+    ? `<button class="mic-btn" id="dlgMicBtn">🎤 Your turn — Speak / မင်းအလှည့် / आपकी बारी</button>`
+    : `<p class="tri small">🎤 EN: Voice check not supported here — read it, then tap Skip. · MY: ဒီ browser မှာ mic အလုပ်မလုပ်ပါ — ဖတ်ပြီး Skip နှိပ်ပါ။ · HI: यहाँ आवाज़ जांच उपलब्ध नहीं है — पढ़ें, फिर Skip दबाएं।</p>
+       <button class="btn-secondary" id="dlgSkipBtn">Skip ▶</button>`;
+  stage.innerHTML = historyHtml + `
+    <div class="example">
+      <p><b>🧑 You say:</b> ${line.en}</p>
+      <p><b>MY:</b> ${line.my}</p>
+      <p><b>HI:</b> ${line.hi}</p>
+      ${micHtml}
+      <p class="mic-feedback" id="dlgFeedback"></p>
+    </div>`;
+
+  const skipBtn = document.getElementById('dlgSkipBtn');
+  if(skipBtn){
+    skipBtn.onclick = ()=>{
+      dialogueHistory.push({speaker:'You', en: line.en});
+      currentLineIndex++;
+      renderDialogueStage();
+    };
+    return;
+  }
+
+  const fb = document.getElementById('dlgFeedback');
+  document.getElementById('dlgMicBtn').onclick = ()=>{
+    fb.textContent = '🎙️ Listening... / နားထောင်နေသည်... / सुन रहा है...';
+    fb.className = 'mic-feedback';
+    const rec = new SR();
+    rec.lang = 'en-US';
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+    rec.onresult = ev=>{
+      const said = ev.results[0][0].transcript;
+      const saidNorm = normalize(said);
+      const target = normalize(extractTarget(line.en));
+      const isClose = saidNorm.includes(target) || target.includes(saidNorm) ||
+        target.split(' ').filter(w=>w && saidNorm.includes(w)).length >= Math.max(1, Math.ceil(target.split(' ').length*0.6));
+      if(isClose){
+        fb.textContent = `✅ Great! You said: "${said}"`;
+        fb.className = 'mic-feedback ok';
+        dialogueHistory.push({speaker:'You', en: line.en, said});
+        setTimeout(()=>{ currentLineIndex++; renderDialogueStage(); }, 900);
+      } else {
+        fb.textContent = `❌ Try again. You said: "${said}"`;
+        fb.className = 'mic-feedback bad';
+      }
+    };
+    rec.onerror = ()=>{
+      fb.textContent = '⚠️ Could not hear you. Try again. / ပြန်ကြိုးစားပါ။ / फिर से कोशिश करें।';
+      fb.className = 'mic-feedback bad';
+    };
+    rec.start();
+  };
+}
 
 // ---- Render: Reading ----
 const readingWrap = document.getElementById('readingUnits');
