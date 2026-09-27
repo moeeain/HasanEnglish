@@ -7,7 +7,7 @@ Workbook (quiz) ပါဝင်ပါတယ်။
 
 ## 🆕 နောက်ဆုံးထပ်ဖြည့်ချက်များ
 - **📖 Reading passages တွေ ပိုရှည်အောင် ပြင်ပြီးပါပြီ** — Let's Go readers လို စာပိုဒ်ရှည်ရှည် (word ၁၅၀-၂၄၀ လောက်) ဖြစ်အောင် unit ၆ ခုလုံးကို ပြန်ရေးထားပါတယ်၊ မေးခွန်း ၄ ခုစီ ပါဝင်ပါတယ်
-- **🔽 Level dropdown filter** — Vocabulary/Grammar tab နှစ်ခုစလုံးမှာ Level ရွေးလို့ရတဲ့ dropdown ထည့်ထားပါတယ် — "All Levels" (သို့) Level 1-6 တစ်ခုချင်းစီကို ရွေးကြည့်လို့ရပါတယ်
+- **📘 Level ရွေးချယ်ခြင်း (Home tab)** — Home tab ပေါ်မှာ Level ရွေးလို့ရတဲ့ dropdown ထည့်ထားပါတယ် — Level 1-6 (သို့) "All Levels" ရွေးလိုက်ရင် **Vocabulary/Grammar tab နှစ်ခုစလုံးမှာ** အဲဒီ Level ကိုပဲ အလိုအလျောက် ပြပေးပါလိမ့်မယ်။ Vocabulary/Grammar tab ထဲက dropdown နဲ့လည်း အပြန်အလှန် sync ဖြစ်ပြီး ရွေးထားတာကို device ပေါ်မှာ မှတ်ထားပါလိမ့်မယ်
 - **👤 Your Name** — Home tab အောက်ပိုင်းမှာ နာမည်ရိုက်ထည့်နိုင်ပါတယ် — device ပေါ်မှာ မှတ်ထားပြီး Workbook score သိမ်းတဲ့အခါ နာမည်ကို အလိုအလျောက် ဖြည့်ပေးပါလိမ့်မယ်
 
 ## ဖိုင်များ

@@ -310,6 +310,184 @@ const VOCAB_UNITS = [
       {emoji:"➡️", en:"Right", my:"ညာဘက်"},
       {emoji:"⬆️", en:"Straight", my:"တည့်တည့်"}
     ]
+  },
+  {    level: 1,
+    title: "Unit 24 — Fruits / အသီးအနှံများ",
+    words: [
+      {emoji:"🍎", en:"Apple", my:"ပန်းသီး"},
+      {emoji:"🍌", en:"Banana", my:"ငှက်ပျောသီး"},
+      {emoji:"🍊", en:"Orange", my:"လိမ္မော်သီး"},
+      {emoji:"🍇", en:"Grapes", my:"စပျစ်သီး"},
+      {emoji:"🍉", en:"Watermelon", my:"ဖရဲသီး"},
+      {emoji:"🥭", en:"Mango", my:"သရက်သီး"},
+      {emoji:"🍍", en:"Pineapple", my:"နာနတ်သီး"},
+      {emoji:"🍓", en:"Strawberry", my:"စတော်ဘယ်ရီသီး"}
+    ]
+  },
+  {    level: 1,
+    title: "Unit 25 — Vegetables / ဟင်းသီးဟင်းရွက်များ",
+    words: [
+      {emoji:"🥕", en:"Carrot", my:"မုန်လာဥနီ"},
+      {emoji:"🥔", en:"Potato", my:"အာလူး"},
+      {emoji:"🍅", en:"Tomato", my:"ခရမ်းချဉ်သီး"},
+      {emoji:"🧅", en:"Onion", my:"ကြက်သွန်နီ"},
+      {emoji:"🥬", en:"Cabbage", my:"ဂေါ်ဖီထုပ်"},
+      {emoji:"🌽", en:"Corn", my:"ပြောင်းဖူး"},
+      {emoji:"🥒", en:"Cucumber", my:"သခွားသီး"},
+      {emoji:"🫑", en:"Pepper", my:"ငရုတ်သီး"}
+    ]
+  },
+  {    level: 1,
+    title: "Unit 26 — Seasons / ရာသီများ",
+    words: [
+      {emoji:"☀️", en:"Summer", my:"နွေရာသီ"},
+      {emoji:"🌧️", en:"Rainy season", my:"မိုးရာသီ"},
+      {emoji:"🍂", en:"Autumn", my:"ဆောင်းဦးရာသီ"},
+      {emoji:"❄️", en:"Winter", my:"ဆောင်းရာသီ"},
+      {emoji:"🌸", en:"Spring", my:"နွေဦးရာသီ"}
+    ]
+  },
+  {    level: 2,
+    title: "Unit 27 — Toys / ကစားစရာများ",
+    words: [
+      {emoji:"🪀", en:"Yo-yo", my:"ယိုယို"},
+      {emoji:"🎈", en:"Balloon", my:"ဗူးဖောင်း"},
+      {emoji:"🧸", en:"Teddy bear", my:"ဝက်အူဖုတ်ရုပ်"},
+      {emoji:"🪁", en:"Kite", my:"လေယာဉ်ပုံပန်း"},
+      {emoji:"🎲", en:"Dice", my:"တဲကွက်"},
+      {emoji:"🚗", en:"Toy car", my:"ကစားစရာကား"},
+      {emoji:"⚽", en:"Ball", my:"ဘောလုံး"}
+    ]
+  },
+  {    level: 2,
+    title: "Unit 28 — Kitchen Items / မီးဖိုချောင်သုံးပစ္စည်းများ",
+    words: [
+      {emoji:"🍳", en:"Pan", my:"ဒယ်အိုး"},
+      {emoji:"🥘", en:"Pot", my:"အိုးကင်း"},
+      {emoji:"🔪", en:"Knife", my:"ဓား"},
+      {emoji:"🥣", en:"Bowl", my:"ခွက်"},
+      {emoji:"🍴", en:"Fork", my:"ခက်ရင်း"},
+      {emoji:"🧊", en:"Ice", my:"ရေခဲ"},
+      {emoji:"🧂", en:"Salt", my:"ဆား"}
+    ]
+  },
+  {    level: 2,
+    title: "Unit 29 — Opposites / ဆန့်ကျင်ဘက်စကားလုံးများ",
+    words: [
+      {emoji:"⬆️⬇️", en:"Big / Small", my:"ကြီးသည် / သေးသည်"},
+      {emoji:"🔥❄️", en:"Hot / Cold", my:"ပူသည် / အေးသည်"},
+      {emoji:"⚡🐌", en:"Fast / Slow", my:"မြန်သည် / နှေးသည်"},
+      {emoji:"📈📉", en:"New / Old", my:"အသစ် / အဟောင်း"},
+      {emoji:"😊😢", en:"Happy / Sad", my:"ပျော်သည် / ဝမ်းနည်းသည်"},
+      {emoji:"🔊🔇", en:"Loud / Quiet", my:"အသံကျယ် / တိတ်ဆိတ်"},
+      {emoji:"⬆️⬇️", en:"Up / Down", my:"အပေါ် / အောက်"}
+    ]
+  },
+  {    level: 3,
+    title: "Unit 30 — Music & Instruments / ဂီတနှင့် တူရိယာများ",
+    words: [
+      {emoji:"🎸", en:"Guitar", my:"ဂီတာ"},
+      {emoji:"🥁", en:"Drum", my:"စည်"},
+      {emoji:"🎹", en:"Piano", my:"ပီယာနို"},
+      {emoji:"🎤", en:"Microphone", my:"မိုက်ခရိုဖုန်း"},
+      {emoji:"🎻", en:"Violin", my:"ဗားရီယိုလင်း"},
+      {emoji:"🎵", en:"Song", my:"သီချင်း"},
+      {emoji:"💃", en:"Dance", my:"အကမြေ"}
+    ]
+  },
+  {    level: 3,
+    title: "Unit 31 — Health & Illness / ကျန်းမာရေးနှင့် ဖျားနာမှု",
+    words: [
+      {emoji:"🤒", en:"Fever", my:"ဖျားခြင်း"},
+      {emoji:"🤧", en:"Cold (illness)", my:"အအေးမိခြင်း"},
+      {emoji:"🤕", en:"Headache", my:"ခေါင်းကိုက်ခြင်း"},
+      {emoji:"🤢", en:"Stomachache", my:"ဗိုက်ကိုက်ခြင်း"},
+      {emoji:"💊", en:"Medicine", my:"ဆေးဝါး"},
+      {emoji:"🏥", en:"Hospital", my:"ဆေးရုံ"},
+      {emoji:"🩹", en:"Bandage", my:"ပတ်တီး"}
+    ]
+  },
+  {    level: 3,
+    title: "Unit 32 — Sports Equipment / အားကစားပစ္စည်းများ",
+    words: [
+      {emoji:"⚽", en:"Football", my:"ဘောလုံး"},
+      {emoji:"🏓", en:"Table tennis bat", my:"စားပွဲတင်တင်းနစ်ဒုတ်"},
+      {emoji:"🏸", en:"Racket", my:"ရက်ကက်"},
+      {emoji:"🏊", en:"Goggles", my:"ရေကူးမျက်မှန်"},
+      {emoji:"⛑️", en:"Helmet", my:"ဦးထုတ်သံဖုံး"},
+      {emoji:"👟", en:"Sports shoes", my:"အားကစားဖိနပ်"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 33 — Hobbies / ဝါသနာများ",
+    words: [
+      {emoji:"📸", en:"Photography", my:"ဓာတ်ပုံရိုက်ခြင်း"},
+      {emoji:"🎨", en:"Drawing", my:"ပုံဆွဲခြင်း"},
+      {emoji:"📚", en:"Reading books", my:"စာအုပ်ဖတ်ခြင်း"},
+      {emoji:"🎮", en:"Playing games", my:"ဂိမ်းကစားခြင်း"},
+      {emoji:"🌱", en:"Gardening", my:"ဥယျာဉ်ပြုစုခြင်း"},
+      {emoji:"🧵", en:"Sewing", my:"ချုပ်ခြင်း"},
+      {emoji:"🍳", en:"Cooking", my:"ဟင်းချက်ခြင်း"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 34 — Money & Shopping / ငွေကြေးနှင့် ဈေးဝယ်ခြင်း",
+    words: [
+      {emoji:"💵", en:"Money", my:"ငွေ"},
+      {emoji:"🏷️", en:"Price", my:"စျေးနှုန်း"},
+      {emoji:"🛍️", en:"Shopping bag", my:"ဈေးဝယ်အိတ်"},
+      {emoji:"💰", en:"Coin", my:"အကြေးငွေ"},
+      {emoji:"🧾", en:"Receipt", my:"ဘောက်ချာ"},
+      {emoji:"🤑", en:"Expensive", my:"စျေးကြီးသည်"},
+      {emoji:"🪙", en:"Cheap", my:"စျေးသက်သာသည်"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 35 — Travel & Holidays / ခရီးသွားခြင်းနှင့် ခရီးစဉ်များ",
+    words: [
+      {emoji:"🧳", en:"Suitcase", my:"ခရီးဆောင်သေတ္တာ"},
+      {emoji:"🎫", en:"Ticket", my:"လက်မှတ်"},
+      {emoji:"🏨", en:"Hotel", my:"ဟိုတယ်"},
+      {emoji:"🗺️", en:"Map", my:"မြေပုံ"},
+      {emoji:"🏖️", en:"Beach", my:"ကမ်းခြေ"},
+      {emoji:"📸", en:"Souvenir", my:"အမှတ်တရပစ္စည်း"},
+      {emoji:"🛂", en:"Passport", my:"နိုင်ငံကူးလက်မှတ်"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 36 — Countries & Nationalities / နိုင်ငံများနှင့် လူမျိုးများ",
+    words: [
+      {emoji:"🇲🇲", en:"Myanmar", my:"မြန်မာ"},
+      {emoji:"🇹🇭", en:"Thailand", my:"ထိုင်း"},
+      {emoji:"🇯🇵", en:"Japan", my:"ဂျပန်"},
+      {emoji:"🇬🇧", en:"England", my:"အင်္ဂလန်"},
+      {emoji:"🇺🇸", en:"America", my:"အမေရိကန်"},
+      {emoji:"🇮🇳", en:"India", my:"အိန္ဒိယ"},
+      {emoji:"🇨🇳", en:"China", my:"တရုတ်"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 37 — Science / သိပ္ပံပညာ",
+    words: [
+      {emoji:"🔬", en:"Microscope", my:"မိုက်ခရိုစကုပ်"},
+      {emoji:"🧪", en:"Experiment", my:"စမ်းသပ်ခြင်း"},
+      {emoji:"⚛️", en:"Atom", my:"အက်တမ်"},
+      {emoji:"🧬", en:"DNA", my:"မျိုးရိုးဗီဇ"},
+      {emoji:"🔭", en:"Telescope", my:"ရေးလ်စကုပ်"},
+      {emoji:"⚗️", en:"Chemistry", my:"ဓာတုဗေဒ"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 38 — Space & Universe / အာကာသနှင့် စကြာဝဠာ",
+    words: [
+      {emoji:"🌍", en:"Earth", my:"ကမ္ဘာမြေ"},
+      {emoji:"🌕", en:"Moon", my:"လ"},
+      {emoji:"⭐", en:"Star", my:"ကြယ်"},
+      {emoji:"🪐", en:"Planet", my:"ဂြိုဟ်"},
+      {emoji:"🚀", en:"Rocket", my:"ဒုံးပျံ"},
+      {emoji:"👨‍🚀", en:"Astronaut", my:"အာကာသယာဉ်မှူး"},
+      {emoji:"☄️", en:"Comet", my:"ကြယ်တံခွန်"}
+    ]
   }
 ];
 

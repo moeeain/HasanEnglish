@@ -211,19 +211,27 @@ GRAMMAR_UNITS.forEach(unit=>{
   grammarLevelGroup.appendChild(box);
 });
 
-// ---- Level filter dropdowns ----
-function wireLevelFilter(selectId, wrap){
-  const sel = document.getElementById(selectId);
-  if(!sel) return;
-  sel.addEventListener('change', ()=>{
-    const val = sel.value;
+// ---- Global Level filter: Home tab selector controls Vocabulary & Grammar everywhere,
+// synced with the per-tab dropdowns too, and remembered on this device ----
+function applyLevelFilter(val){
+  [vocabWrap, grammarWrap].forEach(wrap=>{
     wrap.querySelectorAll('.level-group').forEach(group=>{
       group.style.display = (val === 'all' || group.dataset.level === val) ? '' : 'none';
     });
   });
+  ['homeLevelSelect', 'vocabLevelFilter', 'grammarLevelFilter'].forEach(id=>{
+    const el = document.getElementById(id);
+    if(el && el.value !== val) el.value = val;
+  });
+  localStorage.setItem('selectedLevel', val);
 }
-wireLevelFilter('vocabLevelFilter', vocabWrap);
-wireLevelFilter('grammarLevelFilter', grammarWrap);
+
+['homeLevelSelect', 'vocabLevelFilter', 'grammarLevelFilter'].forEach(id=>{
+  const sel = document.getElementById(id);
+  if(sel) sel.addEventListener('change', ()=> applyLevelFilter(sel.value));
+});
+
+applyLevelFilter(localStorage.getItem('selectedLevel') || 'all');
 
 // ---- Render: Listening ----
 const listeningWrap = document.getElementById('listeningUnits');
