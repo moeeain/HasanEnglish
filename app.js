@@ -156,6 +156,10 @@ if(homeNameSaveBtn){
   });
 }
 
+// Speech recognition (used here in Words, and again in Speaking) — declared
+// once, globally, so both sections can use the same instance check.
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+
 // ---- Render: Vocabulary (grouped into filterable level sections) ----
 const vocabWrap = document.getElementById('vocabUnits');
 let vocabLevelGroup = null;
@@ -177,10 +181,41 @@ VOCAB_UNITS.forEach(unit=>{
   unit.words.forEach(w=>{
     const card = document.createElement('div');
     card.className = 'word-card';
+    const micButtonHtml = SR ? `<button class="word-mic-btn" title="Check my pronunciation / အသံမှန်မမှန်စစ်မယ်">🎤</button>` : '';
     card.innerHTML = `<div class="word-emoji">${w.emoji}</div>
       <div class="word-en">${w.en}</div>
-      <div class="word-my">${w.my}</div>`;
-    card.onclick = ()=>speak(w.en);
+      <div class="word-my">${w.my}</div>
+      ${micButtonHtml}
+      <div class="word-mic-feedback"></div>`;
+    card.addEventListener('click', (e)=>{
+      if(e.target.closest('.word-mic-btn')) return; // mic button handles its own click
+      speak(w.en);
+    });
+    const micBtn = card.querySelector('.word-mic-btn');
+    if(micBtn){
+      micBtn.onclick = (e)=>{
+        e.stopPropagation();
+        const fb = card.querySelector('.word-mic-feedback');
+        fb.textContent = '🎙️...';
+        fb.className = 'word-mic-feedback';
+        const rec = new SR();
+        rec.lang = 'en-US';
+        rec.interimResults = false;
+        rec.maxAlternatives = 1;
+        rec.onresult = ev=>{
+          const said = ev.results[0][0].transcript.toLowerCase().trim();
+          const target = w.en.toLowerCase().trim();
+          const isClose = said.includes(target) || target.includes(said);
+          fb.textContent = isClose ? '✅' : `❌ "${said}"`;
+          fb.className = 'word-mic-feedback ' + (isClose ? 'ok' : 'bad');
+        };
+        rec.onerror = ()=>{
+          fb.textContent = '⚠️';
+          fb.className = 'word-mic-feedback bad';
+        };
+        rec.start();
+      };
+    }
     grid.appendChild(card);
   });
   vocabLevelGroup.appendChild(box);
@@ -250,7 +285,6 @@ LISTENING_UNITS.forEach(unit=>{
 });
 
 // ---- Render: Speaking ----
-const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 const speakingWrap = document.getElementById('speakingUnits');
 SPEAKING_UNITS.forEach((unit,ui)=>{
   const box = document.createElement('div');

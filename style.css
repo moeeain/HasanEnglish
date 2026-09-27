@@ -74,6 +74,11 @@ main{padding:10px 18px 40px;max-width:760px;margin:0 auto}
 .word-emoji{font-size:2rem}
 .word-en{font-weight:800;margin-top:4px}
 .word-my{font-size:0.85rem}
+.word-mic-btn{background:var(--coral);color:#fff;border:none;border-radius:10px;
+  padding:4px 10px;font-size:0.95rem;margin-top:6px;cursor:pointer}
+.word-mic-feedback{font-size:0.8rem;font-weight:800;min-height:1.1em;margin-top:2px}
+.word-mic-feedback.ok{color:#1a7a3d}
+.word-mic-feedback.bad{color:var(--coral)}
 .word-hi{font-size:0.8rem;opacity:0.8}
 
 .example{background:#F1F8FF;border-left:4px solid var(--sky);padding:10px 14px;border-radius:8px;margin-top:10px}
