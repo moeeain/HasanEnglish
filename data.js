@@ -488,6 +488,119 @@ const VOCAB_UNITS = [
       {emoji:"👨‍🚀", en:"Astronaut", my:"အာကာသယာဉ်မှူး"},
       {emoji:"☄️", en:"Comet", my:"ကြယ်တံခွန်"}
     ]
+  },
+  {    level: 1,
+    title: "Unit 39 — Farm Animals / တောင်သူလယ်ယာတိရစ္ဆာန်များ",
+    words: [
+      {emoji:"🐄", en:"Cow", my:"နွား"},
+      {emoji:"🐖", en:"Pig", my:"ဝက်"},
+      {emoji:"🐑", en:"Sheep", my:"သိုး"},
+      {emoji:"🐐", en:"Goat", my:"ဆိတ်"},
+      {emoji:"🐎", en:"Horse", my:"မြင်း"},
+      {emoji:"🦆", en:"Duck", my:"ဘဲ"},
+      {emoji:"🐓", en:"Rooster", my:"ၾကက်ဖ"}
+    ]
+  },
+  {    level: 2,
+    title: "Unit 40 — Insects & Bugs / ပိုးမွှားများ",
+    words: [
+      {emoji:"🐝", en:"Bee", my:"ပျား"},
+      {emoji:"🦋", en:"Butterfly", my:"လိပ်ပြာ"},
+      {emoji:"🐜", en:"Ant", my:"ပုရွှက်ဆီး"},
+      {emoji:"🕷️", en:"Spider", my:"ပင့်ကူ"},
+      {emoji:"🐞", en:"Ladybug", my:"ပိုးလှလှ"},
+      {emoji:"🦗", en:"Grasshopper", my:"နှံကောင်"},
+      {emoji:"🪰", en:"Fly", my:"ယင်"}
+    ]
+  },
+  {    level: 3,
+    title: "Unit 41 — Extended Family / ရင်းချာမိသားစုဝင်များ",
+    words: [
+      {emoji:"👨‍👦", en:"Uncle", my:"ဦးလေး"},
+      {emoji:"👩‍👧", en:"Aunt", my:"အန်တီ"},
+      {emoji:"🧑", en:"Cousin", my:"ဝမ်းကွဲ"},
+      {emoji:"👦", en:"Nephew", my:"တူ"},
+      {emoji:"👧", en:"Niece", my:"တူမ"},
+      {emoji:"👨‍👩‍👧‍👦", en:"Relatives", my:"ဆွေမျိုးများ"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 42 — Materials / ပစ္စည်းမျိုးစိတ်များ",
+    words: [
+      {emoji:"🪵", en:"Wood", my:"သစ်သား"},
+      {emoji:"🧱", en:"Metal", my:"သတ္တု"},
+      {emoji:"🥤", en:"Plastic", my:"ပလတ်စတစ်"},
+      {emoji:"🪟", en:"Glass", my:"ဖန်"},
+      {emoji:"🧵", en:"Cotton", my:"ဝါဂွမ်း"},
+      {emoji:"🪨", en:"Stone", my:"ကျောက်"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 43 — Personality Adjectives / စရိုက်ဖော်ပြသောစကားလုံးများ",
+    words: [
+      {emoji:"😊", en:"Kind", my:"ကြင်နာသော"},
+      {emoji:"🦁", en:"Brave", my:"ရဲစွမ်းသော"},
+      {emoji:"😂", en:"Funny", my:"ဟာသရှိသော"},
+      {emoji:"😳", en:"Shy", my:"ရှက်တတ်သော"},
+      {emoji:"💪", en:"Strong", my:"ခွန်အားရှိသော"},
+      {emoji:"🧠", en:"Clever", my:"ဉာဏ်ကောင်းသော"},
+      {emoji:"🤗", en:"Friendly", my:"ဖော်ရွေသော"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 44 — Cooking Verbs / ဟင်းချက်ခြင်းဆိုင်ရာ ကြိယာများ",
+    words: [
+      {emoji:"🍲", en:"Boil", my:"ပြုတ်"},
+      {emoji:"🍳", en:"Fry", my:"ကြော်"},
+      {emoji:"🍞", en:"Bake", my:"ဖုတ်"},
+      {emoji:"🔪", en:"Chop", my:"ခုတ်"},
+      {emoji:"🥣", en:"Mix", my:"ရောနှော"},
+      {emoji:"🧊", en:"Freeze", my:"ခဲအောင်လုပ်"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 45 — Restaurant & Eating Out / စားသောက်ဆိုင်",
+    words: [
+      {emoji:"📋", en:"Menu", my:"မီနူး"},
+      {emoji:"🧑‍🍳", en:"Waiter/Waitress", my:"ဧည့်ကြိုစားပွဲထိုး"},
+      {emoji:"🧾", en:"Bill", my:"ငွေတောင်းခံလွှာ"},
+      {emoji:"🍽️", en:"Order", my:"မှာယူ"},
+      {emoji:"💵", en:"Tip", my:"ဆုကြေး"},
+      {emoji:"🪑", en:"Table for two", my:"လူနှစ်ယောက်စားပွဲ"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 46 — Bank & Post Office / ဘဏ်နှင့် စာတိုက်",
+    words: [
+      {emoji:"💳", en:"Bank account", my:"ဘဏ်အကောင့်"},
+      {emoji:"✉️", en:"Letter", my:"စာ"},
+      {emoji:"📦", en:"Package", my:"ပါဆယ်"},
+      {emoji:"🏧", en:"ATM", my:"ATM စက်"},
+      {emoji:"📮", en:"Mailbox", my:"စာတိုက်ပုံး"},
+      {emoji:"💴", en:"Deposit", my:"ငွေသွင်း"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 47 — City & Countryside / မြို့ပြနှင့်တောရွာ",
+    words: [
+      {emoji:"🏙️", en:"City", my:"မြို့ပြ"},
+      {emoji:"🏘️", en:"Countryside", my:"တောရွာ"},
+      {emoji:"🚦", en:"Traffic", my:"ယာဉ်ကြောပိတ်ဆို့မှု"},
+      {emoji:"🏭", en:"Factory", my:"စက်ရုံ"},
+      {emoji:"🐄", en:"Farmland", my:"လယ်ယာမြေ"},
+      {emoji:"🌆", en:"Skyscraper", my:"မိုးမျှော်တိုက်"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 48 — Computer & Internet / ကွန်ပျူတာနှင့် အင်တာနက်",
+    words: [
+      {emoji:"⌨️", en:"Keyboard", my:"ကီးဘုတ်"},
+      {emoji:"🖱️", en:"Mouse (computer)", my:"မောက်စ်"},
+      {emoji:"🔑", en:"Password", my:"စကားဝှက်"},
+      {emoji:"📧", en:"Email", my:"အီးမေးလ်"},
+      {emoji:"🌐", en:"Website", my:"ဝက်ဘ်ဆိုဒ်"},
+      {emoji:"☁️", en:"Download", my:"ဒေါင်းလုဒ်ဆွဲ"}
+    ]
   }
 ];
 
@@ -683,6 +796,150 @@ const GRAMMAR_UNITS = [
        my:"တစ်ယောက်ယောက်ပြောတာကို ပြန်ပြောပြတဲ့အခါ verb tense ကို အတိတ်ကာလဆီ တစ်ဆင့် ရွှေ့ပေးရပါတယ်။"}
     ],
     examples: ["She said, \"I am tired.\" → She said (that) she was tired.", "He said, \"I will come.\" → He said (that) he would come."]
+  },
+  {    level: 1,
+    title: "Grammar 25 — Articles (a, an, the) / Article များ",
+    explain: [
+      {en:"Use 'a' before a consonant sound, 'an' before a vowel sound, for one non-specific thing. Use 'the' for a specific thing both people know.",
+       my:"Consonant အသံရှေ့မှာ 'a', vowel အသံရှေ့မှာ 'an' ကို တစ်ခုတည်းအတွက် သုံးပါတယ်။ 'the' ကိုတော့ နှစ်ဦးစလုံးသိတဲ့ အရာအတွက် သုံးပါတယ်။"}
+    ],
+    examples: ["I have a book.", "She has an apple.", "The sun is hot."]
+  },
+  {    level: 1,
+    title: "Grammar 26 — Yes/No Questions / ဟုတ်/မဟုတ် မေးခွန်းများ",
+    explain: [
+      {en:"To make a yes/no question, put 'Is/Are/Do/Does' at the start of the sentence.",
+       my:"ဟုတ်/မဟုတ် မေးခွန်းလုပ်ဖို့ ဝါကျအစမှာ 'Is/Are/Do/Does' ကို ထားပါတယ်။"}
+    ],
+    examples: ["Is she a teacher?", "Are they happy?", "Do you like tea?", "Does he play football?"]
+  },
+  {    level: 2,
+    title: "Grammar 27 — Present Continuous (is/are + -ing) / လက်ရှိဆက်တိုက်ကာလ",
+    explain: [
+      {en:"Use 'is/are + verb-ing' for an action happening right now.",
+       my:"အခုလက်ရှိ ဖြစ်ပျက်နေတဲ့ လုပ်ဆောင်ချက်အတွက် 'is/are + verb-ing' ကို သုံးပါတယ်။"}
+    ],
+    examples: ["I am eating lunch.", "She is reading a book.", "They are playing football now."]
+  },
+  {    level: 2,
+    title: "Grammar 28 — Some / Any / တချို့ / တစ်စုံတစ်ခုမျှ",
+    explain: [
+      {en:"Use 'some' in positive sentences, and 'any' in negative sentences and questions.",
+       my:"'Some' ကို positive ဝါကျတွေမှာ၊ 'any' ကို negative ဝါကျနဲ့ မေးခွန်းတွေမှာ သုံးပါတယ်။"}
+    ],
+    examples: ["I have some apples.", "I don't have any apples.", "Do you have any milk?"]
+  },
+  {    level: 3,
+    title: "Grammar 29 — Much / Many / A lot of / အရေအတွက်ပြ",
+    explain: [
+      {en:"'Many' is for countable nouns, 'much' is for uncountable nouns. 'A lot of' works for both.",
+       my:"'Many' ကို ရေတွက်လို့ရတဲ့ naun တွေအတွက်၊ 'much' ကို ရေတွက်မရတဲ့ naun တွေအတွက် သုံးပါတယ်။ 'A lot of' က နှစ်မျိုးစလုံးအတွက် သုံးနိုင်ပါတယ်။"}
+    ],
+    examples: ["I have many friends.", "I don't have much time.", "She has a lot of books."]
+  },
+  {    level: 3,
+    title: "Grammar 30 — Imperatives (commands) / အမိန့်ပေးဝါကျများ",
+    explain: [
+      {en:"Use the base verb at the start of a sentence to give a command or instruction. Add 'don't' for negative commands.",
+       my:"အမိန့်ပေး (သို့) ညွှန်ကြားချက်ပေးဖို့ ဝါကျအစမှာ verb ရိုးရိုးကို သုံးပါတယ်။ Negative command အတွက် 'don't' ထည့်ပါ။"}
+    ],
+    examples: ["Close the door.", "Sit down, please.", "Don't touch that."]
+  },
+  {    level: 4,
+    title: "Grammar 31 — Would like to / Want to / လိုချင်တာပြ",
+    explain: [
+      {en:"'Would like to' is a polite way to say what you want. 'Want to' is more casual.",
+       my:"'Would like to' က လိုချင်တာကို ယဉ်ကျေးစွာ ပြောနည်းဖြစ်ပြီး 'want to' က ပိုပေါ့ပေါ့ပါးပါး ပြောနည်းဖြစ်ပါတယ်။"}
+    ],
+    examples: ["I would like to have some water.", "I want to play outside.", "Would you like to come with us?"]
+  },
+  {    level: 4,
+    title: "Grammar 32 — Irregular Comparatives (good/bad) / ပုံမှန်မဟုတ်သော နှိုင်းယှဉ်ခြင်း",
+    explain: [
+      {en:"Some adjectives don't add -er/-est; they change completely: good → better → best, bad → worse → worst.",
+       my:"Adjective အချို့က -er/-est ထပ်မထည့်ဘဲ လုံးလုံးပြောင်းသွားတယ်: good → better → best, bad → worse → worst."}
+    ],
+    examples: ["This cake is better than that one.", "This is the best day of my life.", "The weather is worse today."]
+  },
+  {    level: 5,
+    title: "Grammar 33 — Used to (past habits) / အတိတ်က အလေ့အထ",
+    explain: [
+      {en:"Use 'used to + base verb' for a past habit or state that is not true anymore.",
+       my:"အခုမမှန်တော့တဲ့ အတိတ်ကအလေ့အထ (သို့) အခြေအနေအတွက် 'used to + verb ရိုးရိုး' ကို သုံးပါတယ်။"}
+    ],
+    examples: ["I used to live in a village.", "She used to play the piano.", "We used to walk to school."]
+  },
+  {    level: 5,
+    title: "Grammar 34 — Second Conditional (If + past, would + verb) / မဖြစ်နိုင်တဲ့အခြေအနေပြ",
+    explain: [
+      {en:"Use 'If + past simple, ... would + verb' to talk about an imaginary or unlikely situation.",
+       my:"စိတ်ကူးထဲကအခြေအနေ (သို့) ဖြစ်နိုင်ချေနည်းတဲ့အရာအတွက် 'If + past simple, ... would + verb' ကို သုံးပါတယ်။"}
+    ],
+    examples: ["If I had a lot of money, I would travel the world.", "If I were a bird, I would fly every day."]
+  },
+  {    level: 6,
+    title: "Grammar 35 — Present Perfect Continuous / လက်ရှိစုံလင်ဆက်တိုက်ကာလ",
+    explain: [
+      {en:"Use 'have/has been + verb-ing' for an action that started in the past and is still continuing.",
+       my:"အတိတ်ကနေ စပြီး အခုထိ ဆက်ဖြစ်နေတဲ့အရာအတွက် 'have/has been + verb-ing' ကို သုံးပါတယ်။"}
+    ],
+    examples: ["I have been studying English for two years.", "She has been waiting for an hour."]
+  },
+  {    level: 6,
+    title: "Grammar 36 — Question Tags / အတည်ပြုမေးခွန်း",
+    explain: [
+      {en:"A question tag is a short question added to the end of a sentence, to check or confirm information.",
+       my:"Question tag က သတင်းအချက်အလက်ကို စစ်ဆေး/အတည်ပြုဖို့ ဝါကျအဆုံးမှာ ထပ်ဖြည့်တဲ့ မေးခွန်းတိုလေးဖြစ်ပါတယ်။"}
+    ],
+    examples: ["You are a student, aren't you?", "She likes tea, doesn't she?", "They can swim, can't they?"]
+  },
+  {    level: 2,
+    title: "Grammar 37 — Whose (asking about possession) / ပိုင်ရှင်မေးခွန်း",
+    explain: [
+      {en:"Use 'whose' to ask who something belongs to.",
+       my:"တစ်ခုခုက ဘယ်သူ့ဟာလဲဆိုတာ မေးဖို့ 'whose' ကို သုံးပါတယ်။"}
+    ],
+    examples: ["Whose book is this?", "Whose bag is that?", "It is my sister's bag."]
+  },
+  {    level: 3,
+    title: "Grammar 38 — Prepositions of Time (before, after, during, since) / အချိန်ပြ preposition",
+    explain: [
+      {en:"'Before/after' show order, 'during' shows something happening inside a period, 'since' shows a starting point.",
+       my:"'Before/after' က အစီအစဉ်ကို ပြပြီး၊ 'during' က ကာလတစ်ခုအတွင်းဖြစ်တာကို ပြပါတယ်၊ 'since' ကတော့ အစချက်ကို ပြပါတယ်။"}
+    ],
+    examples: ["I eat breakfast before school.", "I sleep after dinner.", "It rained during the trip.", "I have lived here since 2020."]
+  },
+  {    level: 4,
+    title: "Grammar 39 — Too / Enough / လွန်းသည် / လုံလောက်သည်",
+    explain: [
+      {en:"'Too + adjective' means more than needed (a problem). 'Enough' means the right amount.",
+       my:"'Too + adjective' က လိုအပ်တာထက် ပိုတယ် (ပြဿနာဖြစ်နိုင်တယ်) လို့ ဆိုလိုပါတယ်။ 'Enough' ကတော့ လိုအပ်တဲ့ပမာဏအတိုင်း ဆိုလိုပါတယ်။"}
+    ],
+    examples: ["This tea is too hot.", "I don't have enough money.", "She is old enough to go to school."]
+  },
+  {    level: 5,
+    title: "Grammar 40 — Gerunds as Subjects (Swimming is fun) / Gerund ကို subject အဖြစ်သုံးခြင်း",
+    explain: [
+      {en:"A gerund is a verb-ing form used like a noun. It can be the subject of a sentence.",
+       my:"Gerund ဆိုတာ naun လိုသုံးတဲ့ verb-ing ပုံစံဖြစ်ပါတယ်။ ဝါကျရဲ့ subject အဖြစ် သုံးနိုင်ပါတယ်။"}
+    ],
+    examples: ["Swimming is fun.", "Reading books helps you learn.", "Cooking takes a lot of time."]
+  },
+  {    level: 6,
+    title: "Grammar 41 — Indirect Questions / သွယ်ဝိုက်မေးခွန်း",
+    explain: [
+      {en:"Indirect questions are more polite. The word order changes to subject + verb (not verb + subject).",
+       my:"Indirect question က ပိုယဉ်ကျေးပါတယ်။ Word order က subject + verb ပုံစံ ပြောင်းသွားပါတယ် (verb + subject မဟုတ်ပါ)။"}
+    ],
+    examples: ["Could you tell me where the bank is?", "Do you know what time it is?", "I wonder why she is late."]
+  },
+  {    level: 6,
+    title: "Grammar 42 — Basic Phrasal Verbs / အခြေခံ Phrasal Verb များ",
+    explain: [
+      {en:"A phrasal verb is a verb + a small word (like up, on, for) that together have a special meaning.",
+       my:"Phrasal verb ဆိုတာ verb + small word (up, on, for စသည်) ပေါင်းစပ်ပြီး အထူးအဓိပ္ပာယ်ရှိတဲ့ ဝေါဟာရဖြစ်ပါတယ်။"}
+    ],
+    examples: ["Wake up! It's time for school.", "Please turn on the light.", "I am looking for my pencil."]
   }
 ];
 
@@ -722,7 +979,19 @@ const LISTENING_UNITS = [
   {title:"Listen 9 — How's The Weather? / ရာသီဥတုသီချင်း",
    youtubeId:"dTY0DHL9Lxb",
    keyPhrase:"How's the weather today?",
-   note:{en:"Listen for: sunny, rainy, cloudy, snowy.", my:"sunny, rainy, cloudy, snowy — ရာသီဥတုစကားလုံးများကို နားထောင်ပါ။"}}
+   note:{en:"Listen for: sunny, rainy, cloudy, snowy.", my:"sunny, rainy, cloudy, snowy — ရာသီဥတုစကားလုံးများကို နားထောင်ပါ။"}},
+  {title:"Listen 10 — Fruit Is Yummy / အသီးအနှံသီချင်း",
+   youtubeId:"DDjOLRNby20",
+   keyPhrase:"Fruit is yummy in my tummy",
+   note:{en:"Listen for fruit names: banana, mango, apple, strawberry.", my:"banana, mango, apple, strawberry — အသီးနာမည်များကို နားထောင်ပါ။"}},
+  {title:"Listen 11 — The Shape Song #1 / ပုံသဏ္ဍာန်သီချင်း",
+   youtubeId:"TJhfl5vdxp4",
+   keyPhrase:"A circle, a diamond, a square, and a heart",
+   note:{en:"Try to draw each shape as you hear its name.", my:"နာမည်ကြားတိုင်း အဲဒီပုံသဏ္ဍာန်ကို ဆွဲကြည့်ပါ။"}},
+  {title:"Listen 12 — The Animals On The Farm / တောင်သူလယ်ယာတိရစ္ဆာန်သီချင်း",
+   youtubeId:"zXEq-QO3xTg",
+   keyPhrase:"The cow says moo, the pig says oink",
+   note:{en:"Listen for the farm animal sounds and try to copy them.", my:"တောင်သူလယ်ယာတိရစ္ဆာန်အသံများကို နားထောင်ပြီး လိုက်ဆိုကြည့်ပါ။"}}
 ];
 
 // ============================================================
@@ -824,6 +1093,56 @@ const SPEAKING_UNITS = [
    prompts:[
      {en:"Say: \"I have visited Yangon.\"", my:"ပြောကြည့်ပါ - \"I have visited Yangon.\""},
      {en:"Say: \"If it rains, I will stay home.\"", my:"ပြောကြည့်ပါ - \"If it rains, I will stay home.\""}
+   ]},
+  {title:"Speak 13 — Talking about food / အစားအစာအကြောင်းပြော",
+   prompts:[
+     {en:"Say: \"I like eating mangoes.\"", my:"ပြောကြည့်ပါ - \"I like eating mangoes.\""},
+     {en:"Say: \"I don't have any vegetables.\"", my:"ပြောကြည့်ပါ - \"I don't have any vegetables.\""}
+   ]},
+  {title:"Speak 14 — Talking about hobbies / ဝါသနာအကြောင်းပြော",
+   prompts:[
+     {en:"Say: \"My hobby is drawing.\"", my:"ပြောကြည့်ပါ - \"My hobby is drawing.\""},
+     {en:"Say: \"I would like to learn guitar.\"", my:"ပြောကြည့်ပါ - \"I would like to learn guitar.\""}
+   ]},
+  {title:"Speak 15 — Shopping / ဈေးဝယ်ခြင်း",
+   prompts:[
+     {en:"Say: \"How much is this?\"", my:"ပြောကြည့်ပါ - \"How much is this?\""},
+     {en:"Say: \"This is too expensive.\"", my:"ပြောကြည့်ပါ - \"This is too expensive.\""}
+   ]},
+  {title:"Speak 16 — Talking about the past / အတိတ်ကအကြောင်းပြော",
+   prompts:[
+     {en:"Say: \"I used to live in a small village.\"", my:"ပြောကြည့်ပါ - \"I used to live in a small village.\""},
+     {en:"Say: \"I have been studying English for two years.\"", my:"ပြောကြည့်ပါ - \"I have been studying English for two years.\""}
+   ]},
+  {title:"Speak 17 — Imagining things / စိတ်ကူးယဉ်ပြောခြင်း",
+   prompts:[
+     {en:"Say: \"If I had a lot of money, I would travel the world.\"", my:"ပြောကြည့်ပါ - \"If I had a lot of money, I would travel the world.\""},
+     {en:"Say: \"You are a student, aren't you?\"", my:"ပြောကြည့်ပါ - \"You are a student, aren't you?\""}
+   ]},
+  {title:"Speak 18 — At the restaurant / စားသောက်ဆိုင်တွင်",
+   prompts:[
+     {en:"Say: \"Can I see the menu, please?\"", my:"ပြောကြည့်ပါ - \"Can I see the menu, please?\""},
+     {en:"Say: \"I would like to order fried rice.\"", my:"ပြောကြည့်ပါ - \"I would like to order fried rice.\""}
+   ]},
+  {title:"Speak 19 — Describing personality / စရိုက်ဖော်ပြခြင်း",
+   prompts:[
+     {en:"Say: \"My friend is very kind and funny.\"", my:"ပြောကြည့်ပါ - \"My friend is very kind and funny.\""},
+     {en:"Say: \"She is brave enough to try new things.\"", my:"ပြောကြည့်ပါ - \"She is brave enough to try new things.\""}
+   ]},
+  {title:"Speak 20 — Asking politely / ယဉ်ကျေးစွာမေးခြင်း",
+   prompts:[
+     {en:"Say: \"Could you tell me where the bank is?\"", my:"ပြောကြည့်ပါ - \"Could you tell me where the bank is?\""},
+     {en:"Say: \"Do you know what time it is?\"", my:"ပြောကြည့်ပါ - \"Do you know what time it is?\""}
+   ]},
+  {title:"Speak 21 — City or countryside / မြို့ပြ သို့မဟုတ် တောရွာ",
+   prompts:[
+     {en:"Say: \"I like living in the city because it is exciting.\"", my:"ပြောကြည့်ပါ - \"I like living in the city because it is exciting.\""},
+     {en:"Say: \"The countryside is quiet and peaceful.\"", my:"ပြောကြည့်ပါ - \"The countryside is quiet and peaceful.\""}
+   ]},
+  {title:"Speak 22 — Everyday actions / နေ့စဉ်လုပ်ဆောင်ချက်များ",
+   prompts:[
+     {en:"Say: \"Wake up! It's time for school.\"", my:"ပြောကြည့်ပါ - \"Wake up! It's time for school.\""},
+     {en:"Say: \"Please turn on the light.\"", my:"ပြောကြည့်ပါ - \"Please turn on the light.\""}
    ]}
 ];
 
@@ -898,6 +1217,90 @@ const READING_UNITS = [
      {en:"What is the old market famous for?", my:"ဈေးဟောင်းက ဘာနဲ့ နာမည်ကြီးလဲ?"},
      {en:"What does the writer do at the public library?", my:"ရေးသားသူ စာကြည့်တိုက်မှာ ဘာလုပ်လဲ?"},
      {en:"What has the new school taught the writer?", my:"ကျောင်းသစ်က ရေးသားသူကို ဘာသင်ပေးခဲ့လဲ?"}
+   ]},
+
+  {title:"Read 7 — My Grandfather's Garden / ကျွန်တော့်အဘိုးရဲ့ဥယျာဉ်",
+   text:"My grandfather has always loved gardening, and his small garden behind the house is full of colorful flowers, fresh vegetables, and several fruit trees. Every morning before breakfast, he goes outside to water the plants and check on the tomatoes, cucumbers, and carrots that he grows there. He says that gardening used to be a common hobby when he was young, but nowadays fewer people have time for it because everyone is busy with phones and computers. My grandfather has been growing the same mango tree for over thirty years, and he tells me that it produces the sweetest mangoes in our whole neighborhood. Last summer, he taught me how to plant seeds and take care of young plants, and I have been helping him in the garden every weekend since then. At first, I found it a little boring, but now I actually enjoy watching the plants grow bigger each week. My grandfather says that if I keep practicing, I will become a good gardener too, just like him. I would like to have my own small garden one day, filled with my favorite fruits and vegetables.",
+   translation:{
+     my:"ကျွန်တော့်အဘိုးက ဥယျာဉ်ပြုစုတာကို အမြဲကြိုက်ခဲ့ပြီး၊ အိမ်နောက်ဘက်က ဥယျာဉ်ငယ်လေးမှာ အရောင်စုံပန်းများ၊ လတ်ဆတ်တဲ့ ဟင်းသီးဟင်းရွက်များနဲ့ အသီးပင်တချို့ ပြည့်နှက်နေပါတယ်။ မနက်စာမစားခင် နေ့တိုင်း အပြင်ထွက်ပြီး ပင်များကို ရေလောင်း၊ ခရမ်းချဉ်သီး၊ သခွားနဲ့ မုန်လာဥနီတွေကို ကြည့်ရှုပါတယ်။ သူငယ်ငယ်တုန်းက ဥယျာဉ်ပြုစုခြင်းဟာ ရိုးရိုးသာမန် ဝါသနာတစ်ခုဖြစ်ခဲ့ပေမယ့် အခုတော့ ဖုန်းနဲ့ ကွန်ပျူတာနဲ့ အလုပ်များနေကြတဲ့အတွက် အချိန်ရှိတဲ့သူ နည်းနည်းလေးပဲ ရှိတော့တယ်လို့ ပြောပါတယ်။ အဘိုးက သရက်ပင်တစ်ပင်တည်းကို နှစ်ပေါင်း ၃၀ ကျော် စိုက်ပျိုးနေခဲ့ပြီး၊ ဒါက ကျွန်တော်တို့ ရပ်ကွက်တစ်ခုလုံးထဲမှာ အချိုဆုံးသရက်သီးများ ထွက်ရှိစေတယ်လို့ ပြောပါတယ်။ ပြီးခဲ့တဲ့နွေရာသီမှာ မျိုးစေ့စိုက်နည်းနဲ့ ပင်ငယ်များကို ဘယ်လိုပြုစုရမယ်ဆိုတာ ကျွန်တော့်ကို သင်ပေးခဲ့ပြီး၊ အဲဒီကတည်းက စနေ/တနင်္ဂနွေတိုင်း ဥယျာဉ်ထဲမှာ ကူညီနေပါတယ်။ အစပိုင်းမှာ နည်းနည်းငြီးငွေ့ခဲ့ပေမယ့် အခုတော့ ပင်များ တစ်ပတ်ချင်း ကြီးထွားလာတာကို ကြည့်ရတာ တကယ့်ကို ပျော်ရွှင်ပါတယ်။ ဆက်လက်လေ့ကျင့်ရင် ကျွန်တော်လည်း အဘိုးလိုပဲ ဥယျာဉ်ကျွမ်းကျင်သူတစ်ယောက် ဖြစ်လာမယ်လို့ အဘိုးက ပြောပါတယ်။ ကျွန်တော် အကြိုက်ဆုံးအသီးအနှံတွေနဲ့ ပြည့်နှက်နေတဲ့ ကိုယ်ပိုင်ဥယျာဉ်ငယ်လေးတစ်ခု တစ်နေ့နေ့ ပိုင်ဆိုင်ချင်ပါတယ်။"
+   },
+   questions:[
+     {en:"What does the grandfather do every morning?", my:"အဘိုးက နေ့တိုင်း မနက်ပိုင်း ဘာလုပ်လဲ?"},
+     {en:"How long has the grandfather been growing the mango tree?", my:"သရက်ပင်ကို ဘယ်လောက်ကြာကြာ စိုက်ပျိုးနေခဲ့လဲ?"},
+     {en:"Why does the grandfather say fewer people garden nowadays?", my:"ဘာကြောင့် အခု ဥယျာဉ်ပြုစုသူ နည်းနေတယ်လို့ အဘိုးက ပြောလဲ?"},
+     {en:"How did the writer feel about gardening at first?", my:"အစပိုင်းမှာ ဥယျာဉ်ပြုစုတာကို ရေးသားသူ ဘယ်လိုခံစားခဲ့လဲ?"}
+   ]},
+
+  {title:"Read 8 — Staying Healthy / ကျန်းမာရေး ဂရုစိုက်ခြင်း",
+   text:"Last month, I caught a bad cold and had a high fever for three days. I had to stay home from school and take medicine every day until I felt better. During that time, my mother took very good care of me — she cooked warm soup, made sure I drank plenty of water, and checked my temperature every few hours. My doctor said that I should rest as much as possible and avoid cold drinks while I was sick. After that experience, I decided that I wanted to take better care of my health, so I have been trying to eat more fruit and vegetables, exercise regularly, and sleep at least eight hours every night. I have also stopped eating too much candy, which I used to eat almost every day. My grandmother always says that prevention is better than cure, which means it is much easier to stay healthy than to get better after you are sick. Now, I wash my hands before every meal, and I try to go for a short walk or play sports every afternoon. I feel much stronger and happier since I started these new habits, and I rarely get sick anymore.",
+   translation:{
+     my:"ပြီးခဲ့တဲ့လက ကျွန်တော် အအေးမိပြီး သုံးရက်လောက် ဖျားနေခဲ့ပါတယ်။ ကျောင်းမသွားနိုင်ဘဲ ပိုကောင်းလာတဲ့အထိ နေ့တိုင်း ဆေးသောက်ရပါတယ်။ အဲဒီအချိန်မှာ အမေက ကျွန်တော့်ကို အလွန်ကောင်းမွန်စွာ ပြုစုပေးခဲ့ပါတယ် — ဟင်းချိုနွေးနွေးလေးချက်ပေးပြီး၊ ရေအလုံအလောက်သောက်စေပြီး၊ အနာရီအနည်းငယ်ခြားတိုင်း ကိုယ်အပူချိန်စစ်ဆေးပေးပါတယ်။ ဆရာဝန်က ဖြစ်နိုင်သမျှ နားနေပြီး ဖျားနာနေချိန် အအေးမသောက်ဖို့ ပြောပါတယ်။ အဲဒီအတွေ့အကြုံပြီးနောက် ကျန်းမာရေးကို ပိုပြီး ဂရုစိုက်ချင်လာလို့ အသီးအနှံနဲ့ ဟင်းသီးဟင်းရွက် ပိုစားနေပါတယ်၊ ပုံမှန်ကိုယ်လက်လှုပ်ရှားမှုလုပ်ပြီး၊ ညတိုင်း အနည်းဆုံး ၈ နာရီအိပ်စက်နေပါတယ်။ အရင်ကနေ့တိုင်းလိုလို စားနေခဲ့တဲ့ သကြားလုံးများကိုလည်း ရပ်တန့်ထားပါတယ်။ ကျွန်တော့်အဖွားက ကာကွယ်တာက ကုသတာထက် ပိုကောင်းတယ်လို့ အမြဲပြောပါတယ် — ဒီဆိုလိုချက်က ဖျားနာပြီးမှ ပြန်ကောင်းလာအောင်လုပ်ရတာထက် ကျန်းမာနေအောင် ထိန်းသိမ်းထားရတာက ပိုလွယ်တယ်ဆိုတဲ့ အဓိပ္ပာယ်ပါ။ အခု အစားအစာစားတိုင်း လက်ဆေးပြီး၊ ညနေတိုင်း လမ်းလျှောက်တာ (သို့) အားကစားကစားတာ လုပ်ကြည့်ပါတယ်။ ဒီအလေ့အထသစ်တွေ စတင်ကတည်းက ပိုပြီးကျန်းမာပြီး ပျော်ရွှင်လာပြီး ဖျားနာတာ ရှားရှားပါးပါးပဲ ဖြစ်တော့ပါတယ်။"
+   },
+   questions:[
+     {en:"How long did the writer have a fever?", my:"ရေးသားသူ ဘယ်လောက်ကြာကြာ ဖျားနေခဲ့လဲ?"},
+     {en:"What did the doctor say to do while sick?", my:"ဖျားနေချိန် ဆရာဝန်က ဘာလုပ်ဖို့ ပြောခဲ့လဲ?"},
+     {en:"What does \"prevention is better than cure\" mean?", my:"\"ကာကွယ်တာက ကုသတာထက်ပိုကောင်းတယ်\" ဆိုတာ ဘာအဓိပ္ပာယ်လဲ?"},
+     {en:"Name two new habits the writer started.", my:"ရေးသားသူ စတင်ခဲ့တဲ့ အလေ့အထသစ် နှစ်ခုကို ပြောပါ။"}
+   ]},
+
+  {title:"Read 9 — A Trip to the Beach / ကမ်းခြေခရီးစဉ်",
+   text:"Last holiday, my family and I traveled to the beach for the first time in three years. We packed our suitcases the night before and left early in the morning so that we could arrive before it got too hot. The trip took about four hours by bus, and I slept for most of the journey because I was too excited to sleep well the night before. When we finally arrived, the ocean looked more beautiful than I had ever imagined — the water was a clear blue-green color, and the sand felt warm under my feet. We stayed at a small hotel near the beach, and every day we would swim in the morning, eat fresh seafood for lunch, and walk along the shore in the evening, collecting shells and watching the sunset. On the second day, a local fisherman showed us how he catches fish using a traditional net, which was fascinating to watch. My little sister, who had never seen the ocean before, was both amazed and a little scared by the size of the waves at first, but by the end of the trip, she was swimming confidently and did not want to leave. Before we went home, we bought some souvenirs for our grandparents, including seashells and a small bottle of sand from the beach. This was definitely one of the best holidays our family has ever taken together.",
+   translation:{
+     my:"ပြီးခဲ့တဲ့အားလပ်ရက်မှာ ကျွန်တော့်မိသားစုနဲ့ ကျွန်တော် သုံးနှစ်အတွင်း ပထမဆုံးအကြိမ် ကမ်းခြေကို ခရီးသွားခဲ့ကြပါတယ်။ ရှေ့နေ့ညက ခရီးဆောင်သေတ္တာများ ထုပ်ပိုးပြီး၊ နေမပူသေးခင်ရောက်အောင် မနက်စောစော ထွက်ခွာခဲ့ကြပါတယ်။ ခရီးစဉ်က ဘတ်စ်ကားနဲ့ လေးနာရီလောက်ကြာပြီး၊ ရှေ့နေ့ညက စိတ်လှုပ်ရှားလွန်းလို့ ကောင်းကောင်းအိပ်မပျော်ခဲ့လို့ ခရီးစဉ်အတွင်း အများစု အိပ်ပျော်ခဲ့ပါတယ်။ နောက်ဆုံးရောက်တဲ့အခါ သမုဒ္ဒရာက ကျွန်တော် စိတ်ကူးထားတာထက် ပိုလှပါတယ် — ရေက ကြည်လင်တဲ့ အပြာစိမ်းရောင်ဖြစ်ပြီး သဲကမ်းပြင်က ခြေထောက်အောက်မှာ နွေးနွေးလေးခံစားရပါတယ်။ ကမ်းခြေနားက ဟိုတယ်ငယ်လေးမှာ တည်းခိုပြီး နေ့တိုင်း မနက်ရေကူး၊ နေ့လယ်စာအတွက် လတ်ဆတ်တဲ့ ငါးရေထွက်ပစ္စည်းစား၊ ညနေခင်းမှာ ကမ်းစပ်လျှောက်ပြီး ကျောက်ခွံများကောက်ပြီး နေဝင်ချိန်ကို ကြည့်ကြပါတယ်။ ဒုတိယနေ့မှာ ဒေသခံတံငါသည်တစ်ယောက်က ရိုးရာပိုက်ကွန်နဲ့ ငါးဖမ်းပုံကို ပြသပေးခဲ့ပြီး ကြည့်ရတာ အလွန်စိတ်ဝင်စားစရာကောင်းပါတယ်။ ကျွန်တော့်ညီမငယ်က သမုဒ္ဒရာကို တစ်ခါမှ မမြင်ဖူးလို့ လှိုင်းကြီးမှုကို အံ့ဩပြီး အနည်းငယ်လည်း ကြောက်ခဲ့ပေမယ့် ခရီးစဉ်အဆုံးမှာတော့ ယုံကြည်စိတ်ချစွာ ရေကူးနေပြီး ပြန်ချင်တော့မှ မဟုတ်ပါဘူး။ အိမ်မပြန်ခင် အဘိုးအဖွားများအတွက် ကျောက်ခွံနဲ့ သဲအိတ်ငယ်လေးတွေလို အမှတ်တရပစ္စည်းများ ဝယ်ခဲ့ကြပါတယ်။ ဒါဟာ ကျွန်တော့်မိသားစု အတူတကွ လုပ်ခဲ့ဖူးတဲ့ အကောင်းဆုံး အားလပ်ရက်များထဲက တစ်ခုပဲ သေချာပါတယ်။"
+   },
+   questions:[
+     {en:"How long did the bus journey take?", my:"ဘတ်စ်ကားခရီးစဉ်က ဘယ်လောက်ကြာလဲ?"},
+     {en:"What did the family do every day at the beach?", my:"ကမ်းခြေမှာ မိသားစုက နေ့တိုင်း ဘာလုပ်ခဲ့လဲ?"},
+     {en:"How did the little sister feel about the ocean at first?", my:"အစပိုင်းမှာ ညီမငယ်က သမုဒ္ဒရာအကြောင်း ဘယ်လိုခံစားခဲ့လဲ?"},
+     {en:"What souvenirs did they buy?", my:"ဘယ်လို အမှတ်တရပစ္စည်းများ ဝယ်ခဲ့လဲ?"}
+   ]},
+
+  {title:"Read 10 — The Wonders of Space / အာကာသရဲ့ အံ့ဖွယ်များ",
+   text:"Space has always fascinated scientists and ordinary people alike. Our planet, Earth, is one of eight planets that orbit the Sun, and it is the only planet we know of that has life. The Moon, which is much smaller than Earth, orbits our planet and controls the ocean tides. On a clear night, if you look up at the sky, you can see thousands of stars, each one a giant ball of burning gas, much like our own Sun. Some of the light from those stars has been traveling through space for millions of years before reaching our eyes, which means that when you look at a star, you are actually looking into the past. Scientists use powerful telescopes to study space, and in 1969, astronauts first walked on the Moon, which was one of humanity's greatest achievements. Since then, we have sent rockets and robots to explore other planets, including Mars, which many scientists believe humans could visit in the future. Space is also home to comets, which are balls of ice and dust that travel around the Sun, and asteroids, which are rocky objects of many different sizes. Although we have learned a great deal about space, there is still so much that remains unknown, and new discoveries are being made every year. I have always dreamed of becoming an astronaut so that I could see Earth from space with my own eyes.",
+   translation:{
+     my:"အာကာသဟာ သိပ္ပံပညာရှင်များနှင့် သာမန်လူများအားလုံးကို စိတ်ဝင်စားစေတတ်ခဲ့ပါတယ်။ ကျွန်တော်တို့ကမ္ဘာ Earth ဟာ နေကို လှည့်ပတ်နေတဲ့ ဂြိုဟ်ရှစ်လုံးထဲက တစ်လုံးဖြစ်ပြီး သက်ရှိသတ္တဝါရှိတယ်ဆိုတာ ကျွန်တော်တို့သိတဲ့ တစ်ခုတည်းသော ဂြိုဟ်ဖြစ်ပါတယ်။ Earth ထက် အများကြီးသေးငယ်တဲ့ လ ဟာ ကျွန်တော်တို့ ဂြိုဟ်ကို လှည့်ပတ်ပြီး ပင်လယ်ရေအတက်အကျကို ထိန်းချုပ်ပါတယ်။ ကောင်းကင်ကြည်လင်တဲ့ညမှာ အပေါ်ကိုကြည့်ရင် ကြယ်ထောင်ပေါင်းများစွာကို မြင်နိုင်ပြီး၊ ကြယ်တစ်လုံးစီဟာ ကျွန်တော်တို့ ရဲ့ နေနဲ့တူတဲ့ လောင်ကျွမ်းနေတဲ့ ဓာတ်ငွေ့ ဘောလုံးကြီးများပါ။ အဲဒီကြယ်တွေက အလင်းတချို့ဟာ ကျွန်တော်တို့မျက်စိထဲရောက်ဖို့ နှစ်ပေါင်းသန်းချီပြီး အာကာသထဲမှာ ခရီးသွားနေခဲ့ပါတယ် — ဒါကြောင့် ကြယ်တစ်လုံးကို ကြည့်တဲ့အခါ တကယ်တမ်းတော့ အတိတ်ကို ကြည့်နေတာဖြစ်ပါတယ်။ သိပ္ပံပညာရှင်တွေက အားကောင်းတဲ့ ရေးလ်စကုပ်များသုံးပြီး အာကာသကို လေ့လာကြပါတယ်၊ ၁၉၆၉ ခုနှစ်မှာ အာကာသယာဉ်မှူးများ လပေါ်ကို ပထမဆုံးလမ်းလျှောက်ခဲ့ကြပြီး ဒါက လူသားရဲ့ အကြီးမြတ်ဆုံး အောင်မြင်မှုတစ်ခုဖြစ်ခဲ့ပါတယ်။ အဲဒီကတည်းက ဒုံးပျံနဲ့ ရိုဘော့များကို ဂြိုဟ်တခြားများသို့ လေ့လာစူးစမ်းဖို့ ပို့ခဲ့ကြပြီး၊ Mars ပါဝင်ပါတယ် — သိပ္ပံပညာရှင်များစွာက အနာဂတ်မှာ လူသားများ လာလည်နိုင်တယ်လို့ ယုံကြည်ကြပါတယ်။ အာကာသမှာ ကြယ်တံခွန်များလည်း ရှိပါတယ် — ဒါတွေက နေကို ပတ်ပတ်လည်ခရီးသွားတဲ့ ရေခဲနဲ့ ဖုန်မှုန့်ဘောလုံးများဖြစ်ပြီး၊ အရွယ်အစားအမျိုးမျိုးရှိတဲ့ ကျောက်ခဲအရာဝတ္ထုများ asteroid လည်းရှိပါတယ်။ အာကာသအကြောင်း များစွာသိထားပေမယ့် မသိရသေးတာများစွာလည်း ကျန်နေသေးပြီး တွေ့ရှိချက်အသစ်များကို နှစ်တိုင်း ဆက်လက်ရရှိနေဆဲပါ။ ကျွန်တော် အာကာသကနေ Earth ကို ကိုယ်တိုင်တွေ့မြင်ချင်လို့ အာကာသယာဉ်မှူးတစ်ယောက် ဖြစ်ချင်တာကို အမြဲစိတ်ကူးယဉ်ခဲ့ပါတယ်။"
+   },
+   questions:[
+     {en:"What controls the ocean tides?", my:"ပင်လယ်ရေအတက်အကျကို ဘာက ထိန်းချုပ်လဲ?"},
+     {en:"When did astronauts first walk on the Moon?", my:"အာကာသယာဉ်မှူးများ ဘယ်တုန်းက လပေါ်ကို ပထမဆုံးလမ်းလျှောက်ခဲ့လဲ?"},
+     {en:"What is the difference between a comet and an asteroid?", my:"ကြယ်တံခွန်နဲ့ asteroid ဘာကွာလဲ?"},
+     {en:"What does the writer dream of becoming?", my:"ရေးသားသူ ဘာဖြစ်ချင်တယ်လို့ စိတ်ကူးယဉ်ခဲ့လဲ?"}
+   ]},
+
+  {title:"Read 11 — A Day on the Farm / တောင်သူလယ်ယာတွင် တစ်နေ့",
+   text:"During the school holidays, I visited my uncle's farm in the countryside for the very first time. Life there was completely different from life in the city. Every morning, my uncle woke up before sunrise to feed the animals — the cows, the pigs, the goats, and the chickens all needed to be fed before breakfast. I helped him collect eggs from the chicken coop, and I was surprised at how warm they still felt in my hands. In the afternoon, we walked through the fields where rows of corn and rice were growing, and my uncle taught me how to tell if the crops were ready to harvest. The countryside was much quieter than the city; instead of car horns and traffic, I could hear birds singing, cows mooing, and the wind moving through the trees. In the evening, we sat outside and watched the sunset while my uncle told stories about how farming has changed since he was a boy — back then, everything was done by hand, but now they use some machines to make the work faster. Although farm work is hard and tiring, my uncle says he would never trade this life for a job in the city, because he loves being close to nature every single day. By the time I left, I had a much greater respect for farmers and the food they grow for all of us.",
+   translation:{
+     my:"ကျောင်းအားလပ်ရက်များအတွင်း ကျွန်တော့်ဦးလေးရဲ့ လယ်ယာကို ဒီမတိုင်ခင်က ဘယ်တော့မှ သွားဖူးခဲ့ခြင်းမရှိသေးဘဲ ပထမဆုံးအကြိမ် သွားလည်ခဲ့ပါတယ်။ အဲဒီမှာ ဘဝဟာ မြို့ပြဘဝနဲ့ လုံးလုံးလျားလျား ကွာခြားပါတယ်။ ဦးလေးက နေမထွက်ခင် နေ့တိုင်း နိုးပြီး တိရစ္ဆာန်များကို ကျွေးပါတယ် — နွား၊ ဝက်၊ ဆိတ်နဲ့ ကြက်များကို မနက်စာမစားခင် ကျွေးရပါတယ်။ ကြက်အိမ်ထဲက ကြက်ဥများ ကောက်ယူရာမှာ ကူညီခဲ့ပြီး လက်ထဲမှာ ဒီလောက်နွေးနေသေးတာကို အံ့ဩခဲ့ပါတယ်။ နေ့လယ်ပိုင်းမှာ ပြောင်းဖူးနဲ့ ဆန်စပါးတန်းလိုက်ကြီးထွားနေတဲ့ လယ်ကွင်းများကို လျှောက်ခဲ့ပြီး၊ ဘယ်အချိန် ရိတ်သိမ်းရမယ်ဆိုတာ ဦးလေးက သင်ပေးခဲ့ပါတယ်။ တောရွာက မြို့ပြထက် အများကြီးတိတ်ဆိတ်ပါတယ် — ကားတွန်းသံနဲ့ ယာဉ်ကြောပိတ်ဆို့မှုအစား ငှက်သီချင်းဆိုသံ၊ နွားအော်သံနဲ့ လေတိုက်သစ်ပင်ချောက်ချားသံတွေ ကြားရပါတယ်။ ညနေခင်းမှာ အပြင်ဘက်ထိုင်ပြီး နေဝင်ချိန်ကြည့်ရင်း ဦးလေးက သူငယ်ငယ်တုန်းကထက် စိုက်ပျိုးရေးဘယ်လိုပြောင်းလဲလာခဲ့လဲ ပြောပြပါတယ် — အရင်တုန်းက လက်ဖြင့် အားလုံးလုပ်ရပေမယ့် အခုတော့ စက်ကိရိယာတချို့ကို သုံးလို့ အလုပ်ပိုမြန်ပါတယ်။ လယ်ယာအလုပ်ဟာ ခက်ခဲပင်ပန်းပေမယ့် သဘာဝနှင့်နီးကပ်စွာနေထိုင်ရတာကို နှစ်သက်လို့ ဒီဘဝကို မြို့ပြအလုပ်နဲ့ ဘယ်တော့မှ လဲလှယ်မှာမဟုတ်ဘူးလို့ ဦးလေးက ပြောပါတယ်။ ပြန်ချိန်ကျတော့ ကျွန်တော်တို့ရဲ့ စားစရာကို စိုက်ပျိုးပေးတဲ့ တောင်သူများကို ပိုမိုလေးစားလာခဲ့ပါတယ်။"
+   },
+   questions:[
+     {en:"What did the uncle do before sunrise every morning?", my:"ဦးလေးက နေမထွက်ခင် နေ့တိုင်း ဘာလုပ်ခဲ့လဲ?"},
+     {en:"How has farming changed since the uncle was young?", my:"ဦးလေးငယ်ငယ်တုန်းကထက် စိုက်ပျိုးရေးဘယ်လို ပြောင်းလဲခဲ့လဲ?"},
+     {en:"Why does the uncle prefer farm life to city life?", my:"ဘာကြောင့် ဦးလေးက မြို့ပြဘဝထက် လယ်ယာဘဝကို ပိုကြိုက်လဲ?"},
+     {en:"How did the writer feel about farmers after the visit?", my:"လည်ပတ်ပြီးနောက် ရေးသားသူ တောင်သူများအကြောင်း ဘယ်လိုခံစားခဲ့လဲ?"}
+   ]},
+
+  {title:"Read 12 — Learning to Cook / ဟင်းချက်နည်းသင်ယူခြင်း",
+   text:"When I turned fourteen, I decided that it was time for me to learn how to cook, since I had always relied on my mother to prepare every meal. My mother agreed to teach me, and every Sunday afternoon became our special cooking time together. In the beginning, I could barely chop an onion without crying, and I once burned rice so badly that we had to open all the windows because of the smoke! However, my mother was very patient with me, explaining each step slowly and showing me the right way to hold a knife safely. She taught me how to boil eggs, fry vegetables, and eventually bake a simple cake for my little sister's birthday. I learned that cooking is not just about following a recipe — it is also about tasting the food as you go and adjusting the salt, sugar, or spices until it tastes just right. After several months of practice, I finally made a full dinner by myself for the whole family, including rice, a vegetable dish, and fried chicken. Everyone said it tasted delicious, and I felt incredibly proud of myself. Now, I help my mother cook dinner almost every evening, and I have even started experimenting with my own recipes. Learning to cook has taught me patience, and it has also brought my mother and me much closer together.",
+   translation:{
+     my:"ကျွန်တော် အသက် ၁၄ နှစ်ပြည့်တဲ့အခါ ဟင်းချက်နည်းကို သင်ယူချိန် တန်ပြီလို့ ဆုံးဖြတ်ခဲ့ပါတယ် — အစားအစာတိုင်း ပြင်ဆင်ဖို့ အမေကိုပဲ အမြဲမှီခိုနေခဲ့တယ်လို့ ခံစားရလို့ပါ။ အမေက သင်ပေးဖို့ သဘောတူခဲ့ပြီး တနင်္ဂနွေနေ့ ညနေတိုင်း ကျွန်တော်တို့ ဟင်းချက်ချိန်အထူးဖြစ်လာပါတယ်။ အစပိုင်းမှာ ကြက်သွန်နီတောင် မငိုမနေထုတ်နိုင်ခဲ့ဘူးပါ၊ တစ်ကြိမ်တော့ ထမင်းကို ပြင်းပြင်းအားလားလောင်ခဲ့ပြီး မီးခိုးလွန်းလို့ ပြတင်းပေါက်များကို အားလုံးဖွင့်ချထားရပါတယ်! ဒါပေမယ့် အမေက ကျွန်တော့်ကို အလွန်စိတ်ရှည်စွာ ဆက်ဆံပေးခဲ့ပြီး၊ အဆင့်တစ်ခုချင်းစီကို ဖြည်းဖြည်းချင်း ရှင်းပြပေးကာ ဓားကို ဘယ်လိုလုံခြုံစွာ ကိုင်ရမလဲ ပြသပေးပါတယ်။ ကြက်ဥပြုတ်နည်း၊ ဟင်းသီးဟင်းရွက်ကြော်နည်းနဲ့ နောက်ဆုံးတော့ ညီမငယ်ရဲ့ မွေးနေ့အတွက် ကိတ်မုန့်ရိုးရိုးလေးတစ်ခု ဖုတ်နည်းကိုပါ သင်ပေးခဲ့ပါတယ်။ ဟင်းချက်ခြင်းဆိုတာ recipe အတိုင်း လိုက်လုပ်ရုံမက၊ လုပ်ရင်းစားကြည့်ပြီး ဆား၊ သကြား (သို့) ဟင်းခတ်အမွှေးအကြိုင်ကို မှန်အောင် ချိန်ညှိရတာလည်း ပါတယ်ဆိုတာ သင်ယူခဲ့ရပါတယ်။ လများစွာ ကျင့်သားရပြီးနောက် နောက်ဆုံးတော့ မိသားစုတစ်ခုလုံးအတွက် ထမင်း၊ ဟင်းသီးဟင်းရွက်ဟင်းနဲ့ ကြက်သားကြော်ပါဝင်တဲ့ ညစာတစ်စုံလုံးကို ကျွန်တော့်ကိုယ်တိုင် ချက်ပြုတ်နိုင်ခဲ့ပါတယ်။ အားလုံးက အရသာလှတယ်လို့ ပြောကြပြီး ကျွန်တော် တကယ့်ကို ဂုဏ်ယူမိပါတယ်။ အခု ညနေတိုင်းနီးပါး အမေ့ကို ညစာချက်ရာမှာ ကူညီနေပြီး ကိုယ်ပိုင် recipe တွေကိုပါ စမ်းသပ်ချက်ပြုတ်နေပါပြီ။ ဟင်းချက်နည်းသင်ယူခြင်းက ကျွန်တော့်ကို စိတ်ရှည်မှုကို သင်ပေးခဲ့ပြီး၊ အမေနဲ့ ကျွန်တော့်ကို ပိုနီးကပ်စေခဲ့ပါတယ်။"
+   },
+   questions:[
+     {en:"What happened the first time the writer cooked rice?", my:"ထမင်းကို ပထမဆုံးချက်တုန်းက ဘာဖြစ်ခဲ့လဲ?"},
+     {en:"What did the writer learn about cooking besides following a recipe?", my:"Recipe လိုက်လုပ်ခြင်းအပြင် ဟင်းချက်ခြင်းအကြောင်း ဘာသင်ယူခဲ့လဲ?"},
+     {en:"What was in the first full dinner the writer cooked alone?", my:"ကိုယ်တိုင်ချက်ခဲ့တဲ့ ပထမညစာမှာ ဘာတွေပါလဲ?"},
+     {en:"How did learning to cook affect the writer's relationship with their mother?", my:"ဟင်းချက်နည်းသင်ယူခြင်းက အမေနဲ့ ဆက်ဆံရေးကို ဘယ်လိုအကျိုးသက်ရောက်ခဲ့လဲ?"}
+   ]},
+
+  {title:"Read 13 — City Life and Countryside Life / မြို့ပြဘဝနှင့် တောရွာဘဝ",
+   text:"My family has lived in a big city for as long as I can remember, but my grandparents still live in the small village where my mother grew up, so I have had the chance to experience both types of life. Life in the city is fast and exciting — there are tall skyscrapers, busy streets full of traffic, and many shops, restaurants, and shopping malls open late into the night. There is always something to do, and I have many friends from different backgrounds at my school. However, city life can also be noisy, crowded, and sometimes a little stressful, especially during rush hour when everyone is trying to get to work at the same time. In contrast, life in my grandparents' countryside village is much slower and quieter. There are wide open fields, clean air, and almost everyone knows everyone else, which makes it feel very safe and friendly. My grandparents grow their own vegetables and know exactly where their food comes from, which is something most people in the city never experience. On the other hand, the village has fewer job opportunities, and my grandparents often need to travel a long way just to visit a hospital or a large shop. Both city life and countryside life have their own advantages and disadvantages, and I feel very lucky that I get to enjoy the best of both worlds whenever I visit my grandparents during the school holidays.",
+   translation:{
+     my:"ကျွန်တော့်မိသားစု မှတ်မိသမျှ မြို့ပြကြီးတစ်ခုမှာ နေထိုင်ခဲ့ကြပေမယ့် ကျွန်တော့်အဘိုးအဖွားတို့က အမေကြီးပြင်းလာခဲ့တဲ့ ရွာငယ်လေးမှာ ဆက်နေထိုင်နေကြဆဲဖြစ်လို့ ဘဝနှစ်မျိုးစလုံးကို ကျွန်တော် တွေ့ကြုံခံစားခွင့်ရခဲ့ပါတယ်။ မြို့ပြဘဝက မြန်ပြီး စိတ်လှုပ်ရှားစရာဖြစ်ပါတယ် — မိုးမျှော်တိုက်ကြီးများ၊ ယာဉ်များပြည့်နှက်နေတဲ့ လမ်းများနဲ့ ဈေးဆိုင်၊ စားသောက်ဆိုင်၊ ရုပ်ရှင်ရုံတွေ ညနက်နက်ထိ ဖွင့်ထားပါတယ်။ လုပ်စရာအမြဲရှိနေပြီး ကျောင်းမှာ နောက်ခံအမျိုးမျိုးကွဲပြားတဲ့ သူငယ်ချင်းများစွာ ရှိပါတယ်။ ဒါပေမယ့် မြို့ပြဘဝဟာ ဆူညံ၊ လူထူထပ်ပြီး တစ်ခါတစ်လေ စိတ်ဖိစီးစရာလည်းဖြစ်နိုင်ပါတယ် — အထူးသဖြင့် လူတိုင်း တစ်ချိန်တည်း အလုပ်သွားကြတဲ့ အလုပ်ချိန်ခေါက်ဝင်ပိုင်း။ ဆန့်ကျင်ဘက်အနေနဲ့ အဘိုးအဖွားတို့ရဲ့ တောရွာဘဝက ပိုနှေးပြီး ပိုတိတ်ဆိတ်ပါတယ်။ ကျယ်ပြန့်တဲ့ လယ်ကွင်းများ၊ လေကောင်းလေသန့်နဲ့ လူတိုင်းနီးပါး တစ်ယောက်နဲ့တစ်ယောက် သိကြလို့ လုံခြုံပြီး ဖော်ရွေစိတ်ခံစားရပါတယ်။ အဘိုးအဖွားတို့ ကိုယ်ပိုင်ဟင်းသီးဟင်းရွက်များ စိုက်ပျိုးထားပြီး သူတို့စားနေတဲ့ အစားအစာ ဘယ်က ဆင်းလာသလဲဆိုတာ အတိအကျသိကြပါတယ် — ဒါက မြို့ပြက လူအများစု ဘယ်တော့မှ မတွေ့ကြုံဖူးတဲ့ အရာပါ။ ဒီဘက်ကျမှတော့ ရွာမှာ အလုပ်အကိုင်အခွင့်အလမ်းနည်းပါတယ်၊ ဆေးရုံ (သို့) ဈေးကြီးတစ်ခုကို သွားဖို့ အဘိုးအဖွားတို့ ခရီးဝေးကို သွားရလေ့ရှိပါတယ်။ မြို့ပြဘဝနဲ့ တောရွာဘဝနှစ်မျိုးလုံးမှာ ကိုယ်ပိုင်အားသာချက်နဲ့ အားနည်းချက်များရှိပြီး ကျောင်းအားလပ်ရက်တိုင်း အဘိုးအဖွားများဆီ သွားလည်တိုင်း ကမ္ဘာနှစ်ခုစလုံးရဲ့ အကောင်းဆုံးကို ခံစားရလို့ ကျွန်တော် တကယ်ကံကောင်းတယ်လို့ ခံစားရပါတယ်။"
+   },
+   questions:[
+     {en:"What are two advantages of city life mentioned in the text?", my:"မြို့ပြဘဝရဲ့ အားသာချက်နှစ်ခုကို ပြောပါ။"},
+     {en:"What are two advantages of countryside life mentioned in the text?", my:"တောရွာဘဝရဲ့ အားသာချက်နှစ်ခုကို ပြောပါ။"},
+     {en:"What do the grandparents need to travel far for?", my:"အဘိုးအဖွားတို့ ဘာအတွက် ခရီးဝေးသွားရလဲ?"},
+     {en:"How does the writer feel about experiencing both ways of life?", my:"ဘဝနှစ်မျိုးစလုံးကို တွေ့ကြုံရတာကို ရေးသားသူ ဘယ်လိုခံစားရလဲ?"}
    ]}
 ];
 
@@ -932,6 +1335,46 @@ const WRITING_UNITS = [
    instructions:{
      en:"Write 2 sentences using: I have visited ___. I have never visited ___.",
      my:"ဝါကျ ၂ ကြောင်း ရေးပါ - I have visited ___. I have never visited ___."
+   }},
+  {title:"Write 7 — My Favorite Hobby / ကျွန်တော်အကြိုက်ဆုံးဝါသနာ",
+   instructions:{
+     en:"Write 3 sentences using: My hobby is ___. I have been doing it for ___. I like it because ___.",
+     my:"ဝါကျ ၃ ကြောင်း ရေးပါ - My hobby is ___. I have been doing it for ___. I like it because ___."
+   }},
+  {title:"Write 8 — If I Had a Superpower / စွမ်းအားထူးရှိရင်",
+   instructions:{
+     en:"Write 2 sentences using the second conditional. Example: If I could fly, I would visit every country.",
+     my:"Second conditional သုံးပြီး ဝါကျ ၂ ကြောင်း ရေးပါ။ ဥပမာ - If I could fly, I would visit every country."
+   }},
+  {title:"Write 9 — When I Was Young / ငယ်ငယ်တုန်းက",
+   instructions:{
+     en:"Write 2 sentences using 'used to' about something you did as a young child but don't do anymore.",
+     my:"ငယ်ငယ်တုန်းက လုပ်ခဲ့ပေမယ့် အခုမလုပ်တော့တဲ့အရာအကြောင်း 'used to' သုံးပြီး ဝါကျ ၂ ကြောင်း ရေးပါ။"
+   }},
+  {title:"Write 10 — Shopping List / ဈေးဝယ်စာရင်း",
+   instructions:{
+     en:"Write a short shopping list of 5 items using 'some' and 'any', and one sentence about the price.",
+     my:"'some' နှင့် 'any' သုံးပြီး ပစ္စည်း ၅ ခုပါဝင်တဲ့ ဈေးဝယ်စာရင်းတိုတစ်ခု ရေးပြီး စျေးနှုန်းအကြောင်း ဝါကျတစ်ကြောင်း ထပ်ရေးပါ။"
+   }},
+  {title:"Write 11 — A Trip to the Farm / လယ်ယာခရီးစဉ်",
+   instructions:{
+     en:"Write 3 sentences about a farm visit using: I saw ___. The ___ said ___. I helped ___.",
+     my:"လယ်ယာလည်ပတ်ခြင်းအကြောင်း ဝါကျ ၃ ကြောင်း ရေးပါ - I saw ___. The ___ said ___. I helped ___."
+   }},
+  {title:"Write 12 — My Best Friend's Personality / ကျွန်တော့်သူငယ်ချင်းရဲ့စရိုက်",
+   instructions:{
+     en:"Write 3 sentences describing your best friend's personality using at least two personality adjectives.",
+     my:"Personality adjective အနည်းဆုံးနှစ်ခုသုံးပြီး ကိုယ့်သူငယ်ချင်းအကောင်းဆုံးရဲ့ စရိုက်ကို ဖော်ပြတဲ့ ဝါကျ ၃ ကြောင်း ရေးပါ။"
+   }},
+  {title:"Write 13 — City or Countryside? / မြို့ပြ သို့မဟုတ် တောရွာ?",
+   instructions:{
+     en:"Write 3 sentences saying whether you prefer city life or countryside life, and why.",
+     my:"မြို့ပြဘဝ (သို့) တောရွာဘဝ ဘယ်ဟာကို ပိုကြိုက်လဲ၊ ဘာကြောင့်လဲဆိုတာ ဝါကျ ၃ ကြောင်းရေးပါ။"
+   }},
+  {title:"Write 14 — A Recipe I Know / ကျွန်တော်သိတဲ့ ဟင်းချက်နည်း",
+   instructions:{
+     en:"Write step-by-step instructions (3-4 sentences) for a simple dish, using cooking verbs like boil, fry, chop, mix.",
+     my:"boil, fry, chop, mix စတဲ့ cooking verb များသုံးပြီး ဟင်းလွယ်တစ်ခုအတွက် အဆင့်ဆင့် (ဝါကျ ၃-၄ ကြောင်း) ညွှန်ကြားချက် ရေးပါ။"
    }}
 ];
 
@@ -1018,5 +1461,90 @@ const WORKBOOK_QUESTIONS = [
    options:["will","would","was","did"], answer:"will"},
   {id:"w48", type:"fill", q:{en:"Fill in: I use my ___ to call people. (ဖုန်း)"}, answer:"phone"},
   {id:"w49", type:"mcq", q:{en:"Which word means a large area of trees?"},
-   options:["River","Mountain","Forest","Ocean"], answer:"Forest"}
+   options:["River","Mountain","Forest","Ocean"], answer:"Forest"},
+  {id:"w50", type:"mcq", q:{en:"Which fruit is yellow and curved?"},
+   options:["Apple","Banana","Grapes","Watermelon"], answer:"Banana"},
+  {id:"w51", type:"fill", q:{en:"Fill in: I eat ___ in summer to cool down. (ဖရဲသီး)"}, answer:"watermelon"},
+  {id:"w52", type:"mcq", q:{en:"Which season is the coldest?"},
+   options:["Summer","Spring","Winter","Autumn"], answer:"Winter"},
+  {id:"w53", type:"mcq", q:{en:"Choose the article: I have ___ apple."},
+   options:["a","an","the","-"], answer:"an"},
+  {id:"w54", type:"mcq", q:{en:"\"___ she a teacher?\" (yes/no question)"},
+   options:["Do","Does","Is","Are"], answer:"Is"},
+  {id:"w55", type:"mcq", q:{en:"\"I ___ eating lunch right now.\" (present continuous)"},
+   options:["am","is","was","do"], answer:"am"},
+  {id:"w56", type:"mcq", q:{en:"\"I don't have ___ milk.\" (negative sentence)"},
+   options:["some","any","many","much"], answer:"any"},
+  {id:"w57", type:"mcq", q:{en:"\"I have ___ friends.\" (countable noun)"},
+   options:["much","many","a little","-"], answer:"many"},
+  {id:"w58", type:"fill", q:{en:"Fill in the command: ___ the door. (close)"}, answer:"Close"},
+  {id:"w59", type:"mcq", q:{en:"Which instrument has strings and is played with fingers or a pick?"},
+   options:["Drum","Guitar","Piano","Microphone"], answer:"Guitar"},
+  {id:"w60", type:"mcq", q:{en:"What do you take when you have a headache?"},
+   options:["Bandage","Medicine","Hospital","Fever"], answer:"Medicine"},
+  {id:"w61", type:"fill", q:{en:"Fill in: My ___ is drawing. (ဝါသနာ)"}, answer:"hobby"},
+  {id:"w62", type:"mcq", q:{en:"\"This cake is ___ than that one.\" (irregular comparative of good)"},
+   options:["gooder","better","best","goodest"], answer:"better"},
+  {id:"w63", type:"mcq", q:{en:"Which word means a place where you pay for things?"},
+   options:["Price","Receipt","Bank","Suitcase"], answer:"Bank"},
+  {id:"w64", type:"fill", q:{en:"Fill in: You need a ___ to travel to another country. (နိုင်ငံကူးလက်မှတ်)"}, answer:"passport"},
+  {id:"w65", type:"mcq", q:{en:"Which country is Tokyo the capital of?"},
+   options:["Thailand","China","Japan","India"], answer:"Japan"},
+  {id:"w66", type:"mcq", q:{en:"\"I ___ to live in a village.\" (past habit, not true now)"},
+   options:["use","used","using","uses"], answer:"used"},
+  {id:"w67", type:"mcq", q:{en:"\"If I ___ a lot of money, I would travel.\" (second conditional)"},
+   options:["have","has","had","having"], answer:"had"},
+  {id:"w68", type:"fill", q:{en:"Fill in: Scientists use a ___ to see faraway stars. (ရေးလ်စကုပ်)"}, answer:"telescope"},
+  {id:"w69", type:"mcq", q:{en:"Which planet do we live on?"},
+   options:["Moon","Mars","Earth","Sun"], answer:"Earth"},
+  {id:"w70", type:"mcq", q:{en:"\"I ___ been studying for two years.\" (present perfect continuous)"},
+   options:["am","is","have","has"], answer:"have"},
+  {id:"w71", type:"mcq", q:{en:"\"You like tea, ___?\" (question tag)"},
+   options:["do you","don't you","aren't you","isn't it"], answer:"don't you"},
+  {id:"w72", type:"fill", q:{en:"Fill in: A person who flies to space is called an ___. (အာကာသယာဉ်မှူး)"}, answer:"astronaut"},
+  {id:"w73", type:"mcq", q:{en:"Which word means the opposite of 'expensive'?"},
+   options:["Cheap","Price","Money","Coin"], answer:"Cheap"},
+  {id:"w74", type:"mcq", q:{en:"Which farm animal says \"Moo\"?"},
+   options:["Pig","Cow","Sheep","Horse"], answer:"Cow"},
+  {id:"w75", type:"mcq", q:{en:"Which insect makes honey?"},
+   options:["Ant","Spider","Bee","Fly"], answer:"Bee"},
+  {id:"w76", type:"fill", q:{en:"Fill in: My father's brother is my ___. (ဦးလေး)"}, answer:"uncle"},
+  {id:"w77", type:"mcq", q:{en:"Which material is used to make windows?"},
+   options:["Wood","Glass","Cotton","Stone"], answer:"Glass"},
+  {id:"w78", type:"mcq", q:{en:"Which word describes someone who makes people laugh?"},
+   options:["Shy","Brave","Funny","Strong"], answer:"Funny"},
+  {id:"w79", type:"fill", q:{en:"Fill in: Please ___ the vegetables before cooking. (ခုတ်)"}, answer:"chop"},
+  {id:"w80", type:"mcq", q:{en:"Who brings your food to the table at a restaurant?"},
+   options:["Waiter","Menu","Bill","Order"], answer:"Waiter"},
+  {id:"w81", type:"mcq", q:{en:"Where do you put a letter to send it?"},
+   options:["ATM","Bank account","Mailbox","Deposit"], answer:"Mailbox"},
+  {id:"w82", type:"mcq", q:{en:"Which place has skyscrapers and lots of traffic?"},
+   options:["Countryside","Farmland","City","Village"], answer:"City"},
+  {id:"w83", type:"mcq", q:{en:"What do you use to type on a computer?"},
+   options:["Mouse","Keyboard","Password","Website"], answer:"Keyboard"},
+  {id:"w84", type:"mcq", q:{en:"\"___ book is this?\" (asking about possession)"},
+   options:["Who","Whose","Which","What"], answer:"Whose"},
+  {id:"w85", type:"mcq", q:{en:"\"I eat breakfast ___ school.\" (before this)"},
+   options:["after","during","before","since"], answer:"before"},
+  {id:"w86", type:"mcq", q:{en:"\"This tea is ___ hot to drink.\" (a problem)"},
+   options:["enough","too","very much","so"], answer:"too"},
+  {id:"w87", type:"fill", q:{en:"Fill in: ___ is fun. (Swimming, as a subject)"}, answer:"Swimming"},
+  {id:"w88", type:"mcq", q:{en:"\"Could you tell me where the bank ___?\" (indirect question)"},
+   options:["is","is it","it is","does it"], answer:"is"},
+  {id:"w89", type:"mcq", q:{en:"\"Please turn ___ the light.\" (phrasal verb)"},
+   options:["up","on","for","in"], answer:"on"},
+  {id:"w90", type:"fill", q:{en:"Fill in: A butterfly starts as a ___. (never mind spelling, just guess a bug word)"}, answer:"caterpillar"},
+  {id:"w91", type:"mcq", q:{en:"Which season comes after winter?"},
+   options:["Summer","Autumn","Spring","Rainy season"], answer:"Spring"},
+  {id:"w92", type:"mcq", q:{en:"Which shape has three sides?"},
+   options:["Circle","Square","Triangle","Heart"], answer:"Triangle"},
+  {id:"w93", type:"mcq", q:{en:"Which vegetable is orange and long?"},
+   options:["Potato","Carrot","Onion","Cabbage"], answer:"Carrot"},
+  {id:"w94", type:"fill", q:{en:"Fill in: I need a ___ to log into my email. (စကားဝှက်)"}, answer:"password"},
+  {id:"w95", type:"mcq", q:{en:"Which word means giving extra money to a waiter for good service?"},
+   options:["Bill","Tip","Menu","Order"], answer:"Tip"},
+  {id:"w96", type:"mcq", q:{en:"Which animal makes silk and has eight legs?"},
+   options:["Ant","Bee","Spider","Ladybug"], answer:"Spider"},
+  {id:"w97", type:"mcq", q:{en:"\"She is old ___ to go to school.\" (the right amount)"},
+   options:["too","enough","very","so"], answer:"enough"}
 ];
