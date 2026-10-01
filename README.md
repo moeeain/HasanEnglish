@@ -54,14 +54,14 @@ Vocabulary နဲ့ Grammar tab နှစ်ခုစလုံးကို **Le
 - **Level 6 (အသစ်)**: Technology, Nature & Environment, Places in Town + Present Perfect, Modals (must/have to/should),
   Relative Clauses (who/which/that), Passive Voice, First Conditional, Reported Speech
 
-## လက်ရှိပါဝင်သော content (Level 1-6, Let's Go style) — 🆕 ထပ်မံချဲ့ထွင်ပြီးပါပြီ!
-- **Words**: unit ၄၈ ခု၊ စကားလုံး ၃၄၂ လုံး
+## လက်ရှိပါဝင်သော content (Level 1-6, Let's Go style) — 🆕 Level တစ်ခုစီ unit 10 ခုစီ ညီအောင် ပြင်ပြီးပါပြီ!
+- **Words**: unit ၆၀ ခု (**Level 1 ခုချင်းစီမှာ unit တိတိကျကျ ၁၀ ခုစီ**)၊ စကားလုံး ၄၁၀ လုံး
 - **Grammar**: unit ၄၂ ခု (Level 1 → Level 6)
 - **Listening**: verified video ၁၂ ခု (supersimple.com)
 - **Speaking**: unit ၂၂ ခု (mic + instant check) **+ 🔁 Listen & Repeat Practice**
 - **Reading**: unit ၁၃ ခု (word ၂,၇၅၀ ကျော်၊ Let's Go readers ပုံစံ စာပိုဒ်ရှည်ရှည်)
 - **Writing**: unit ၁၄ ခု
-- **Workbook**: မေးခွန်း ၉၇ ခု
+- **Workbook**: မေးခွန်း ၁၀၈ ခု
 
 ## 🔁 Listen & Repeat Practice (redesigned)
 အရင် "Dialogue Practice" (App/You အလှည့်ကျပြောတဲ့ ပုံစံ) က confusing ဖြစ်နေလို့

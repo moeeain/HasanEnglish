@@ -601,6 +601,134 @@ const VOCAB_UNITS = [
       {emoji:"🌐", en:"Website", my:"ဝက်ဘ်ဆိုဒ်"},
       {emoji:"☁️", en:"Download", my:"ဒေါင်းလုဒ်ဆွဲ"}
     ]
+  },
+  {    level: 1,
+    title: "Unit 49 — Pets / အိမ်မွေးတိရစ္ဆာန်များ",
+    words: [
+      {emoji:"🐶", en:"Dog", my:"ခွေး"},
+      {emoji:"🐱", en:"Cat", my:"ကြောင်"},
+      {emoji:"🐠", en:"Fish", my:"ငါး"},
+      {emoji:"🐦", en:"Bird", my:"ငှက်"},
+      {emoji:"🐰", en:"Rabbit", my:"ယုန်"},
+      {emoji:"🐹", en:"Hamster", my:"ဟမ်စတာ"}
+    ]
+  },
+  {    level: 3,
+    title: "Unit 50 — Parts of a House / အိမ်၏ အခန်းများ",
+    words: [
+      {emoji:"🛏️", en:"Bedroom", my:"အိပ်ခန်း"},
+      {emoji:"🍳", en:"Kitchen", my:"မီးဖိုချောင်"},
+      {emoji:"🛁", en:"Bathroom", my:"ရေချိုးခန်း"},
+      {emoji:"🛋️", en:"Living room", my:"ဧည့်ခန်း"},
+      {emoji:"🏠", en:"Roof", my:"အမိုး"},
+      {emoji:"🪜", en:"Stairs", my:"လှေကား"}
+    ]
+  },
+  {    level: 3,
+    title: "Unit 51 — Furniture / ပရိဘောဂများ",
+    words: [
+      {emoji:"🛋️", en:"Sofa", my:"ဆိုဖာ"},
+      {emoji:"🪑", en:"Table", my:"စားပွဲ"},
+      {emoji:"🚪", en:"Wardrobe", my:"အင်္ကျီဗီရို"},
+      {emoji:"🪞", en:"Mirror", my:"မှန်"},
+      {emoji:"💡", en:"Lamp", my:"မီးအိမ်"},
+      {emoji:"📚", en:"Bookshelf", my:"စာအုပ်စင်"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 52 — Natural Disasters / သဘာဝဘေးအန္တရာယ်များ",
+    words: [
+      {emoji:"🌊", en:"Flood", my:"ရေကြီးခြင်း"},
+      {emoji:"🌪️", en:"Storm", my:"မုန်တိုင်း"},
+      {emoji:"🏚️", en:"Earthquake", my:"မြေငလျင်"},
+      {emoji:"🔥", en:"Fire", my:"မီးလောင်ခြင်း"},
+      {emoji:"☀️", en:"Drought", my:"မိုးခေါင်ခြင်း"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 53 — Money Verbs / ငွေကြေးဆိုင်ရာ ကြိယာများ",
+    words: [
+      {emoji:"💰", en:"Save", my:"စုဆောင်း"},
+      {emoji:"🛍️", en:"Spend", my:"သုံးစွဲ"},
+      {emoji:"🤝", en:"Borrow", my:"ငှား"},
+      {emoji:"🤲", en:"Lend", my:"ငှားပေး"},
+      {emoji:"💵", en:"Pay", my:"ပေးချေ"},
+      {emoji:"🏦", en:"Earn", my:"ရှာဖွေ"}
+    ]
+  },
+  {    level: 4,
+    title: "Unit 54 — Party & Celebrations / ပါတီနှင့် ပွဲလမ်းသဘင်များ",
+    words: [
+      {emoji:"🎂", en:"Birthday cake", my:"မွေးနေ့ကိတ်"},
+      {emoji:"🎁", en:"Gift", my:"လက်ဆောင်"},
+      {emoji:"🎈", en:"Balloon", my:"ဗူးဖောင်း"},
+      {emoji:"🎉", en:"Celebrate", my:"ပွဲခံ"},
+      {emoji:"🎊", en:"Party", my:"ပါတီ"},
+      {emoji:"🕯️", en:"Candle", my:"ဖယောင်းတိုင်"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 55 — At the Airport / လေဆိပ်တွင်",
+    words: [
+      {emoji:"🎫", en:"Boarding pass", my:"လေယာဉ်ပေါ်တက်လက်မှတ်"},
+      {emoji:"🚪", en:"Gate", my:"ဂိတ်"},
+      {emoji:"🧳", en:"Luggage", my:"ခရီးဆောင်ပစ္စည်း"},
+      {emoji:"✈️", en:"Flight", my:"လေယာဉ်ခရီးစဉ်"},
+      {emoji:"🛂", en:"Passport control", my:"နိုင်ငံကူးလက်မှတ်စစ်ဆေးရေး"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 56 — Camping & Outdoors / စခန်းချခြင်းနှင့် ပြင်ပလှုပ်ရှားမှု",
+    words: [
+      {emoji:"⛺", en:"Tent", my:"တဲ"},
+      {emoji:"🛌", en:"Sleeping bag", my:"အိပ်အိတ်"},
+      {emoji:"🔥", en:"Campfire", my:"စခန်းမီးအိုင်"},
+      {emoji:"🎒", en:"Backpack", my:"ကျောပိုးအိတ်"},
+      {emoji:"🔦", en:"Flashlight", my:"လက်နှိပ်ဓာတ်မီး"},
+      {emoji:"🥾", en:"Hiking boots", my:"တောင်တက်ဖိနပ်"}
+    ]
+  },
+  {    level: 5,
+    title: "Unit 57 — Emergencies / အရေးပေါ်အခြေအနေများ",
+    words: [
+      {emoji:"🚨", en:"Emergency", my:"အရေးပေါ်အခြေအနေ"},
+      {emoji:"🚑", en:"Ambulance", my:"လူနာတင်ကား"},
+      {emoji:"🚒", en:"Fire truck", my:"မီးသတ်ကား"},
+      {emoji:"👮", en:"Police", my:"ရဲ"},
+      {emoji:"🆘", en:"Help", my:"အကူအညီ"},
+      {emoji:"🚪", en:"Exit", my:"ထွက်ပေါက်"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 58 — Global Issues / ကမ္ဘာလုံးဆိုင်ရာပြဿနာများ",
+    words: [
+      {emoji:"🏭", en:"Pollution", my:"ညစ်ညမ်းမှု"},
+      {emoji:"🌍", en:"Climate change", my:"ရာသီဥတုပြောင်းလဲမှု"},
+      {emoji:"🌳", en:"Deforestation", my:"သစ်တောပြုန်းတီးမှု"},
+      {emoji:"💰", en:"Poverty", my:"ဆင်းရဲမွဲတေမှု"},
+      {emoji:"♻️", en:"Sustainability", my:"ရေရှည်တည်တံ့မှု"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 59 — Business & Economy / စီးပွားရေးနှင့် ဘဏ္ဍာရေး",
+    words: [
+      {emoji:"🏢", en:"Company", my:"ကုမ္ပဏီ"},
+      {emoji:"📈", en:"Profit", my:"အမြတ်"},
+      {emoji:"🧑‍💼", en:"Customer", my:"ဖောက်သည်"},
+      {emoji:"💵", en:"Salary", my:"လစာ"},
+      {emoji:"📊", en:"Market", my:"ဈေးကွက်"}
+    ]
+  },
+  {    level: 6,
+    title: "Unit 60 — Law & Government / ဥပဒေနှင့် အစိုးရ",
+    words: [
+      {emoji:"🏛️", en:"Government", my:"အစိုးရ"},
+      {emoji:"👨‍⚖️", en:"President", my:"သမ္မတ"},
+      {emoji:"🗳️", en:"Vote", my:"မဲပေး"},
+      {emoji:"⚖️", en:"Law", my:"ဥပဒေ"},
+      {emoji:"🏢", en:"Court", my:"တရားရုံး"},
+      {emoji:"🪪", en:"Citizen", my:"နိုင်ငံသား"}
+    ]
   }
 ];
 
@@ -1546,5 +1674,24 @@ const WORKBOOK_QUESTIONS = [
   {id:"w96", type:"mcq", q:{en:"Which animal makes silk and has eight legs?"},
    options:["Ant","Bee","Spider","Ladybug"], answer:"Spider"},
   {id:"w97", type:"mcq", q:{en:"\"She is old ___ to go to school.\" (the right amount)"},
-   options:["too","enough","very","so"], answer:"enough"}
+   options:["too","enough","very","so"], answer:"enough"},
+  {id:"w98", type:"mcq", q:{en:"Which pet lives in water?"},
+   options:["Dog","Cat","Fish","Rabbit"], answer:"Fish"},
+  {id:"w99", type:"fill", q:{en:"Fill in: I cook food in the ___. (မီးဖိုချောင်)"}, answer:"kitchen"},
+  {id:"w100", type:"mcq", q:{en:"Which furniture do you sleep on top of, not a bed?"},
+   options:["Sofa","Wardrobe","Mirror","Bookshelf"], answer:"Sofa"},
+  {id:"w101", type:"mcq", q:{en:"Which natural disaster involves the ground shaking?"},
+   options:["Flood","Earthquake","Drought","Storm"], answer:"Earthquake"},
+  {id:"w102", type:"fill", q:{en:"Fill in: I ___ money every month for a new bicycle. (စုဆောင်း)"}, answer:"save"},
+  {id:"w103", type:"mcq", q:{en:"What do you blow out on a birthday cake?"},
+   options:["Balloon","Candle","Gift","Party"], answer:"Candle"},
+  {id:"w104", type:"mcq", q:{en:"What do you show before boarding a plane?"},
+   options:["Passport control","Gate","Boarding pass","Luggage"], answer:"Boarding pass"},
+  {id:"w105", type:"fill", q:{en:"Fill in: We slept in a ___ when we went camping. (တဲ)"}, answer:"tent"},
+  {id:"w106", type:"mcq", q:{en:"Who do you call in a fire emergency?"},
+   options:["Ambulance","Police","Fire truck","Court"], answer:"Fire truck"},
+  {id:"w107", type:"mcq", q:{en:"Which word means cutting down too many trees?"},
+   options:["Pollution","Deforestation","Poverty","Profit"], answer:"Deforestation"},
+  {id:"w108", type:"mcq", q:{en:"Which word means the money a company earns?"},
+   options:["Salary","Customer","Profit","Market"], answer:"Profit"}
 ];
